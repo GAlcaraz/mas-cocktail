@@ -3,7 +3,7 @@
 
 	86.07 Laboratorio de Microprocesadores
 
-  M.A.S. Cocktail						
+	
 
 
 
