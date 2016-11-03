@@ -11,10 +11,19 @@
 		OUT			DDRC,R20
 		OUT			DDRD,R20
 		RCALL		KBINIT
+		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
+		RCALL		InicDisplay		; lo mismo que la anterior
 
  MAIN:	
 		RCALL		GETKEY
-		SER			R22
+		ldi			TEMP,48
+		ADD			KEY,TEMP
+		MOV			DISPVAR,KEY
+		RCALL		DisplayChar
+
+		
+
+/*		SER			R22
 		OUT			PORTC,R22
 		OUT			PORTD,R22
  BCD1:	MOV			R18,R19
@@ -32,8 +41,9 @@ BCD3:	MOV			R18,R19
 BCD4:	MOV			R18,R19
 		ANDI		R18,0X01
 		BREQ		MAIN
-		CBI			PORTC,3
+		CBI			PORTC,3*/
+		/*RCALL I2CStop*/
 		RJMP		MAIN
 
  .include "kb_driver.asm"
-
+ .include "disp_driver.asm"

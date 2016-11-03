@@ -1,12 +1,18 @@
-;
+/*
+ * disp_driver.asm
+ *
+ *  Created: 01-Nov-16 5:01:30 PM
+ *   Author: galca
+ */ 
+ ;
 ; display.asm
 ;
 ; Created: 23/9/2016 2:16:36 p. m.
 ; Author : waral
 ;
 	.def TEMP = R16
-	.def RETARDO = R18
-	.def DISPVAR = R19
+	.def RETARDO = R21
+	.def DISPVAR = R24
 	.def CONTADOR = R20
 
 	.equ TWI_RATE = 0xF8
@@ -30,7 +36,7 @@ start:
 	RCALL InicDisplay		; lo mismo que la anterior
 	RCALL DisplayCocktail	; Mando "Cocktail" al display
 	RCALL DisplayEnter		; Mando "Enter" al display
-	RCALL DisplayWelcome		; Mando "Welcome" al display
+	RCALL DisplayWelcome	; Mando "Welcome" al display
 	
 
 
@@ -440,3 +446,16 @@ T_Welcome:
 T_COCKTail:
 	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*','*','0'
 	
+
+DispNum:
+	
+
+	ldi TEMP, 48
+	add KEY,TEMP
+	
+	
+DispNum_cont:
+	mov DISPVAR,TEMP
+	RCALL DisplayChar
+	
+	ret
