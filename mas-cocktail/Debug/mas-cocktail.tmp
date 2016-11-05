@@ -10,6 +10,7 @@
  <SOURCE_FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\avrasm\inc\m88padef.inc</FILE>
+  <FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE>
   <FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE>
   <FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE>
  </INCLUDED_FILES>
@@ -24,12 +25,22 @@
   <FILE>mas-cocktail.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
+  <MAIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>25</LINE></MAIN>
+  <retardo10us><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>10</LINE></retardo10us>
+  <loop_ret_10><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>13</LINE></loop_ret_10>
+  <retardo1ms><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>20</LINE></retardo1ms>
+  <loop_ret_1m><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>23</LINE></loop_ret_1m>
+  <retardo50ms><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>30</LINE></retardo50ms>
+  <loop_ret_50m><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>33</LINE></loop_ret_50m>
+  <retardo5ms><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>40</LINE></retardo5ms>
+  <loop_ret_5m><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>42</LINE></loop_ret_5m>
+  <retardo3s><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>48</LINE></retardo3s>
+  <loop_ret_3s><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>51</LINE></loop_ret_3s>
   <KBINIT><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>33</LINE></KBINIT>
-  <InicI2C><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>68</LINE></InicI2C>
-  <InicDisplay><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>113</LINE></InicDisplay>
-  <MAIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>17</LINE></MAIN>
+  <InicI2C><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>67</LINE></InicI2C>
+  <InicDisplay><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>112</LINE></InicDisplay>
   <GETKEY><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>42</LINE></GETKEY>
-  <DisplayChar><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>262</LINE></DisplayChar>
+  <DisplayChar><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>261</LINE></DisplayChar>
   <READ_COL><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>79</LINE></READ_COL>
   <DONE><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>76</LINE></DONE>
   <SETTLE><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>104</LINE></SETTLE>
@@ -37,39 +48,27 @@
   <NEXTCOL1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>93</LINE></NEXTCOL1>
   <EXIT><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>100</LINE></EXIT>
   <TAGAIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>106</LINE></TAGAIN>
-  <start><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>29</LINE></start>
-  <DisplayCocktail><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>426</LINE></DisplayCocktail>
-  <DisplayEnter><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>293</LINE></DisplayEnter>
-  <DisplayWelcome><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>411</LINE></DisplayWelcome>
-  <I2CStop><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>316</LINE></I2CStop>
-  <loop><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>48</LINE></loop>
-  <wait1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>76</LINE></wait1>
-  <error_A><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>86</LINE></error_A>
-  <continuo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>89</LINE></continuo>
-  <ERROR1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>402</LINE></ERROR1>
-  <wait2><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>95</LINE></wait2>
-  <error_B><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>105</LINE></error_B>
-  <continuo2><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>107</LINE></continuo2>
-  <retardo50ms><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>347</LINE></retardo50ms>
-  <WaitDataI2c><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>248</LINE></WaitDataI2c>
-  <DisplayEnable><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>374</LINE></DisplayEnable>
-  <retardo5ms><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>357</LINE></retardo5ms>
-  <retardo1ms><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>336</LINE></retardo1ms>
-  <wait_twint><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>250</LINE></wait_twint>
-  <error_data><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>321</LINE></error_data>
-  <retardo10us><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>327</LINE></retardo10us>
-  <loop_ret_10><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>330</LINE></loop_ret_10>
-  <loop_ret_1m><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>339</LINE></loop_ret_1m>
-  <loop_ret_50m><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>350</LINE></loop_ret_50m>
-  <loop_ret_5m><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>359</LINE></loop_ret_5m>
-  <retardo3s><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>365</LINE></retardo3s>
-  <loop_ret_3s><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>368</LINE></loop_ret_3s>
-  <ERROR><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>396</LINE></ERROR>
-  <T_Welcome><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>443</LINE></T_Welcome>
-  <DisplayWelcome_cont><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>417</LINE></DisplayWelcome_cont>
-  <T_Cocktail><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>446</LINE></T_Cocktail>
-  <DisplayCocktail_cont><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>432</LINE></DisplayCocktail_cont>
-  <DispNum><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>450</LINE></DispNum>
-  <DispNum_cont><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>457</LINE></DispNum_cont>
+  <wait1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>75</LINE></wait1>
+  <error_A><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>85</LINE></error_A>
+  <continuo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>88</LINE></continuo>
+  <ERROR1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>352</LINE></ERROR1>
+  <wait2><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>94</LINE></wait2>
+  <error_B><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>104</LINE></error_B>
+  <continuo2><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>106</LINE></continuo2>
+  <WaitDataI2c><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>247</LINE></WaitDataI2c>
+  <DisplayEnable><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>324</LINE></DisplayEnable>
+  <wait_twint><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>249</LINE></wait_twint>
+  <error_data><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>320</LINE></error_data>
+  <DisplayEnter><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>292</LINE></DisplayEnter>
+  <I2CStop><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>315</LINE></I2CStop>
+  <ERROR><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>346</LINE></ERROR>
+  <DisplayWelcome><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>361</LINE></DisplayWelcome>
+  <T_Welcome><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>393</LINE></T_Welcome>
+  <DisplayWelcome_cont><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>367</LINE></DisplayWelcome_cont>
+  <DisplayCocktail><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>376</LINE></DisplayCocktail>
+  <T_Cocktail><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>396</LINE></T_Cocktail>
+  <DisplayCocktail_cont><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>382</LINE></DisplayCocktail_cont>
+  <DispNum><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>400</LINE></DispNum>
+  <DispNum_cont><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>407</LINE></DispNum_cont>
  </LABELS>
 </ASSEMBLER_INFO>

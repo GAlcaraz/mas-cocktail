@@ -78,6 +78,9 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="delay.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="disp_driver.asm">
       <SubType>Code</SubType>
     </Compile>

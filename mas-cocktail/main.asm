@@ -6,6 +6,14 @@
 ;
 ; LEDs verdes: PORTD 4 y 7
 ; LEDs rojos: PORTC 2 y 3
+ .equ CRYSTAL = 8000000
+
+.CSEG
+		RJMP		MAIN
+
+
+ .include "delay.asm"
+
 
 		LDI			R20,0XFF
 		OUT			DDRC,R20

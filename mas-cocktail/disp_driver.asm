@@ -11,7 +11,6 @@
 ; Author : waral
 ;
 	.def TEMP = R16
-	.def RETARDO = R21
 	.def DISPVAR = R24
 	.def CONTADOR = R20
 
@@ -26,7 +25,7 @@
 ;lo que yo puse fue para encender un led que me diga que esta todo ok
 
 
-start:
+/*start:
 	ldi TEMP , 0x02		; inicializacion led de error
 	out ddrb , TEMP
 	ldi TEMP , 0x00			
@@ -48,7 +47,7 @@ start:
 loop:
 	rjmp loop			;loop infinito
 
-    rjmp start			;vuelve al inicio
+    rjmp start			;vuelve al inicio*/
 
 ;---------------------------------------------------------------------
 ;---------------------------------------------------------------------
@@ -321,55 +320,6 @@ I2CStop:
 error_data:
 	RCALL ERROR1
 
-
-
-
-retardo10us:
-	push RETARDO
-	ldi RETARDO,58
-loop_ret_10:
-	dec RETARDO
-	brne loop_ret_10
-	pop RETARDO
-	ret
-
-retardo1ms:
-	push RETARDO
-	ldi RETARDO,100
-loop_ret_1m:
-	RCALL retardo10us
-	dec RETARDO
-	
-	brne loop_ret_1m
-	pop RETARDO
-	ret
-
-retardo50ms:
-	push RETARDO
-	ldi RETARDO,50
-loop_ret_50m:
-	RCALL retardo1ms
-	dec RETARDO
-	brne loop_ret_50m
-	pop RETARDO
-	ret
-
-retardo5ms:
-	ldi RETARDO,5
-loop_ret_5m:
-	RCALL retardo1ms
-	dec RETARDO
-	brne loop_ret_5m
-	ret
-
-retardo3s:
-
-	ldi RETARDO, 60
-loop_ret_3s:
-	RCALL retardo50ms
-	dec RETARDO
-	brne loop_ret_3s
-	ret
 
 DisplayEnable:
 	RCALL retardo1ms
