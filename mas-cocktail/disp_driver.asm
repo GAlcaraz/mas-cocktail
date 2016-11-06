@@ -11,8 +11,8 @@
 ; Author : waral
 ;
 	.def TEMP = R16
-	.def DISPVAR = R24
 	.def CONTADOR = R20
+	.def DISPVAR = R24
 
 	.equ TWI_RATE = 0xF8
 	.equ STARTi = 0x08
@@ -310,6 +310,13 @@ DisplayEnter:
 
 	RCALL DisplayEnable
 ret
+
+;------Display :CLEAR----------
+DisplayClear:
+	RCALL DisplayEnter
+	RCALL DisplayEnter
+	ret
+
 ;----DISPLAY : STOP------
 
 I2CStop:
@@ -357,45 +364,32 @@ ERROR1:
 	sts TWCR, r16
 	rjmp error
 
-;....................Display welcome............................
-DisplayWelcome:
-	
-	LDi ZH, High(2*T_Welcome)
-	LDI ZL, LOW(2*T_Welcome)
-	ldi CONTADOR,13
-	
-DisplayWelcome_cont:
+
+
+DisplayString:
+	PUSH ZH
+	PUSH ZL
+	LDI CONTADOR,0x00
+
+DisplayString_cont:
+	INC CONTADOR	
+	LPM DISPVAR, Z+
+	CPI DISPVAR,0x00
+	BRNE DisplayString_cont
+	DEC CONTADOR
+	POP ZL
+	POP ZH
+
+DisplayString_next:
 	lpm DISPVAR, Z+
 	RCALL DisplayChar
 
 	dec  CONTADOR
-	brne DisplayWelcome_cont
+	brne DisplayString_next
 	
 	ret
 
-DisplayCocktail:
-	
-	LDI ZH, High(2*T_Cocktail)
-	LDI ZL, LOW(2*T_Cocktail)
-	ldi CONTADOR,15
-	
-DisplayCocktail_cont:
-	lpm DISPVAR, Z+
-	RCALL DisplayChar
 
-	dec  CONTADOR
-	brne DisplayCocktail_cont
-	
-	ret
-
-;....................TABLAS (display)...........................
-
-T_Welcome:
-	.Db 'B','I','E','N','V','E','N','I','D','O','S','!','!','0'
-
-T_COCKTail:
-	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*','*','0'
-	
 
 DispNum:
 	

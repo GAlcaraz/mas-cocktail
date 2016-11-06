@@ -12,7 +12,7 @@
 		RJMP		MAIN
 
 
- .include "delay.asm"
+
 
 
 		LDI			R20,0XFF
@@ -23,11 +23,14 @@
 		RCALL		InicDisplay		; lo mismo que la anterior
 
  MAIN:	
-		RCALL		GETKEY
+/*		RCALL		GETKEY
 		ldi			TEMP,48
 		ADD			KEY,TEMP
 		MOV			DISPVAR,KEY
-		RCALL		DisplayChar
+		RCALL		DisplayChar*/
+		RCALL		DisplayWelcome
+		RCALL		retardo3s
+		RCALL		DisplayClear
 
 		
 
@@ -55,3 +58,5 @@ BCD4:	MOV			R18,R19
 
  .include "kb_driver.asm"
  .include "disp_driver.asm"
+ .include "delay.asm"
+ .include "interface.asm"

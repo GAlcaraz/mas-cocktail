@@ -84,6 +84,9 @@
     <Compile Include="disp_driver.asm">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="interface.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="kb_driver.asm">
       <SubType>Code</SubType>
     </Compile>
