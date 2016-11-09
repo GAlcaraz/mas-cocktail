@@ -11,9 +11,8 @@
 ; Author : waral
 ;
 	.def TEMP = R16
-	.def RETARDO = R21
-	.def DISPVAR = R24
 	.def CONTADOR = R20
+	.def DISPVAR = R24
 
 	.equ TWI_RATE = 0xF8
 	.equ STARTi = 0x08
@@ -26,7 +25,7 @@
 ;lo que yo puse fue para encender un led que me diga que esta todo ok
 
 
-start:
+/*start:
 	ldi TEMP , 0x02		; inicializacion led de error
 	out ddrb , TEMP
 	ldi TEMP , 0x00			
@@ -48,7 +47,7 @@ start:
 loop:
 	rjmp loop			;loop infinito
 
-    rjmp start			;vuelve al inicio
+    rjmp start			;vuelve al inicio*/
 
 ;---------------------------------------------------------------------
 ;---------------------------------------------------------------------
@@ -311,6 +310,13 @@ DisplayEnter:
 
 	RCALL DisplayEnable
 ret
+
+;------Display :CLEAR----------
+DisplayClear:
+	RCALL DisplayEnter
+	RCALL DisplayEnter
+	ret
+
 ;----DISPLAY : STOP------
 
 I2CStop:
@@ -321,55 +327,6 @@ I2CStop:
 error_data:
 	RCALL ERROR1
 
-
-
-
-retardo10us:
-	push RETARDO
-	ldi RETARDO,58
-loop_ret_10:
-	dec RETARDO
-	brne loop_ret_10
-	pop RETARDO
-	ret
-
-retardo1ms:
-	push RETARDO
-	ldi RETARDO,100
-loop_ret_1m:
-	RCALL retardo10us
-	dec RETARDO
-	
-	brne loop_ret_1m
-	pop RETARDO
-	ret
-
-retardo50ms:
-	push RETARDO
-	ldi RETARDO,50
-loop_ret_50m:
-	RCALL retardo1ms
-	dec RETARDO
-	brne loop_ret_50m
-	pop RETARDO
-	ret
-
-retardo5ms:
-	ldi RETARDO,5
-loop_ret_5m:
-	RCALL retardo1ms
-	dec RETARDO
-	brne loop_ret_5m
-	ret
-
-retardo3s:
-
-	ldi RETARDO, 60
-loop_ret_3s:
-	RCALL retardo50ms
-	dec RETARDO
-	brne loop_ret_3s
-	ret
 
 DisplayEnable:
 	RCALL retardo1ms
@@ -407,45 +364,32 @@ ERROR1:
 	sts TWCR, r16
 	rjmp error
 
-;....................Display welcome............................
-DisplayWelcome:
-	
-	LDi ZH, High(2*T_Welcome)
-	LDI ZL, LOW(2*T_Welcome)
-	ldi CONTADOR,13
-	
-DisplayWelcome_cont:
+
+
+DisplayString:
+	PUSH ZH
+	PUSH ZL
+	LDI CONTADOR,0x00
+
+DisplayString_cont:
+	INC CONTADOR	
+	LPM DISPVAR, Z+
+	CPI DISPVAR,0x00
+	BRNE DisplayString_cont
+	DEC CONTADOR
+	POP ZL
+	POP ZH
+
+DisplayString_next:
 	lpm DISPVAR, Z+
 	RCALL DisplayChar
 
 	dec  CONTADOR
-	brne DisplayWelcome_cont
+	brne DisplayString_next
 	
 	ret
 
-DisplayCocktail:
-	
-	LDI ZH, High(2*T_Cocktail)
-	LDI ZL, LOW(2*T_Cocktail)
-	ldi CONTADOR,15
-	
-DisplayCocktail_cont:
-	lpm DISPVAR, Z+
-	RCALL DisplayChar
 
-	dec  CONTADOR
-	brne DisplayCocktail_cont
-	
-	ret
-
-;....................TABLAS (display)...........................
-
-T_Welcome:
-	.Db 'B','I','E','N','V','E','N','I','D','O','S','!','!','0'
-
-T_COCKTail:
-	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*','*','0'
-	
 
 DispNum:
 	
