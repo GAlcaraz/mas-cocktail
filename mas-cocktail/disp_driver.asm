@@ -311,11 +311,7 @@ DisplayEnter:
 	RCALL DisplayEnable
 ret
 
-;------Display :CLEAR----------
-DisplayClear:
-	RCALL DisplayEnter
-	RCALL DisplayEnter
-	ret
+
 
 ;----DISPLAY : STOP------
 
@@ -364,7 +360,48 @@ ERROR1:
 	sts TWCR, r16
 	rjmp error
 
+;------Display :CLEAR----------
+DisplayClear:
+	ldi r17, 0x08
+	ldi	r16, 0x08
+	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+	ldi r16, (1<<TWINT) |(1<<TWEN)
+	sts TWCR, r16
 
+	RCALL WaitDataI2c
+	RCALL DisplayEnable
+
+	ldi r17, 0x18
+	ldi r16, 0x18
+	sts TWDR, r16								
+	ldi r16, (1<<TWINT) |(1<<TWEN)				
+	sts TWCR, r16
+	RCALL WaitDataI2c
+
+	RCALL DisplayEnable
+
+	ret
+
+DisplayToggleShift:
+	ldi r17, 0x18
+	ldi	r16, 0x18
+	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+	ldi r16, (1<<TWINT) |(1<<TWEN)
+	sts TWCR, r16
+
+	RCALL WaitDataI2c
+	RCALL DisplayEnable
+
+	ldi r17, 0x88
+	ldi r16, 0x88
+	sts TWDR, r16								
+	ldi r16, (1<<TWINT) |(1<<TWEN)				
+	sts TWCR, r16
+	RCALL WaitDataI2c
+
+	RCALL DisplayEnable
+
+	ret
 
 DisplayString:
 	PUSH ZH

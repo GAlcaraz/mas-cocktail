@@ -9,12 +9,12 @@
  .equ CRYSTAL = 8000000
 
 .CSEG
-		RJMP		MAIN
+		RJMP		BEGIN
 
 
 
 
-
+BEGIN:
 		LDI			R20,0XFF
 		OUT			DDRC,R20
 		OUT			DDRD,R20
@@ -43,41 +43,45 @@ KeyMenu0:
 KeyMenu1a:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu1a
+getk1a:
 		RCALL		GETKEY
 		CPI			KEY,0x04
-		BRLT		KeyMenu1a
+		BRSH		getk1a
 KeyMenu2a:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2a
+getk2a:		
 		RCALL		GETKEY
 		CPI			KEY,0x00
-		BREQ		KeyMenu2a
+		BREQ		getk2a
 		CPI			KEY,0x03
-		BRSH		KeyMenu2a
+		BRSH		getk2a
 		RJMP		END
 KeyMenu1b:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu1b
+getk1b:		
 		RCALL		GETKEY
 		CPI			KEY,0x00
-		BREQ		KeyMenu1b
+		BREQ		getk1b
 		CPI			KEY,0x03
-		BRSH		KeyMenu1b
+		BRSH		getk1b
 KeyMenu2b:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2b
+getk2b:		
 		RCALL		GETKEY
 		CPI			KEY,0x00
-		BREQ		KeyMenu2b
+		BREQ		getk2b
 		CPI			KEY,0x03
-		BRSH		KeyMenu2b
+		BRSH		getk2b
 KeyMenu3b:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu3b
 		RCALL		GETKEY
 
 END:
-		RJMP		MAIN
+		RJMP		KeyMenu0
 
  .include "kb_driver.asm"
  .include "disp_driver.asm"

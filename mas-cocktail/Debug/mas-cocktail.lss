@@ -1,30 +1,30 @@
 
-AVRASM ver. 2.2.6  D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm Sun Nov 06 02:09:49 2016
+AVRASM ver. 2.2.6  D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm Sun Nov 13 19:38:26 2016
 
-[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\avrasm\inc\m88padef.inc'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(82): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(83): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(84): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(85): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
-[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\avrasm\inc\m88padef.inc'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(82): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(83): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(84): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(85): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\avrasm\inc\m328pdef.inc'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(86): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(87): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(88): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(89): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\avrasm\inc\m328pdef.inc'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(86): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(87): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(88): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(89): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
                                  
                                  ;
                                  
-                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATmega88PA.xml **********
+                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATmega328P.xml **********
                                  ;*************************************************************************
                                  ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
                                  ;* 
                                  ;* Number            : AVR000
-                                 ;* File Name         : "m88PAdef.inc"
-                                 ;* Title             : Register/Bit Definitions for the ATmega88PA
+                                 ;* File Name         : "m328Pdef.inc"
+                                 ;* Title             : Register/Bit Definitions for the ATmega328P
                                  ;* Date              : 2011-02-09
                                  ;* Version           : 2.35
                                  ;* Support E-mail    : avr@atmel.com
-                                 ;* Target MCU        : ATmega88PA
+                                 ;* Target MCU        : ATmega328P
                                  ;* 
                                  ;* DESCRIPTION
                                  ;* When including this file in the assembly program file, all I/O register 
@@ -52,17 +52,17 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  ;* ...                         ;otherwise do something else
                                  ;*************************************************************************
                                  
-                                 #ifndef _M88PADEF_INC_
-                                 #define _M88PADEF_INC_
+                                 #ifndef _M328PDEF_INC_
+                                 #define _M328PDEF_INC_
                                  
                                  
                                  #pragma partinc 0
                                  
                                  ; ***** SPECIFY DEVICE ***************************************************
-                                 .device ATmega88PA
-                                 #pragma AVRPART ADMIN PART_NAME ATmega88PA
+                                 .device ATmega328P
+                                 #pragma AVRPART ADMIN PART_NAME ATmega328P
                                  .equ	SIGNATURE_000	= 0x1e
-                                 .equ	SIGNATURE_001	= 0x93
+                                 .equ	SIGNATURE_001	= 0x95
                                  .equ	SIGNATURE_002	= 0x0f
                                  
                                  #pragma AVRPART CORE CORE_VERSION V2E
@@ -747,39 +747,6 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  .equ	WDIF	= 7	; Watchdog Timeout Interrupt Flag
                                  
                                  
-                                 ; ***** EEPROM ***********************
-                                 ; EEARL - EEPROM Address Register Low Byte
-                                 .equ	EEAR0	= 0	; EEPROM Read/Write Access Bit 0
-                                 .equ	EEAR1	= 1	; EEPROM Read/Write Access Bit 1
-                                 .equ	EEAR2	= 2	; EEPROM Read/Write Access Bit 2
-                                 .equ	EEAR3	= 3	; EEPROM Read/Write Access Bit 3
-                                 .equ	EEAR4	= 4	; EEPROM Read/Write Access Bit 4
-                                 .equ	EEAR5	= 5	; EEPROM Read/Write Access Bit 5
-                                 .equ	EEAR6	= 6	; EEPROM Read/Write Access Bit 6
-                                 .equ	EEAR7	= 7	; EEPROM Read/Write Access Bit 7
-                                 
-                                 ; EEARH - EEPROM Address Register High Byte
-                                 .equ	EEAR8	= 0	; EEPROM Read/Write Access Bit 0
-                                 
-                                 ; EEDR - EEPROM Data Register
-                                 .equ	EEDR0	= 0	; EEPROM Data Register bit 0
-                                 .equ	EEDR1	= 1	; EEPROM Data Register bit 1
-                                 .equ	EEDR2	= 2	; EEPROM Data Register bit 2
-                                 .equ	EEDR3	= 3	; EEPROM Data Register bit 3
-                                 .equ	EEDR4	= 4	; EEPROM Data Register bit 4
-                                 .equ	EEDR5	= 5	; EEPROM Data Register bit 5
-                                 .equ	EEDR6	= 6	; EEPROM Data Register bit 6
-                                 .equ	EEDR7	= 7	; EEPROM Data Register bit 7
-                                 
-                                 ; EECR - EEPROM Control Register
-                                 .equ	EERE	= 0	; EEPROM Read Enable
-                                 .equ	EEPE	= 1	; EEPROM Write Enable
-                                 .equ	EEMPE	= 2	; EEPROM Master Write Enable
-                                 .equ	EERIE	= 3	; EEPROM Ready Interrupt Enable
-                                 .equ	EEPM0	= 4	; EEPROM Programming Mode Bit 0
-                                 .equ	EEPM1	= 5	; EEPROM Programming Mode Bit 1
-                                 
-                                 
                                  ; ***** CPU **************************
                                  ; SREG - Status Register
                                  .equ	SREG_C	= 0	; Carry Flag
@@ -809,13 +776,13 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  .equ	CLKPCE	= 7	; Clock Prescaler Change Enable
                                  
                                  ; SPMCSR - Store Program Memory Control and Status Register
-                                 .equ	SELFPRGEN = 0; Added for backwards compatibility
+                                 .equ    SELFPRGEN = 0; Added for backwards compatibility
                                  .equ	SPMEN	= 0	; Store Program Memory
                                  .equ	PGERS	= 1	; Page Erase
                                  .equ	PGWRT	= 2	; Page Write
                                  .equ	BLBSET	= 3	; Boot Lock Bit Set
                                  .equ	RWWSRE	= 4	; Read-While-Write section read enable
-                                 .equ	SIGRD	= 5 ; Signature Row Read
+                                 .equ    SIGRD   = 5 ; Signature Row Read
                                  .equ	RWWSB	= 6	; Read-While-Write Section Busy
                                  .equ	SPMIE	= 7	; SPM Interrupt Enable
                                  
@@ -879,6 +846,40 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  .equ	PRTWI	= 7	; Power Reduction TWI
                                  
                                  
+                                 ; ***** EEPROM ***********************
+                                 ; EEARL - EEPROM Address Register Low Byte
+                                 .equ	EEAR0	= 0	; EEPROM Read/Write Access Bit 0
+                                 .equ	EEAR1	= 1	; EEPROM Read/Write Access Bit 1
+                                 .equ	EEAR2	= 2	; EEPROM Read/Write Access Bit 2
+                                 .equ	EEAR3	= 3	; EEPROM Read/Write Access Bit 3
+                                 .equ	EEAR4	= 4	; EEPROM Read/Write Access Bit 4
+                                 .equ	EEAR5	= 5	; EEPROM Read/Write Access Bit 5
+                                 .equ	EEAR6	= 6	; EEPROM Read/Write Access Bit 6
+                                 .equ	EEAR7	= 7	; EEPROM Read/Write Access Bit 7
+                                 
+                                 ; EEARH - EEPROM Address Register High Byte
+                                 .equ	EEAR8	= 0	; EEPROM Read/Write Access Bit 8
+                                 .equ	EEAR9	= 1	; EEPROM Read/Write Access Bit 9
+                                 
+                                 ; EEDR - EEPROM Data Register
+                                 .equ	EEDR0	= 0	; EEPROM Data Register bit 0
+                                 .equ	EEDR1	= 1	; EEPROM Data Register bit 1
+                                 .equ	EEDR2	= 2	; EEPROM Data Register bit 2
+                                 .equ	EEDR3	= 3	; EEPROM Data Register bit 3
+                                 .equ	EEDR4	= 4	; EEPROM Data Register bit 4
+                                 .equ	EEDR5	= 5	; EEPROM Data Register bit 5
+                                 .equ	EEDR6	= 6	; EEPROM Data Register bit 6
+                                 .equ	EEDR7	= 7	; EEPROM Data Register bit 7
+                                 
+                                 ; EECR - EEPROM Control Register
+                                 .equ	EERE	= 0	; EEPROM Read Enable
+                                 .equ	EEPE	= 1	; EEPROM Write Enable
+                                 .equ	EEMPE	= 2	; EEPROM Master Write Enable
+                                 .equ	EERIE	= 3	; EEPROM Ready Interrupt Enable
+                                 .equ	EEPM0	= 4	; EEPROM Programming Mode Bit 0
+                                 .equ	EEPM1	= 5	; EEPROM Programming Mode Bit 1
+                                 
+                                 
                                  
                                  ; ***** LOCKSBITS ********************************************************
                                  .equ	LB1	= 0	; Lock bit
@@ -901,9 +902,9 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  .equ	CKDIV8	= 7	; Divide clock by 8
                                  
                                  ; HIGH fuse bits
-                                 .equ	BODLEVEL0	= 0	; Brown-out Detector trigger level
-                                 .equ	BODLEVEL1	= 1	; Brown-out Detector trigger level
-                                 .equ	BODLEVEL2	= 2	; Brown-out Detector trigger level
+                                 .equ	BOOTRST	= 0	; Select reset vector
+                                 .equ	BOOTSZ0	= 1	; Select boot size
+                                 .equ	BOOTSZ1	= 2	; Select boot size
                                  .equ	EESAVE	= 3	; EEPROM memory is preserved through chip erase
                                  .equ	WDTON	= 4	; Watchdog Timer Always On
                                  .equ	SPIEN	= 5	; Enable Serial programming and Data Downloading
@@ -911,9 +912,9 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  .equ	RSTDISBL	= 7	; External reset disable
                                  
                                  ; EXTENDED fuse bits
-                                 .equ	BOOTRST	= 0	; Select reset vector
-                                 .equ	BOOTSZ0	= 1	; Select boot size
-                                 .equ	BOOTSZ1	= 2	; Select boot size
+                                 .equ	BODLEVEL0	= 0	; Brown-out Detector trigger level
+                                 .equ	BODLEVEL1	= 1	; Brown-out Detector trigger level
+                                 .equ	BODLEVEL2	= 2	; Brown-out Detector trigger level
                                  
                                  
                                  
@@ -928,67 +929,67 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  
                                  
                                  ; ***** DATA MEMORY DECLARATIONS *****************************************
-                                 .equ	FLASHEND	= 0x0fff	; Note: Word address
+                                 .equ	FLASHEND	= 0x3fff	; Note: Word address
                                  .equ	IOEND	= 0x00ff
                                  .equ	SRAM_START	= 0x0100
-                                 .equ	SRAM_SIZE	= 1024
-                                 .equ	RAMEND	= 0x04ff
+                                 .equ	SRAM_SIZE	= 2048
+                                 .equ	RAMEND	= 0x08ff
                                  .equ	XRAMEND	= 0x0000
-                                 .equ	E2END	= 0x01ff
-                                 .equ	EEPROMEND	= 0x01ff
-                                 .equ	EEADRBITS	= 9
-                                 #pragma AVRPART MEMORY PROG_FLASH 8192
-                                 #pragma AVRPART MEMORY EEPROM 512
-                                 #pragma AVRPART MEMORY INT_SRAM SIZE 1024
+                                 .equ	E2END	= 0x03ff
+                                 .equ	EEPROMEND	= 0x03ff
+                                 .equ	EEADRBITS	= 10
+                                 #pragma AVRPART MEMORY PROG_FLASH 32768
+                                 #pragma AVRPART MEMORY EEPROM 1024
+                                 #pragma AVRPART MEMORY INT_SRAM SIZE 2048
                                  #pragma AVRPART MEMORY INT_SRAM START_ADDR 0x100
                                  
                                  
                                  
                                  ; ***** BOOTLOADER DECLARATIONS ******************************************
-                                 .equ	NRWW_START_ADDR	= 0xc00
-                                 .equ	NRWW_STOP_ADDR	= 0xfff
+                                 .equ	NRWW_START_ADDR	= 0x3800
+                                 .equ	NRWW_STOP_ADDR	= 0x3fff
                                  .equ	RWW_START_ADDR	= 0x0
-                                 .equ	RWW_STOP_ADDR	= 0xbff
-                                 .equ	PAGESIZE	= 32
-                                 .equ	FIRSTBOOTSTART	= 0xf80
-                                 .equ	SECONDBOOTSTART	= 0xf00
-                                 .equ	THIRDBOOTSTART	= 0xe00
-                                 .equ	FOURTHBOOTSTART	= 0xc00
+                                 .equ	RWW_STOP_ADDR	= 0x37ff
+                                 .equ	PAGESIZE	= 64
+                                 .equ	FIRSTBOOTSTART	= 0x3f00
+                                 .equ	SECONDBOOTSTART	= 0x3e00
+                                 .equ	THIRDBOOTSTART	= 0x3c00
+                                 .equ	FOURTHBOOTSTART	= 0x3800
                                  .equ	SMALLBOOTSTART	= FIRSTBOOTSTART
                                  .equ	LARGEBOOTSTART	= FOURTHBOOTSTART
                                  
                                  
                                  
                                  ; ***** INTERRUPT VECTORS ************************************************
-                                 .equ	INT0addr	= 0x0001	; External Interrupt Request 0
-                                 .equ	INT1addr	= 0x0002	; External Interrupt Request 1
-                                 .equ	PCI0addr	= 0x0003	; Pin Change Interrupt Request 0
-                                 .equ	PCI1addr	= 0x0004	; Pin Change Interrupt Request 0
-                                 .equ	PCI2addr	= 0x0005	; Pin Change Interrupt Request 1
-                                 .equ	WDTaddr	= 0x0006	; Watchdog Time-out Interrupt
-                                 .equ	OC2Aaddr	= 0x0007	; Timer/Counter2 Compare Match A
-                                 .equ	OC2Baddr	= 0x0008	; Timer/Counter2 Compare Match A
-                                 .equ	OVF2addr	= 0x0009	; Timer/Counter2 Overflow
-                                 .equ	ICP1addr	= 0x000a	; Timer/Counter1 Capture Event
-                                 .equ	OC1Aaddr	= 0x000b	; Timer/Counter1 Compare Match A
-                                 .equ	OC1Baddr	= 0x000c	; Timer/Counter1 Compare Match B
-                                 .equ	OVF1addr	= 0x000d	; Timer/Counter1 Overflow
-                                 .equ	OC0Aaddr	= 0x000e	; TimerCounter0 Compare Match A
-                                 .equ	OC0Baddr	= 0x000f	; TimerCounter0 Compare Match B
-                                 .equ	OVF0addr	= 0x0010	; Timer/Couner0 Overflow
-                                 .equ	SPIaddr	= 0x0011	; SPI Serial Transfer Complete
-                                 .equ	URXCaddr	= 0x0012	; USART Rx Complete
-                                 .equ	UDREaddr	= 0x0013	; USART, Data Register Empty
-                                 .equ	UTXCaddr	= 0x0014	; USART Tx Complete
-                                 .equ	ADCCaddr	= 0x0015	; ADC Conversion Complete
-                                 .equ	ERDYaddr	= 0x0016	; EEPROM Ready
-                                 .equ	ACIaddr	= 0x0017	; Analog Comparator
-                                 .equ	TWIaddr	= 0x0018	; Two-wire Serial Interface
-                                 .equ	SPMRaddr	= 0x0019	; Store Program Memory Read
+                                 .equ	INT0addr	= 0x0002	; External Interrupt Request 0
+                                 .equ	INT1addr	= 0x0004	; External Interrupt Request 1
+                                 .equ	PCI0addr	= 0x0006	; Pin Change Interrupt Request 0
+                                 .equ	PCI1addr	= 0x0008	; Pin Change Interrupt Request 0
+                                 .equ	PCI2addr	= 0x000a	; Pin Change Interrupt Request 1
+                                 .equ	WDTaddr	= 0x000c	; Watchdog Time-out Interrupt
+                                 .equ	OC2Aaddr	= 0x000e	; Timer/Counter2 Compare Match A
+                                 .equ	OC2Baddr	= 0x0010	; Timer/Counter2 Compare Match A
+                                 .equ	OVF2addr	= 0x0012	; Timer/Counter2 Overflow
+                                 .equ	ICP1addr	= 0x0014	; Timer/Counter1 Capture Event
+                                 .equ	OC1Aaddr	= 0x0016	; Timer/Counter1 Compare Match A
+                                 .equ	OC1Baddr	= 0x0018	; Timer/Counter1 Compare Match B
+                                 .equ	OVF1addr	= 0x001a	; Timer/Counter1 Overflow
+                                 .equ	OC0Aaddr	= 0x001c	; TimerCounter0 Compare Match A
+                                 .equ	OC0Baddr	= 0x001e	; TimerCounter0 Compare Match B
+                                 .equ	OVF0addr	= 0x0020	; Timer/Couner0 Overflow
+                                 .equ	SPIaddr	= 0x0022	; SPI Serial Transfer Complete
+                                 .equ	URXCaddr	= 0x0024	; USART Rx Complete
+                                 .equ	UDREaddr	= 0x0026	; USART, Data Register Empty
+                                 .equ	UTXCaddr	= 0x0028	; USART Tx Complete
+                                 .equ	ADCCaddr	= 0x002a	; ADC Conversion Complete
+                                 .equ	ERDYaddr	= 0x002c	; EEPROM Ready
+                                 .equ	ACIaddr	= 0x002e	; Analog Comparator
+                                 .equ	TWIaddr	= 0x0030	; Two-wire Serial Interface
+                                 .equ	SPMRaddr	= 0x0032	; Store Program Memory Read
                                  
-                                 .equ	INT_VECTORS_SIZE	= 26	; size in words
+                                 .equ	INT_VECTORS_SIZE	= 52	; size in words
                                  
-                                 #endif  /* _M88PADEF_INC_ */
+                                 #endif  /* _M328PDEF_INC_ */
                                  
                                  ; ***** END OF FILE ******************************************************
                                  
@@ -1002,12 +1003,12 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                   .equ CRYSTAL = 8000000
                                  
                                  .CSEG
-000000 c006                      		RJMP		MAIN
+000000 c000                      		RJMP		BEGIN
                                  
                                  
                                  
                                  
-                                 
+                                 BEGIN:
 000001 ef4f                      		LDI			R20,0XFF
 000002 b947                      		OUT			DDRC,R20
 000003 b94a                      		OUT			DDRD,R20
@@ -1021,10 +1022,10 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  		ADD			KEY,TEMP
                                  		MOV			DISPVAR,KEY
                                  		RCALL		DisplayChar*/
-000007 d17d                      		RCALL		DisplayWelcome
-000008 d177                      		RCALL		retardo3s
-000009 d12b                      		RCALL		DisplayClear
-00000a d181                      		RCALL		DisplayMenu0
+000007 d1a0                      		RCALL		DisplayWelcome
+000008 d19a                      		RCALL		retardo3s
+000009 d145                      		RCALL		DisplayClear
+00000a d1a5                      		RCALL		DisplayMenu0
                                  
                                  KeyMenu0:		
 00000b d02b                      		RCALL		GETKEY
@@ -1034,43 +1035,47 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 00000f f071                      		BREQ		KeyMenu1b
 000010 cffa                      		RJMP		KeyMenu0
                                  KeyMenu1a:
-000011 d123                      		RCALL		DisplayClear
-000012 d17d                      		RCALL		DisplayMenu1a
+000011 d13d                      		RCALL		DisplayClear
+000012 d1a1                      		RCALL		DisplayMenu1a
+                                 getk1a:
 000013 d023                      		RCALL		GETKEY
 000014 3034                      		CPI			KEY,0x04
-000015 f3dc                      		BRLT		KeyMenu1a
+000015 f7e8                      		BRSH		getk1a
                                  KeyMenu2a:
-000016 d11e                      		RCALL		DisplayClear
-000017 d17c                      		RCALL		DisplayMenu2a
+000016 d138                      		RCALL		DisplayClear
+000017 d1a0                      		RCALL		DisplayMenu2a
+                                 getk2a:		
 000018 d01e                      		RCALL		GETKEY
 000019 3030                      		CPI			KEY,0x00
-00001a f3d9                      		BREQ		KeyMenu2a
+00001a f3e9                      		BREQ		getk2a
 00001b 3033                      		CPI			KEY,0x03
-00001c f7c8                      		BRSH		KeyMenu2a
+00001c f7d8                      		BRSH		getk2a
 00001d c011                      		RJMP		END
                                  KeyMenu1b:
-00001e d116                      		RCALL		DisplayClear
-00001f d178                      		RCALL		DisplayMenu1b
+00001e d130                      		RCALL		DisplayClear
+00001f d19c                      		RCALL		DisplayMenu1b
+                                 getk1b:		
 000020 d016                      		RCALL		GETKEY
 000021 3030                      		CPI			KEY,0x00
-000022 f3d9                      		BREQ		KeyMenu1b
+000022 f3e9                      		BREQ		getk1b
 000023 3033                      		CPI			KEY,0x03
-000024 f7c8                      		BRSH		KeyMenu1b
+000024 f7d8                      		BRSH		getk1b
                                  KeyMenu2b:
-000025 d10f                      		RCALL		DisplayClear
-000026 d175                      		RCALL		DisplayMenu2b
+000025 d129                      		RCALL		DisplayClear
+000026 d199                      		RCALL		DisplayMenu2b
+                                 getk2b:		
 000027 d00f                      		RCALL		GETKEY
 000028 3030                      		CPI			KEY,0x00
-000029 f3d9                      		BREQ		KeyMenu2b
+000029 f3e9                      		BREQ		getk2b
 00002a 3033                      		CPI			KEY,0x03
-00002b f7c8                      		BRSH		KeyMenu2b
+00002b f7d8                      		BRSH		getk2b
                                  KeyMenu3b:
-00002c d108                      		RCALL		DisplayClear
-00002d d172                      		RCALL		DisplayMenu3b
+00002c d122                      		RCALL		DisplayClear
+00002d d196                      		RCALL		DisplayMenu3b
 00002e d008                      		RCALL		GETKEY
                                  
                                  END:
-00002f cfd7                      		RJMP		MAIN
+00002f cfdb                      		RJMP		KeyMenu0
                                  
                                   .include "kb_driver.asm"
                                  
@@ -1267,7 +1272,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 000074 f409                      	brne error_A
 000075 c001                      	rjmp continuo
                                  error_A:
-000076 d0d7                      	RCALL ERROR1
+000076 d0d4                      	RCALL ERROR1
                                  	
                                  continuo:
 000077 e40e                      	ldi TEMP, SL_ADD								
@@ -1286,7 +1291,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 000085 f009                      	breq error_B
 000086 c001                      	rjmp continuo2
                                  error_B:
-000087 d0c6                      	RCALL ERROR1
+000087 d0c3                      	RCALL ERROR1
                                  continuo2:
 000088 9508                      	ret
                                  	
@@ -1295,7 +1300,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  ;.................................incialización display, envio de a 4bits........................;
                                  InicDisplay:	
                                  	
-000089 d0ea                      	RCALL retardo50ms
+000089 d10d                      	RCALL retardo50ms
                                  	
 00008a e300                      	ldi TEMP, 0x30
 00008b e310                      	ldi r17,0x30
@@ -1304,17 +1309,17 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 00008f 9300 00bc                 	sts TWCR, TEMP								
 000091 d06c                      	RCALL WaitDataI2c
                                  
-000092 d0aa                      	RCALL DisplayEnable
+000092 d0a7                      	RCALL DisplayEnable
                                  
-000093 d0e7                      	RCALL retardo5ms
+000093 d10a                      	RCALL retardo5ms
                                  
-000094 d0a8                      	RCALL DisplayEnable
+000094 d0a5                      	RCALL DisplayEnable
                                  
-000095 d0d7                      	RCALL retardo1ms
+000095 d0fa                      	RCALL retardo1ms
                                  												; todo esto te lo pide que hagas la hoja de datos del display
-000096 d0a6                      	RCALL DisplayEnable
+000096 d0a3                      	RCALL DisplayEnable
                                  
-000097 d0e3                      	RCALL retardo5ms
+000097 d106                      	RCALL retardo5ms
                                  
 000098 e208                      	ldi r16, 0x28								;set 4bit mode
 000099 e218                      	ldi r17,0x28
@@ -1323,9 +1328,9 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 00009d 9300 00bc                 	sts TWCR, r16								
 00009f d05e                      	RCALL WaitDataI2c
                                  	
-0000a0 d09c                      	RCALL DisplayEnable
+0000a0 d099                      	RCALL DisplayEnable
                                  
-0000a1 d0cb                      	RCALL retardo1ms
+0000a1 d0ee                      	RCALL retardo1ms
                                  
 0000a2 e208                      	ldi TEMP,0x28								;0x28_H
 0000a3 e218                      	ldi r17,0x28
@@ -1334,7 +1339,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000a7 9300 00bc                 	sts TWCR, TEMP								
 0000a9 d054                      	RCALL WaitDataI2c
                                  
-0000aa d092                      	RCALL DisplayEnable
+0000aa d08f                      	RCALL DisplayEnable
                                  
 0000ab e808                      	ldi TEMP,0x88								;0x28_L
 0000ac e818                      	ldi r17,0x88
@@ -1343,7 +1348,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000b0 9300 00bc                 	sts TWCR, TEMP								
 0000b2 d04b                      	RCALL WaitDataI2c
                                  
-0000b3 d089                      	RCALL DisplayEnable
+0000b3 d086                      	RCALL DisplayEnable
                                  
 0000b4 e008                      	ldi TEMP, 0x08								;0x08_H
 0000b5 e018                      	ldi r17,0x08
@@ -1352,7 +1357,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000b9 9300 00bc                 	sts TWCR, TEMP								
 0000bb d042                      	RCALL WaitDataI2c
                                  
-0000bc d080                      	RCALL DisplayEnable							
+0000bc d07d                      	RCALL DisplayEnable							
                                  
 0000bd e808                      	ldi TEMP,0x88								;0x08_L				
 0000be e818                      	ldi r17,0x88
@@ -1362,7 +1367,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000c2 9300 00bc                 	sts TWCR, TEMP								
 0000c4 d039                      	RCALL WaitDataI2c
                                  
-0000c5 d077                      	RCALL DisplayEnable
+0000c5 d074                      	RCALL DisplayEnable
                                  
 0000c6 e008                      	ldi r16,0x08								;0x01_H	
 0000c7 e018                      	ldi r17,0x08
@@ -1371,7 +1376,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000cb 9300 00bc                 	sts TWCR, r16								
 0000cd d030                      	RCALL WaitDataI2c
                                  
-0000ce d06e                      	RCALL DisplayEnable
+0000ce d06b                      	RCALL DisplayEnable
                                  
 0000cf e108                      	ldi r16,0x18								;0x01_L	
 0000d0 e118                      	ldi r17,0x18
@@ -1381,7 +1386,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000d4 9300 00bc                 	sts TWCR, r16								
 0000d6 d027                      	RCALL WaitDataI2c
                                  
-0000d7 d065                      	RCALL DisplayEnable
+0000d7 d062                      	RCALL DisplayEnable
                                  
 0000d8 e008                      	ldi r16,0x08								;0x0F_H		
 0000d9 e018                      	ldi r17,0x08
@@ -1391,7 +1396,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000dd 9300 00bc                 	sts TWCR, r16								
 0000df d01e                      	RCALL WaitDataI2c
                                  
-0000e0 d05c                      	RCALL DisplayEnable
+0000e0 d059                      	RCALL DisplayEnable
                                  	
 0000e1 ef08                      	ldi r16,0xF8								;0x0F_L	
 0000e2 ef18                      	ldi r17,0xF8
@@ -1400,7 +1405,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000e6 9300 00bc                 	sts TWCR, r16								
 0000e8 d015                      	RCALL WaitDataI2c
                                  
-0000e9 d053                      	RCALL DisplayEnable
+0000e9 d050                      	RCALL DisplayEnable
                                  
 0000ea e008                      	ldi r16,0x08							;0x06_H
 0000eb e018                      	ldi r17,0x08
@@ -1409,9 +1414,9 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000ef 9300 00bc                 	sts TWCR, r16
 0000f1 d00c                      	RCALL WaitDataI2c
                                  
-0000f2 d04a                      	RCALL DisplayEnable
+0000f2 d047                      	RCALL DisplayEnable
                                  
-0000f3 d087                      	RCALL retardo5ms
+0000f3 d0aa                      	RCALL retardo5ms
                                  	
 0000f4 e608                      	ldi r16, 0x68							;0x06_L
 0000f5 e618                      	ldi r17, 0x68
@@ -1420,7 +1425,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 0000f9 9300 00bc                 	sts TWCR, r16
 0000fb d002                      	RCALL WaitDataI2c
                                  
-0000fc d040                      	RCALL DisplayEnable
+0000fc d03d                      	RCALL DisplayEnable
                                  
 0000fd 9508                      	ret
                                  
@@ -1438,7 +1443,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 000102 9100 00b9                 	lds r16,TWSR
 000104 7f08                      	andi r16, 0xF8
 000105 3208                      	cpi r16, MT_DATA_ACK
-000106 f5a9                      	brne error_data
+000106 f591                      	brne error_data
 000107 9508                      	ret
                                  
                                  ;------DISPLAY : CHAR------;                  Con esta Funcion le enviamos un CHAR al display
@@ -1453,7 +1458,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 00010f 9300 00bc                 	sts TWCR, r16
                                  
 000111 dfec                      	RCALL WaitDataI2c
-000112 d02a                      	RCALL DisplayEnable
+000112 d027                      	RCALL DisplayEnable
                                  
 000113 2f08                      	mov r16,DISPVAR							  ;Envio DISPVAR_L
 000114 0f00                      	lsl r16
@@ -1467,7 +1472,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 00011d 9300 00bc                 	sts TWCR, r16
 00011f dfde                      	RCALL WaitDataI2c
                                  
-000120 d01c                      	RCALL DisplayEnable
+000120 d019                      	RCALL DisplayEnable
                                  
 000121 9508                      	ret
                                  
@@ -1482,7 +1487,7 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 000127 9300 00bc                 	sts TWCR, r16								
 000129 dfd4                      	RCALL WaitDataI2c
                                  
-00012a d012                      	RCALL DisplayEnable							
+00012a d00f                      	RCALL DisplayEnable							
                                  
 00012b e008                      	ldi r16,0x08								;0x08_L				
 00012c e018                      	ldi r17,0x08
@@ -1492,44 +1497,40 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
 000130 9300 00bc                 	sts TWCR, r16								
 000132 dfcb                      	RCALL WaitDataI2c
                                  
-000133 d009                      	RCALL DisplayEnable
+000133 d006                      	RCALL DisplayEnable
 000134 9508                      ret
                                  
-                                 ;------Display :CLEAR----------
-                                 DisplayClear:
-000135 dfec                      	RCALL DisplayEnter
-000136 dfeb                      	RCALL DisplayEnter
-000137 9508                      	ret
+                                 
                                  
                                  ;----DISPLAY : STOP------
                                  
                                  I2CStop:
-000138 e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
-000139 9300 00bc                 	sts TWCR, r16
-00013b 9508                      			ret
+000135 e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
+000136 9300 00bc                 	sts TWCR, r16
+000138 9508                      			ret
                                  
                                  error_data:
-00013c d011                      	RCALL ERROR1
+000139 d011                      	RCALL ERROR1
                                  
                                  
                                  DisplayEnable:
-00013d d02f                      	RCALL retardo1ms
+00013a d055                      	RCALL retardo1ms
                                  	
-00013e 6014                      	ori r17, 0x04
-00013f 9310 00bb                 	sts TWDR, r17								
-000141 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-000142 9300 00bc                 	sts TWCR, r16
-000144 dfb9                      	RCALL WaitDataI2c
+00013b 6014                      	ori r17, 0x04
+00013c 9310 00bb                 	sts TWDR, r17								
+00013e e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+00013f 9300 00bc                 	sts TWCR, r16
+000141 dfbc                      	RCALL WaitDataI2c
                                  ;	RCALL retardo1ms
                                  
-000145 7f1b                      	andi r17, 0b11111011
-000146 9310 00bb                 	sts TWDR, r17								
-000148 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-000149 9300 00bc                 	sts TWCR, r16
-00014b dfb2                      	RCALL WaitDataI2c
+000142 7f1b                      	andi r17, 0b11111011
+000143 9310 00bb                 	sts TWDR, r17								
+000145 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+000146 9300 00bc                 	sts TWCR, r16
+000148 dfb5                      	RCALL WaitDataI2c
                                  
                                  	;RCALL retardo1ms
-00014c 9508                      	ret
+000149 9508                      	ret
                                  
                                  
                                  ;-----------Error----------------------------------
@@ -1538,56 +1539,97 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  	
                                  	;ldi R16,0x02
                                  	;out PORTB,R16
-00014d cfff                      	rjmp error
+00014a cfff                      	rjmp error
                                  
                                  ERROR1:
                                  	
                                  	;ldi R16,0x02
                                  	;out PORTB,R16
-00014e e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
-00014f 9300 00bc                 	sts TWCR, r16
-000151 cffb                      	rjmp error
+00014b e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
+00014c 9300 00bc                 	sts TWCR, r16
+00014e cffb                      	rjmp error
                                  
+                                 ;------Display :CLEAR----------
+                                 DisplayClear:
+00014f e018                      	ldi r17, 0x08
+000150 e008                      	ldi	r16, 0x08
+000151 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+000153 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+000154 9300 00bc                 	sts TWCR, r16
                                  
+000156 dfa7                      	RCALL WaitDataI2c
+000157 dfe2                      	RCALL DisplayEnable
+                                 
+000158 e118                      	ldi r17, 0x18
+000159 e108                      	ldi r16, 0x18
+00015a 9300 00bb                 	sts TWDR, r16								
+00015c e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+00015d 9300 00bc                 	sts TWCR, r16
+00015f df9e                      	RCALL WaitDataI2c
+                                 
+000160 dfd9                      	RCALL DisplayEnable
+                                 
+000161 9508                      	ret
+                                 
+                                 DisplayToggleShift:
+000162 e118                      	ldi r17, 0x18
+000163 e108                      	ldi	r16, 0x18
+000164 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+000166 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+000167 9300 00bc                 	sts TWCR, r16
+                                 
+000169 df94                      	RCALL WaitDataI2c
+00016a dfcf                      	RCALL DisplayEnable
+                                 
+00016b e818                      	ldi r17, 0x88
+00016c e808                      	ldi r16, 0x88
+00016d 9300 00bb                 	sts TWDR, r16								
+00016f e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+000170 9300 00bc                 	sts TWCR, r16
+000172 df8b                      	RCALL WaitDataI2c
+                                 
+000173 dfc6                      	RCALL DisplayEnable
+                                 
+000174 9508                      	ret
                                  
                                  DisplayString:
-000152 93ff                      	PUSH ZH
-000153 93ef                      	PUSH ZL
-000154 e040                      	LDI CONTADOR,0x00
+000175 93ff                      	PUSH ZH
+000176 93ef                      	PUSH ZL
+000177 e040                      	LDI CONTADOR,0x00
                                  
                                  DisplayString_cont:
-000155 9543                      	INC CONTADOR	
-000156 9185                      	LPM DISPVAR, Z+
-000157 3080                      	CPI DISPVAR,0x00
-000158 f7e1                      	BRNE DisplayString_cont
-000159 954a                      	DEC CONTADOR
-00015a 91ef                      	POP ZL
-00015b 91ff                      	POP ZH
+000178 9543                      	INC CONTADOR	
+000179 9185                      	LPM DISPVAR, Z+
+00017a 3080                      	CPI DISPVAR,0x00
+00017b f7e1                      	BRNE DisplayString_cont
+00017c 954a                      	DEC CONTADOR
+00017d 91ef                      	POP ZL
+00017e 91ff                      	POP ZH
                                  
                                  DisplayString_next:
-00015c 9185                      	lpm DISPVAR, Z+
-00015d dfaa                      	RCALL DisplayChar
+00017f 9185                      	lpm DISPVAR, Z+
+000180 df87                      	RCALL DisplayChar
                                  
-00015e 954a                      	dec  CONTADOR
-00015f f7e1                      	brne DisplayString_next
+000181 954a                      	dec  CONTADOR
+000182 f7e1                      	brne DisplayString_next
                                  	
-000160 9508                      	ret
+000183 9508                      	ret
                                  
                                  
                                  
                                  DispNum:
                                  	
                                  
-000161 e300                      	ldi TEMP, 48
-000162 0f30                      	add KEY,TEMP
+000184 e300                      	ldi TEMP, 48
+000185 0f30                      	add KEY,TEMP
                                  	
                                  	
                                  DispNum_cont:
-000163 2f80                      	mov DISPVAR,TEMP
-000164 dfa3                      	RCALL DisplayChar
+000186 2f80                      	mov DISPVAR,TEMP
+000187 df80                      	RCALL DisplayChar
                                  	
                                   .include "delay.asm"
-000165 9508                      
+000188 9508                      
                                   * delay.asm
                                   *
                                   *  Created: 05-Nov-16 5:35:06 PM
@@ -1597,52 +1639,52 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  
                                  
                                   retardo10us:
-000166 935f                      	push RETARDO
-000167 e151                      	ldi RETARDO,(CRYSTAL/(4*100000)-3)
+000189 935f                      	push RETARDO
+00018a e35a                      	ldi RETARDO,58
                                  loop_ret_10:
-000168 955a                      	dec RETARDO
-000169 0000                      	NOP
-00016a f7e9                      	brne loop_ret_10
-00016b 915f                      	pop RETARDO
-00016c 9508                      	ret
+00018b 955a                      	dec RETARDO
+00018c 0000                      	NOP
+00018d f7e9                      	brne loop_ret_10
+00018e 915f                      	pop RETARDO
+00018f 9508                      	ret
                                  
                                  retardo1ms:
-00016d 935f                      	push RETARDO
-00016e e652                      	ldi RETARDO,98
+000190 935f                      	push RETARDO
+000191 e654                      	ldi RETARDO,100
                                  loop_ret_1m:
-00016f dff6                      	RCALL retardo10us
-000170 955a                      	dec RETARDO	
-000171 f7e9                      	brne loop_ret_1m
-000172 915f                      	pop RETARDO
-000173 9508                      	ret
+000192 dff6                      	RCALL retardo10us
+000193 955a                      	dec RETARDO	
+000194 f7e9                      	brne loop_ret_1m
+000195 915f                      	pop RETARDO
+000196 9508                      	ret
                                  
                                  retardo50ms:
-000174 935f                      	push RETARDO
-000175 e352                      	ldi RETARDO,50
+000197 935f                      	push RETARDO
+000198 e352                      	ldi RETARDO,50
                                  loop_ret_50m:
-000176 dff6                      	RCALL retardo1ms
-000177 955a                      	dec RETARDO
-000178 f7e9                      	brne loop_ret_50m
-000179 915f                      	pop RETARDO
-00017a 9508                      	ret
+000199 dff6                      	RCALL retardo1ms
+00019a 955a                      	dec RETARDO
+00019b f7e9                      	brne loop_ret_50m
+00019c 915f                      	pop RETARDO
+00019d 9508                      	ret
                                  
                                  retardo5ms:
-00017b e055                      	ldi RETARDO,5
+00019e e055                      	ldi RETARDO,5
                                  loop_ret_5m:
-00017c dff0                      	RCALL retardo1ms
-00017d 955a                      	dec RETARDO
-00017e f7e9                      	brne loop_ret_5m
-00017f 9508                      	ret
+00019f dff0                      	RCALL retardo1ms
+0001a0 955a                      	dec RETARDO
+0001a1 f7e9                      	brne loop_ret_5m
+0001a2 9508                      	ret
                                  
                                  retardo3s:
                                  
-000180 e35c                      	ldi RETARDO, 60
+0001a3 e35c                      	ldi RETARDO, 60
                                  loop_ret_3s:
-000181 dff2                      	RCALL retardo50ms
-000182 955a                      	dec RETARDO
-000183 f7e9                      	brne loop_ret_3s
+0001a4 dff2                      	RCALL retardo50ms
+0001a5 955a                      	dec RETARDO
+0001a6 f7e9                      	brne loop_ret_3s
                                   .include "interface.asm"
-000184 9508                      
+0001a7 9508                      
                                   * interface.asm
                                   *
                                   *  Created: 05-Nov-16 7:59:54 PM
@@ -1658,262 +1700,263 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                   ;....................Display welcome............................
                                  DisplayWelcome:
                                  	
-000185 e0f3                      	LDi ZH, High(2*T_Welcome)
-000186 e4e8                      	LDI ZL, LOW(2*T_Welcome)
+0001a8 e0f3                      	LDi ZH, High(2*T_Welcome)
+0001a9 e9e0                      	LDI ZL, LOW(2*T_Welcome)
                                  	
-000187 dfca                      	RCALL DisplayString
+0001aa dfca                      	RCALL DisplayString
+0001ab df76                      	RCALL DisplayEnter
                                  	
-000188 e0f3                      	LDI ZH, High(2*T_Cocktail)
-000189 e5e6                      	LDI ZL, LOW(2*T_Cocktail)
+0001ac e0f3                      	LDI ZH, High(2*T_Cocktail)
+0001ad e9ee                      	LDI ZL, LOW(2*T_Cocktail)
                                  	
-00018a dfc7                      	RCALL DisplayString
+0001ae dfc6                      	RCALL DisplayString
                                  		
-00018b 9508                      	ret
+0001af 9508                      	ret
                                  
                                  DisplayMenu0:
                                  	
-00018c e0f3                      	LDi ZH, High(2*T_Mode_Select)
-00018d e6e6                      	LDI ZL, LOW(2*T_Mode_Select)
+0001b0 e0f3                      	LDi ZH, High(2*T_Mode_Select)
+0001b1 eaee                      	LDI ZL, LOW(2*T_Mode_Select)
                                  	
-00018e dfc3                      	RCALL DisplayString
+0001b2 dfc2                      	RCALL DisplayString
                                  	
                                  		
-00018f 9508                      	ret
+0001b3 9508                      	ret
                                  
                                  DisplayMenu1a:
                                  	
-000190 e0f3                      	LDi ZH, High(2*T_Pred_Select)
-000191 eae4                      	LDI ZL, LOW(2*T_Pred_Select)
+0001b4 e0f3                      	LDi ZH, High(2*T_Pred_Select)
+0001b5 eeec                      	LDI ZL, LOW(2*T_Pred_Select)
                                  	
-000192 dfbf                      	RCALL DisplayString
+0001b6 dfbe                      	RCALL DisplayString
                                  	
                                  		
-000193 9508                      	ret
+0001b7 9508                      	ret
                                  
                                  DisplayMenu2a:
                                  	
-000194 e0f3                      	LDi ZH, High(2*T_Pot_Select)
-000195 edea                      	LDI ZL, LOW(2*T_Pot_Select)
+0001b8 e0f4                      	LDi ZH, High(2*T_Pot_Select)
+0001b9 e2e2                      	LDI ZL, LOW(2*T_Pot_Select)
                                  	
-000196 dfbb                      	RCALL DisplayString
+0001ba dfba                      	RCALL DisplayString
                                  	
                                  		
-000197 9508                      	ret
+0001bb 9508                      	ret
                                  
                                  DisplayMenu1b:
                                  	
-000198 e0f4                      	LDi ZH, High(2*T_Bebida1_Select)
-000199 e1e0                      	LDI ZL, LOW(2*T_Bebida1_Select)
+0001bc e0f4                      	LDi ZH, High(2*T_Bebida1_Select)
+0001bd e5e8                      	LDI ZL, LOW(2*T_Bebida1_Select)
                                  	
-00019a dfb7                      	RCALL DisplayString
+0001be dfb6                      	RCALL DisplayString
                                  	
                                  		
-00019b 9508                      	ret
+0001bf 9508                      	ret
                                  
                                  DisplayMenu2b:
                                  	
-00019c e0f4                      	LDi ZH, High(2*T_Porc_Select)
-00019d e8e0                      	LDI ZL, LOW(2*T_Porc_Select)
+0001c0 e0f4                      	LDi ZH, High(2*T_Porc_Select)
+0001c1 ece8                      	LDI ZL, LOW(2*T_Porc_Select)
                                  	
-00019e dfb3                      	RCALL DisplayString
+0001c2 dfb2                      	RCALL DisplayString
                                  	
                                  		
-00019f 9508                      	ret
+0001c3 9508                      	ret
                                  
                                  DisplayMenu3b:
                                  	
-0001a0 e0f4                      	LDi ZH, High(2*T_Bebida2_Select)
-0001a1 e4e8                      	LDI ZL, LOW(2*T_Bebida2_Select)
+0001c4 e0f4                      	LDi ZH, High(2*T_Bebida2_Select)
+0001c5 e9e0                      	LDI ZL, LOW(2*T_Bebida2_Select)
                                  	
-0001a2 dfaf                      	RCALL DisplayString
+0001c6 dfae                      	RCALL DisplayString
                                  	
                                  		
-0001a3 9508                      	ret
+0001c7 9508                      	ret
                                  
                                   ;....................TABLAS (display)...........................
                                  
                                  T_Welcome:
-0001a4 4942
-0001a5 4e45
-0001a6 4556
-0001a7 494e
-0001a8 4f44
-0001a9 2153
-0001aa 0021                      	.Db 'B','I','E','N','V','E','N','I','D','O','S','!','!',0
+0001c8 4942
+0001c9 4e45
+0001ca 4556
+0001cb 494e
+0001cc 4f44
+0001cd 2153
+0001ce 0021                      	.Db 'B','I','E','N','V','E','N','I','D','O','S','!','!',0
                                  
                                  T_COCKTail:
-0001ab 2a2a
-0001ac 432a
-0001ad 434f
-0001ae 2d4b
-0001af 4154
-0001b0 4c49
-0001b1 2a2a
-0001b2 002a                      	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*','*',0
+0001cf 2a2a
+0001d0 432a
+0001d1 434f
+0001d2 2d4b
+0001d3 4154
+0001d4 4c49
+0001d5 2a2a
+0001d6 002a                      	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*','*',0
                                  	
                                  T_Mode_Select:
-0001b3 6553
-0001b4 656c
-0001b5 6363
-0001b6 6f69
-0001b7 656e
-0001b8 6d20
-0001b9 646f
-0001ba 206f
-0001bb 6564
-0001bc 6f20
-0001bd 6570
-0001be 6172
-0001bf 6963
-0001c0 6ef3
-0001c1 5c3a
-0001c2 316e
-0001c3 502d
-0001c4 6572
-0001c5 6564
-0001c6 6574
-0001c7 6d72
-0001c8 6e69
-0001c9 6461
-0001ca 5c6f
-0001cb 3274
-0001cc 502d
-0001cd 6572
-0001ce 6963
-0001cf 6973
-0001d0 6ef3
-0001d1 0020                      	.DB		"Seleccione modo de operación:\n1-Predeterminado\t2-Precisión ",0 
+0001d7 6553
+0001d8 656c
+0001d9 6363
+0001da 6f69
+0001db 656e
+0001dc 6d20
+0001dd 646f
+0001de 206f
+0001df 6564
+0001e0 6f20
+0001e1 6570
+0001e2 6172
+0001e3 6963
+0001e4 6ef3
+0001e5 5c3a
+0001e6 316e
+0001e7 502d
+0001e8 6572
+0001e9 6564
+0001ea 6574
+0001eb 6d72
+0001ec 6e69
+0001ed 6461
+0001ee 5c6f
+0001ef 3274
+0001f0 502d
+0001f1 6572
+0001f2 6963
+0001f3 6973
+0001f4 6ef3
+0001f5 0020                      	.DB		"Seleccione modo de operación:\n1-Predeterminado\t2-Precisión ",0 
                                  
                                  T_Pred_Select:
-0001d2 6553
-0001d3 656c
-0001d4 6363
-0001d5 6f69
-0001d6 656e
-0001d7 6220
-0001d8 6265
-0001d9 6469
-0001da 3a61
-0001db 6e5c
-0001dc 2d31
-0001dd 6546
-0001de 6e72
-0001df 7465
-0001e0 745c
-0001e1 2d32
-0001e2 6857
-0001e3 7369
-0001e4 6f63
-0001e5 616c
-0001e6 745c
-0001e7 2d33
-0001e8 6f43
-0001e9 6163
-0001ea 432d
-0001eb 6c6f
-0001ec 0061                      	.DB		"Seleccione bebida:\n1-Fernet\t2-Whiscola\t3-Coca-Cola",0
+0001f6 6553
+0001f7 656c
+0001f8 6363
+0001f9 6f69
+0001fa 656e
+0001fb 6220
+0001fc 6265
+0001fd 6469
+0001fe 3a61
+0001ff 6e5c
+000200 2d31
+000201 6546
+000202 6e72
+000203 7465
+000204 745c
+000205 2d32
+000206 6857
+000207 7369
+000208 6f63
+000209 616c
+00020a 745c
+00020b 2d33
+00020c 6f43
+00020d 6163
+00020e 432d
+00020f 6c6f
+000210 0061                      	.DB		"Seleccione bebida:\n1-Fernet\t2-Whiscola\t3-Coca-Cola",0
                                  
                                  T_Pot_Select:
-0001ed 6553
-0001ee 656c
-0001ef 6363
-0001f0 6f69
-0001f1 656e
-0001f2 7020
-0001f3 746f
-0001f4 6e65
-0001f5 6963
-0001f6 3a61
-0001f7 6e5c
-0001f8 2d31
-0001f9 7546
-0001fa 7265
-0001fb 6574
-0001fc 745c
-0001fd 2d32
-0001fe 654d
-0001ff 6964
-000200 5c61
-000201 3374
-000202 4d2d
-000203 2065
-000204 616c
-000205 6320
-000206 6d6f
-000207 006f                      	.DB		"Seleccione potencia:\n1-Fuerte\t2-Media\t3-Me la como",0
+000211 6553
+000212 656c
+000213 6363
+000214 6f69
+000215 656e
+000216 7020
+000217 746f
+000218 6e65
+000219 6963
+00021a 3a61
+00021b 6e5c
+00021c 2d31
+00021d 7546
+00021e 7265
+00021f 6574
+000220 745c
+000221 2d32
+000222 654d
+000223 6964
+000224 5c61
+000225 3374
+000226 4d2d
+000227 2065
+000228 616c
+000229 6320
+00022a 6d6f
+00022b 006f                      	.DB		"Seleccione potencia:\n1-Fuerte\t2-Media\t3-Me la como",0
                                  
                                  T_Bebida1_Select:
-000208 6553
-000209 656c
-00020a 6363
-00020b 6f69
-00020c 656e
-00020d 7020
-00020e 6972
-00020f 656d
-000210 6172
-000211 6220
-000212 6265
-000213 6469
-000214 3a61
-000215 6e5c
-000216 2d31
-000217 6546
-000218 6e72
-000219 7465
-00021a 745c
-00021b 2d32
-00021c 6857
-00021d 7369
-00021e 796b
-00021f 745c
-000220 2d33
-000221 6f43
-000222 6163
-000223 0020                      	.DB		"Seleccione primera bebida:\n1-Fernet\t2-Whisky\t3-Coca ",0
+00022c 6553
+00022d 656c
+00022e 6363
+00022f 6f69
+000230 656e
+000231 7020
+000232 6972
+000233 656d
+000234 6172
+000235 6220
+000236 6265
+000237 6469
+000238 3a61
+000239 6e5c
+00023a 2d31
+00023b 6546
+00023c 6e72
+00023d 7465
+00023e 745c
+00023f 2d32
+000240 6857
+000241 7369
+000242 796b
+000243 745c
+000244 2d33
+000245 6f43
+000246 6163
+000247 0020                      	.DB		"Seleccione primera bebida:\n1-Fernet\t2-Whisky\t3-Coca ",0
                                  
                                  T_Bebida2_Select:
-000224 6553
-000225 656c
-000226 6363
-000227 6f69
-000228 656e
-000229 7320
-00022a 6765
-00022b 6e75
-00022c 6164
-00022d 6220
-00022e 6265
-00022f 6469
-000230 3a61
-000231 6e5c
-000232 2d31
-000233 6546
-000234 6e72
-000235 7465
-000236 745c
-000237 2d32
-000238 6857
-000239 7369
-00023a 796b
-00023b 745c
-00023c 2d33
-00023d 6f43
-00023e 6163
-00023f 0020                      	.DB		"Seleccione segunda bebida:\n1-Fernet\t2-Whisky\t3-Coca ",0
+000248 6553
+000249 656c
+00024a 6363
+00024b 6f69
+00024c 656e
+00024d 7320
+00024e 6765
+00024f 6e75
+000250 6164
+000251 6220
+000252 6265
+000253 6469
+000254 3a61
+000255 6e5c
+000256 2d31
+000257 6546
+000258 6e72
+000259 7465
+00025a 745c
+00025b 2d32
+00025c 6857
+00025d 7369
+00025e 796b
+00025f 745c
+000260 2d33
+000261 6f43
+000262 6163
+000263 0020                      	.DB		"Seleccione segunda bebida:\n1-Fernet\t2-Whisky\t3-Coca ",0
                                  
                                  T_Porc_Select:
-000240 6e49
-000241 7274
-000242 646f
-000243 7a75
-000244 6163
-000245 7020
-000246 726f
-000247 6563
-000248 746e
-000249 6a61
-00024a 3a65
+000264 6e49
+000265 7274
+000266 646f
+000267 7a75
+000268 6163
+000269 7020
+00026a 726f
+00026b 6563
+00026c 746e
+00026d 6a61
+00026e 3a65
 
 
 RESOURCE USE INFORMATION
@@ -1930,41 +1973,41 @@ counted separately from r26..r31 here.
 
 .dseg memory usage only counts static data declared with .byte
 
-"ATmega88PA" register use summary:
+"ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   2 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 107 r17:  36 r18:   8 r19:  18 r20:   7 
+r13:   0 r14:   0 r15:   0 r16: 123 r17:  40 r18:   8 r19:  18 r20:   7 
 r21:  16 r22:   0 r23:   0 r24:   6 r25:   0 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:  10 r31:  10 
 Registers used: 10 out of 35 (28.6%)
 
-"ATmega88PA" instruction use summary:
+"ATmega328P" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   1 adiw  :   0 and   :   0 
 andi  :   5 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   0 brcs  :   0 break :   0 breq  :   6 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   1 brmi  :   0 
-brne  :  10 brpl  :   0 brsh  :   3 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 cbi   :   0 cbr   :   2 clc   :   0 
-clh   :   0 cli   :   0 cln   :   0 clr   :   1 cls   :   0 clt   :   0 
-clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 cpi   :  13 
-cpse  :   0 dec   :   8 eor   :   0 fmul  :   0 fmuls :   0 fmulsu:   0 
-icall :   0 ijmp  :   0 in    :   0 inc   :   4 ld    :   0 ldd   :   0 
-ldi   :  87 lds   :   6 lpm   :   2 lsl   :   4 lsr   :   0 mov   :   5 
-movw  :   0 mul   :   0 muls  :   0 mulsu :   0 neg   :   0 nop   :   1 
-or    :   0 ori   :   3 out   :   8 pop   :   6 push  :   6 rcall :  90 
-ret   :  29 reti  :   0 rjmp  :  17 rol   :   0 ror   :   0 sbc   :   0 
-sbci  :   0 sbi   :   0 sbic  :   3 sbis  :   0 sbiw  :   0 sbr   :   3 
-sbrc  :   3 sbrs  :   3 sec   :   0 seh   :   0 sei   :   0 sen   :   0 
-ser   :   0 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 
-spm   :   0 st    :   0 std   :   0 sts   :  42 sub   :   0 subi  :   0 
-swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 29 out of 111 (26.1%)
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
+brne  :  10 brpl  :   0 brsh  :   4 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   0 cbr   :   2 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   1 cls   :   0 
+clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
+cpi   :  13 cpse  :   0 dec   :   8 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   4 jmp   :   0 
+ld    :   0 ldd   :   0 ldi   :  99 lds   :   6 lpm   :   2 lsl   :   4 
+lsr   :   0 mov   :   5 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   1 or    :   0 ori   :   3 out   :   8 pop   :   6 
+push  :   6 rcall :  97 ret   :  30 reti  :   0 rjmp  :  17 rol   :   0 
+ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   3 sbis  :   0 
+sbiw  :   0 sbr   :   3 sbrc  :   3 sbrs  :   3 sec   :   0 seh   :   0 
+sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  50 
+sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 28 out of 113 (24.8%)
 
-"ATmega88PA" memory use summary [bytes]:
+"ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000498    840    336   1176    8192  14.4%
-[.dseg] 0x000100 0x000100      0      0      0    1024   0.0%
-[.eseg] 0x000000 0x000000      0      0      0     512   0.0%
+[.cseg] 0x000000 0x0004e0    912    336   1248   32768   3.8%
+[.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
+[.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
 Assembly complete, 0 errors, 0 warnings

@@ -9,7 +9,7 @@
 
  retardo10us:
 	push RETARDO
-	ldi RETARDO,(CRYSTAL/(4*100000)-3)
+	ldi RETARDO,58
 loop_ret_10:
 	dec RETARDO
 	NOP
@@ -19,7 +19,7 @@ loop_ret_10:
 
 retardo1ms:
 	push RETARDO
-	ldi RETARDO,98
+	ldi RETARDO,100
 loop_ret_1m:
 	RCALL retardo10us
 	dec RETARDO	

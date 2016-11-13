@@ -18,6 +18,7 @@ DisplayWelcome:
 	LDI ZL, LOW(2*T_Welcome)
 	
 	RCALL DisplayString
+	RCALL DisplayEnter
 	
 	LDI ZH, High(2*T_Cocktail)
 	LDI ZL, LOW(2*T_Cocktail)
