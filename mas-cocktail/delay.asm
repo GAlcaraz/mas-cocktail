@@ -4,52 +4,58 @@
  *  Created: 05-Nov-16 5:35:06 PM
  *   Author: galca
  */ 
- .def RETARDO = R21
-
-
  retardo10us:
-	push RETARDO
-	ldi RETARDO,(CRYSTAL/(4*100000)-3)
+	push TEMP
+	ldi TEMP,58
 loop_ret_10:
-	dec RETARDO
+	dec TEMP
 	NOP
 	brne loop_ret_10
-	pop RETARDO
+	pop TEMP
 	ret
 
 retardo1ms:
-	push RETARDO
-	ldi RETARDO,98
+	push TEMP
+	ldi TEMP,100
 loop_ret_1m:
 	RCALL retardo10us
-	dec RETARDO	
+	dec TEMP	
 	brne loop_ret_1m
-	pop RETARDO
+	pop TEMP
 	ret
 
 retardo50ms:
-	push RETARDO
-	ldi RETARDO,50
+	push TEMP
+	ldi TEMP,50
 loop_ret_50m:
 	RCALL retardo1ms
-	dec RETARDO
+	dec TEMP
 	brne loop_ret_50m
-	pop RETARDO
+	pop TEMP
 	ret
 
 retardo5ms:
-	ldi RETARDO,5
+	ldi TEMP,5
 loop_ret_5m:
 	RCALL retardo1ms
-	dec RETARDO
+	dec TEMP
 	brne loop_ret_5m
 	ret
 
 retardo3s:
 
-	ldi RETARDO, 60
+	ldi TEMP, 60
 loop_ret_3s:
 	RCALL retardo50ms
-	dec RETARDO
+	dec TEMP
 	brne loop_ret_3s
+	ret
+
+retardo1s:
+
+	ldi TEMP, 20
+loop_ret_1s:
+	RCALL retardo50ms
+	dec TEMP
+	brne loop_ret_1s
 	ret

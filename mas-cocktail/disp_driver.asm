@@ -10,7 +10,7 @@
 ; Created: 23/9/2016 2:16:36 p. m.
 ; Author : waral
 ;
-	.def TEMP = R16
+
 	.def CONTADOR = R20
 	.def DISPVAR = R24
 
@@ -311,11 +311,7 @@ DisplayEnter:
 	RCALL DisplayEnable
 ret
 
-;------Display :CLEAR----------
-DisplayClear:
-	RCALL DisplayEnter
-	RCALL DisplayEnter
-	ret
+
 
 ;----DISPLAY : STOP------
 
@@ -364,7 +360,58 @@ ERROR1:
 	sts TWCR, r16
 	rjmp error
 
+;------Display :CLEAR----------
+DisplayClear:
+	ldi r17, 0x08
+	ldi	r16, 0x08
+	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+	ldi r16, (1<<TWINT) |(1<<TWEN)
+	sts TWCR, r16
 
+	RCALL WaitDataI2c
+	RCALL DisplayEnable
+
+	ldi r17, 0x18
+	ldi r16, 0x18
+	sts TWDR, r16								
+	ldi r16, (1<<TWINT) |(1<<TWEN)				
+	sts TWCR, r16
+	RCALL WaitDataI2c
+
+	RCALL DisplayEnable
+
+	ret
+
+DisplayToggleShift:
+	ldi r17, 0x18
+	ldi	r16, 0x18
+	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+	ldi r16, (1<<TWINT) |(1<<TWEN)
+	sts TWCR, r16
+
+	RCALL WaitDataI2c
+	RCALL DisplayEnable
+
+	ldi r17, 0x88
+	ldi r16, 0x88
+	sts TWDR, r16								
+	ldi r16, (1<<TWINT) |(1<<TWEN)				
+	sts TWCR, r16
+	RCALL WaitDataI2c
+
+	RCALL DisplayEnable
+
+	ret
+
+Shift:
+		DEC			SHIFTREGISTER
+		BRNE		SkipShift0
+		RCALL		DisplayToggleShift
+		LDI			SHIFTREGISTER,SHIFTDELAY		
+SkipShift0:
+		RCALL		retardo1ms
+
+		ret
 
 DisplayString:
 	PUSH ZH
@@ -376,12 +423,23 @@ DisplayString_cont:
 	LPM DISPVAR, Z+
 	CPI DISPVAR,0x00
 	BRNE DisplayString_cont
+	INC CONTADOR
+	LPM DISPVAR, Z+
+	CPI DISPVAR,0x00
+	BRNE DisplayString_cont
+	DEC CONTADOR
 	DEC CONTADOR
 	POP ZL
 	POP ZH
 
 DisplayString_next:
 	lpm DISPVAR, Z+
+	CPI DISPVAR,0x00
+	BRNE DisplayString_nextChar
+	RCALL DisplayEnter
+	DEC CONTADOR
+	RJMP DisplayString_next
+DisplayString_nextChar:
 	RCALL DisplayChar
 
 	dec  CONTADOR
