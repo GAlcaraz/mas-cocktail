@@ -83,32 +83,52 @@ DisplayMenu3b:
 	LDI ZL, LOW(2*T_Bebida2_Select)
 	
 	RCALL DisplayString
+	ret
+
+DisplayWait:
 	
-		
+	LDi ZH, High(2*T_Espere)
+	LDI ZL, LOW(2*T_Espere)
+
+	RCALL DisplayString
+	ret
+
+DisplayDone:
+	
+	LDi ZH, High(2*T_Listo)
+	LDI ZL, LOW(2*T_Listo)
+
+	RCALL DisplayString
 	ret
 
  ;....................TABLAS (display)...........................
 
 T_Welcome:
-	.Db 'B','I','E','N','V','E','N','I','D','O','S','!','!',0
+	.Db 'B','I','E','N','V','E','N','I','D','O','S','!',0,0
 
 T_COCKTail:
-	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*','*',0
+	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*',0,0
 	
 T_Mode_Select:
-	.DB		"Seleccione modo de operación:\n1-Predeterminado\t2-Precisión ",0 
+	.DB		"Seleccione modo de operacion:",0,"1-Basico 2-Avanzado",0,0 
 
 T_Pred_Select:
-	.DB		"Seleccione bebida:\n1-Fernet\t2-Whiscola\t3-Coca-Cola",0
+	.DB		"Seleccione bebida:",0,"1-Fernet 2-Whiscola 3-Coca-Cola",0,0
 
 T_Pot_Select:
-	.DB		"Seleccione potencia:\n1-Fuerte\t2-Media\t3-Me la como",0
+	.DB		"Seleccione potencia:",0,"1-Cordobes 2-Media 3-Infantil",0,0
 
 T_Bebida1_Select:
-	.DB		"Seleccione primera bebida:\n1-Fernet\t2-Whisky\t3-Coca ",0
+	.DB		"Seleccione primera bebida:",0,"1-Fernet 2-Whisky 3-Coca",0,0
 
 T_Bebida2_Select:
-	.DB		"Seleccione segunda bebida:\n1-Fernet\t2-Whisky\t3-Coca ",0
+	.DB		"Seleccione segunda bebida:",0," 1-Fernet 2-Whisky 3-Coca ",0,0
 
 T_Porc_Select:
-	.DB		"Introduzca porcentaje: ",0
+	.DB		"Introduzca",0,"porcentaje: ",0,0
+
+T_Espere:
+	.DB		"Espere ",0,"por favor...",0,0
+
+T_Listo:
+	.DB		"Listo! Retire su",0,"bebida por favor",0,0

@@ -10,7 +10,7 @@
 ; Created: 23/9/2016 2:16:36 p. m.
 ; Author : waral
 ;
-	.def TEMP = R16
+
 	.def CONTADOR = R20
 	.def DISPVAR = R24
 
@@ -403,6 +403,16 @@ DisplayToggleShift:
 
 	ret
 
+Shift:
+		DEC			SHIFTREGISTER
+		BRNE		SkipShift0
+		RCALL		DisplayToggleShift
+		LDI			SHIFTREGISTER,SHIFTDELAY		
+SkipShift0:
+		RCALL		retardo1ms
+
+		ret
+
 DisplayString:
 	PUSH ZH
 	PUSH ZL
@@ -413,12 +423,23 @@ DisplayString_cont:
 	LPM DISPVAR, Z+
 	CPI DISPVAR,0x00
 	BRNE DisplayString_cont
+	INC CONTADOR
+	LPM DISPVAR, Z+
+	CPI DISPVAR,0x00
+	BRNE DisplayString_cont
+	DEC CONTADOR
 	DEC CONTADOR
 	POP ZL
 	POP ZH
 
 DisplayString_next:
 	lpm DISPVAR, Z+
+	CPI DISPVAR,0x00
+	BRNE DisplayString_nextChar
+	RCALL DisplayEnter
+	DEC CONTADOR
+	RJMP DisplayString_next
+DisplayString_nextChar:
 	RCALL DisplayChar
 
 	dec  CONTADOR
