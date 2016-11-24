@@ -25,30 +25,6 @@
 ;lo que yo puse fue para encender un led que me diga que esta todo ok
 
 
-/*start:
-	ldi TEMP , 0x02		; inicializacion led de error
-	out ddrb , TEMP
-	ldi TEMP , 0x00			
-	out portb , TEMP	;esto tranquilamente se puede borrar
-	
-	RCALL InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
-	RCALL InicDisplay		; lo mismo que la anterior
-	RCALL DisplayCocktail	; Mando "Cocktail" al display
-	RCALL DisplayEnter		; Mando "Enter" al display
-	RCALL DisplayWelcome	; Mando "Welcome" al display
-	
-
-
-	RCALL I2CStop			; cuando finaliza el programa hay que ponerle stop al i2c
-	
-	ldi R16,0x02	;LED INDICADOR DE FINALIZACION OK DE PROGRAMA
-	out PORTB,R16
-
-loop:
-	rjmp loop			;loop infinito
-
-    rjmp start			;vuelve al inicio*/
-
 ;---------------------------------------------------------------------
 ;---------------------------------------------------------------------
 ;-----------------------------Fin start-------------------------------
@@ -404,10 +380,10 @@ DisplayToggleShift:
 	ret
 
 Shift:
-		DEC			SHIFTREGISTER
+		DEC			TEMP
 		BRNE		SkipShift0
 		RCALL		DisplayToggleShift
-		LDI			SHIFTREGISTER,SHIFTDELAY		
+		LDI			TEMP,SHIFTDELAY		
 SkipShift0:
 		RCALL		retardo1ms
 

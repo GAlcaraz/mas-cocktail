@@ -7,7 +7,7 @@
 
  .DEF	DENOMINATOR = R2
  .DEF	QUOTIENT = R3
- .DEF	NUM = R5
+ .DEF	NUM = R4
 
 keyb_to_bcd:
 		POP			ZH
@@ -25,6 +25,28 @@ keyb_to_bcd:
 		PUSH		ZH
 
 		RET
+
+bcd_to_bin:
+		POP			ZH
+		POP			ZL
+		POP			TEMP
+		PUSH		TEMP
+		ANDI		TEMP,0x0F
+		MOV			TEMP2,TEMP
+		POP			TEMP
+		SWAP		TEMP
+		ANDI		TEMP,0x0F
+		MOV			TEMP3,TEMP
+		LDI			TEMP,10
+		MUL			TEMP3,TEMP
+		MOVW		TEMP3,R0
+		ADC			TEMP3,TEMP2
+		PUSH		TEMP3
+		PUSH		ZL
+		PUSH		ZH
+		
+		RET
+
 
 bcd_to_ascii:
 		POP			ZH
@@ -46,7 +68,19 @@ bcd_to_ascii:
 		PUSH		ZH
 		RET
 
-bin_to_ascii:
+pack_bcd:
+		POP			ZH
+		POP			ZL
+		POP			TEMP2
+		POP			TEMP
+		SWAP		TEMP2
+		OR			TEMP,TEMP2
+		PUSH		TEMP
+		PUSH		ZL
+		PUSH		ZH
+		RET
+
+bin_to_bcd:
 		POP			ZH
 		POP			ZL
 		POP			NUM
@@ -54,17 +88,14 @@ bin_to_ascii:
 		MOV			DENOMINATOR,TEMP
 		RCALL		DIVIDE
 		MOV			TEMP,NUM
-		ORI			TEMP,0x30
 		MOV			NUM,TEMP
 		PUSH		NUM
 		MOV			NUM,QUOTIENT
 		RCALL		DIVIDE
 		MOV			TEMP,NUM
-		ORI			TEMP,0x30
 		MOV			NUM,TEMP
 		PUSH		NUM
 		MOV			TEMP,QUOTIENT
-		ORI			TEMP,0x30
 		MOV			QUOTIENT,TEMP
 		PUSH		QUOTIENT
 		PUSH		ZL

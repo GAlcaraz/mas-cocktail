@@ -5,6 +5,9 @@
  *   Author: galca
  */ 
 
+.EQU USART_BAUDRATE = 9600
+.EQU BAUD_PRESCALE = (((F_CPU / (USART_BAUDRATE * 16))) - 1)
+
 InitUsart:
 		LDI		TEMP,(1<<TXEN0)|(1<<RXEN0)
 		STS		UCSR0B,TEMP
@@ -20,6 +23,7 @@ InitUsart:
 measurement:
 		POP		ZH
 		POP		ZL
+
 		LDI		TEMP,0x55
 		RCALL	transmit
 		RCALL	retardo50ms
@@ -28,7 +32,6 @@ measurement:
 		RCALL	receive
 		PUSH	TEMP
 		RCALL receive
-
 
 		PUSH	ZL
 		PUSH	ZH
