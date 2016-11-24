@@ -24,7 +24,7 @@
 
 .CSEG
 		RJMP		BEGIN
-
+ .include "ultrasound_driver.asm"
 
 
 
@@ -33,6 +33,65 @@ BEGIN:
 		OUT	SPL, R16
 		LDI	R16, high(RAMEND)
 		OUT	SPH, R16
+
+/*		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
+		RCALL		InicDisplay	
+		RCALL		CLEARKEY
+		RCALL init_usound
+		RCALL us_trigger
+		RCALL measure_pulse
+
+		PUSH R22
+		RCALL bcd_to_ascii
+		POP R22
+		MOV DISPVAR,R22
+		RCALL DisplayChar
+		POP R22
+		MOV DISPVAR,R22
+		RCALL DisplayChar
+
+
+HERE:
+		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
+		RCALL		InicDisplay	
+		RCALL		CLEARKEY
+		LDI	R16, low(RAMEND)
+		OUT	SPL, R16
+		LDI	R16, high(RAMEND)
+		OUT	SPH, R16
+
+		RCALL measurement
+		pop r16
+		pop r17
+		push r16
+		push r17
+		RCALL bin_to_ascii
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		RCALL bin_to_ascii
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+
+here2:		
+		RJMP here2
+		
+*/
+
+
 /*		LDI			R21,'4'
 		LDI			R22,'7'
 		PUSH		R22
@@ -41,12 +100,11 @@ BEGIN:
 		POP			R21
 		RJMP		BEGIN*/
 
-		LDI			R20,0XFF
-		OUT			DDRC,R20
-		OUT			DDRD,R20
+
 		RCALL		KBINIT
 		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
 		RCALL		InicDisplay		; lo mismo que la anterior
+		RCALL		InitUsart
 
  MAIN:	
 /*		RCALL		GETKEY
@@ -154,10 +212,25 @@ getk3b:
 END:	
 		RCALL		DisplayClear
 		RCALL		DisplayWait
-		RCALL		retardo3s
+		RCALL		retardo1s
 		RCALL		DisplayClear
 		RCALL		DisplayDone
-		RCALL		retardo3s
+		RCALL		retardo1s
+		RCALL		DisplayClear
+		RCALL measurement
+
+		RCALL bin_to_ascii
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		RCALL retardo3s
+		pop r16
 		RJMP		KeyMenu0
 
  .include "kb_driver.asm"
@@ -165,3 +238,4 @@ END:
  .include "delay.asm"
  .include "interface.asm"
  .include "math.asm"
+

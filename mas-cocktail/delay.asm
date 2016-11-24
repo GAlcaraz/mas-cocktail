@@ -34,6 +34,16 @@ loop_ret_50m:
 	pop TEMP
 	ret
 
+retardo500ms:
+	push TEMP
+	ldi TEMP,10
+loop_ret_500m:
+	RCALL retardo50ms
+	dec TEMP
+	brne loop_ret_500m
+	pop TEMP
+	ret
+
 retardo5ms:
 	ldi TEMP,5
 loop_ret_5m:

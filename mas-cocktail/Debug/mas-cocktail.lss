@@ -1,18 +1,20 @@
 
-AVRASM ver. 2.2.6  D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm Sat Nov 19 16:03:32 2016
+AVRASM ver. 2.2.6  D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm Tue Nov 22 19:45:49 2016
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\avrasm\inc\m328pdef.inc'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(163): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(164): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(165): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(166): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(167): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(27): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\ultrasound_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(236): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(237): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(238): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(239): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(240): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\avrasm\inc\m328pdef.inc'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(163): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(164): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(165): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(166): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(167): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(27): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\ultrasound_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(236): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(237): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(238): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(239): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm'
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(240): Including file 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm'
                                  
                                  ;
                                  
@@ -1019,16 +1021,124 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                   
                                  
                                  .CSEG
-000000 c000                      		RJMP		BEGIN
+000000 c028                      		RJMP		BEGIN
+                                  .include "ultrasound_driver.asm"
+                                 
+                                  * ultrasound_driver.asm
+                                  *
+                                  *  Created: 19-Nov-16 4:18:04 PM
+                                  *   Author: galca
+                                  */ 
+                                 
+                                 InitUsart:
+000001 e108                      		LDI		TEMP,(1<<TXEN0)|(1<<RXEN0)
+000002 9300 00c1                 		STS		UCSR0B,TEMP
+000004 e006                      		LDI		TEMP,(3<<UCSZ00)
+000005 9300 00c2                 		STS		UCSR0C,R16
+000007 e707                      		LDI		TEMP,0X77
+000008 9300 00c4                 		STS		UBRR0L,TEMP
+00000a e000                      		LDI		TEMP,0x00
+00000b 9300 00c5                 		STS		UBRR0H,TEMP
+                                 
+00000d 9508                      		RET
+                                 
+                                 measurement:
+00000e 91ff                      		POP		ZH
+00000f 91ef                      		POP		ZL
+000010 e505                      		LDI		TEMP,0x55
+000011 d009                      		RCALL	transmit
+000012 d1fc                      		RCALL	retardo50ms
+000013 d00e                      		RCALL	receive
+000014 930f                      		PUSH	TEMP
+000015 d00c                      		RCALL	receive
+000016 930f                      		PUSH	TEMP
+000017 d00a                      		RCALL receive
                                  
                                  
+000018 93ef                      		PUSH	ZL
+000019 93ff                      		PUSH	ZH
+00001a 9508                      		RET
+                                 
+                                 
+                                 transmit:		
+00001b 9040 00c0                 		LDS		TEMP2,UCSR0A
+00001d fe45                      		SBRS	TEMP2,UDRE0
+00001e cffc                      		RJMP	transmit
+00001f 9300 00c6                 		STS		UDR0,TEMP
+000021 9508                      		RET
+                                 
+                                 receive:
+000022 9040 00c0                 		LDS		TEMP2,UCSR0A
+000024 fe45                      		SBRS	TEMP2,UDRE0
+000025 cffc                      		RJMP	receive
+000026 9100 00c6                 		LDS		TEMP,UDR0
+000028 9508                      
                                  
                                  
                                  BEGIN:
-000001 ef0f                      		LDI	R16, low(RAMEND)
-000002 bf0d                      		OUT	SPL, R16
-000003 e008                      		LDI	R16, high(RAMEND)
-000004 bf0e                      		OUT	SPH, R16
+000029 ef0f                      		LDI	R16, low(RAMEND)
+00002a bf0d                      		OUT	SPL, R16
+00002b e008                      		LDI	R16, high(RAMEND)
+00002c bf0e                      		OUT	SPH, R16
+                                 
+                                 /*		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
+                                 		RCALL		InicDisplay	
+                                 		RCALL		CLEARKEY
+                                 		RCALL init_usound
+                                 		RCALL us_trigger
+                                 		RCALL measure_pulse
+                                 
+                                 		PUSH R22
+                                 		RCALL bcd_to_ascii
+                                 		POP R22
+                                 		MOV DISPVAR,R22
+                                 		RCALL DisplayChar
+                                 		POP R22
+                                 		MOV DISPVAR,R22
+                                 		RCALL DisplayChar
+                                 
+                                 
+                                 HERE:
+                                 		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
+                                 		RCALL		InicDisplay	
+                                 		RCALL		CLEARKEY
+                                 		LDI	R16, low(RAMEND)
+                                 		OUT	SPL, R16
+                                 		LDI	R16, high(RAMEND)
+                                 		OUT	SPH, R16
+                                 
+                                 		RCALL measurement
+                                 		pop r16
+                                 		pop r17
+                                 		push r16
+                                 		push r17
+                                 		RCALL bin_to_ascii
+                                 		pop r16
+                                 		mov DISPVAR,r16
+                                 		RCALL DisplayChar
+                                 		pop r16
+                                 		mov DISPVAR,r16
+                                 		RCALL DisplayChar
+                                 		pop r16
+                                 		mov DISPVAR,r16
+                                 		RCALL DisplayChar
+                                 		RCALL bin_to_ascii
+                                 		pop r16
+                                 		mov DISPVAR,r16
+                                 		RCALL DisplayChar
+                                 		pop r16
+                                 		mov DISPVAR,r16
+                                 		RCALL DisplayChar
+                                 		pop r16
+                                 		mov DISPVAR,r16
+                                 		RCALL DisplayChar
+                                 
+                                 here2:		
+                                 		RJMP here2
+                                 		
+                                 */
+                                 
+                                 
                                  /*		LDI			R21,'4'
                                  		LDI			R22,'7'
                                  		PUSH		R22
@@ -1037,12 +1147,11 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  		POP			R21
                                  		RJMP		BEGIN*/
                                  
-000005 ef4f                      		LDI			R20,0XFF
-000006 b947                      		OUT			DDRC,R20
-000007 b94a                      		OUT			DDRD,R20
-000008 d059                      		RCALL		KBINIT
-000009 d090                      		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
-00000a d0b2                      		RCALL		InicDisplay		; lo mismo que la anterior
+                                 
+00002d d068                      		RCALL		KBINIT
+00002e d09f                      		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
+00002f d0c1                      		RCALL		InicDisplay		; lo mismo que la anterior
+000030 dfd0                      		RCALL		InitUsart
                                  
                                   MAIN:	
                                  /*		RCALL		GETKEY
@@ -1050,111 +1159,126 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  		ADD			KEY,TEMP
                                  		MOV			DISPVAR,KEY
                                  		RCALL		DisplayChar*/
-00000b d1e5                      		RCALL		DisplayWelcome
-00000c d1da                      		RCALL		retardo3s
-00000d d175                      		RCALL		DisplayClear
-00000e d1ea                      		RCALL		DisplayMenu0
-00000f ea90                      		LDI			SHIFTREGISTER,SHIFTDELAY
+000031 d1fa                      		RCALL		DisplayWelcome
+000032 d1ef                      		RCALL		retardo3s
+000033 d183                      		RCALL		DisplayClear
+000034 d1ff                      		RCALL		DisplayMenu0
+000035 ea90                      		LDI			SHIFTREGISTER,SHIFTDELAY
                                  KeyMenu0:
-000010 d172                      		RCALL		DisplayClear
-000011 d1e7                      		RCALL		DisplayMenu0
-000012 d085                      		RCALL		CLEARKEY
+000036 d180                      		RCALL		DisplayClear
+000037 d1fc                      		RCALL		DisplayMenu0
+000038 d093                      		RCALL		CLEARKEY
                                  getk0:
-000013 d195                      		RCALL		Shift
-000014 d054                      		RCALL		GETKEY
-000015 3031                      		CPI			KEY,0x01
-000016 f019                      		BREQ		KeyMenu1a
-000017 3032                      		CPI			KEY,0x02
-000018 f0b1                      		BREQ		KeyMenu1b
-000019 cff9                      		RJMP		getk0
+000039 d1a3                      		RCALL		Shift
+00003a d062                      		RCALL		GETKEY
+00003b 3031                      		CPI			KEY,0x01
+00003c f019                      		BREQ		KeyMenu1a
+00003d 3032                      		CPI			KEY,0x02
+00003e f0b1                      		BREQ		KeyMenu1b
+00003f cff9                      		RJMP		getk0
                                  KeyMenu1a:
-00001a d168                      		RCALL		DisplayClear
-00001b d1e1                      		RCALL		DisplayMenu1a
-00001c d07b                      		RCALL		CLEARKEY
-00001d d1ce                      		RCALL		retardo1s
+000040 d176                      		RCALL		DisplayClear
+000041 d1f6                      		RCALL		DisplayMenu1a
+000042 d089                      		RCALL		CLEARKEY
+000043 d1e3                      		RCALL		retardo1s
                                  getk1a:
-00001e d18a                      		RCALL		Shift
-00001f d049                      		RCALL		GETKEY
-000020 3030                      		CPI			KEY,0x00
-000021 f3e1                      		BREQ		getk1a
-000022 3033                      		CPI			KEY,0x03
-000023 f7d0                      		BRSH		getk1a
+000044 d198                      		RCALL		Shift
+000045 d057                      		RCALL		GETKEY
+000046 3030                      		CPI			KEY,0x00
+000047 f3e1                      		BREQ		getk1a
+000048 3033                      		CPI			KEY,0x03
+000049 f7d0                      		BRSH		getk1a
                                  KeyMenu2a:
-000024 d15e                      		RCALL		DisplayClear
-000025 d1db                      		RCALL		DisplayMenu2a
-000026 d071                      		RCALL		CLEARKEY
-000027 d1c4                      		RCALL		retardo1s
+00004a d16c                      		RCALL		DisplayClear
+00004b d1f0                      		RCALL		DisplayMenu2a
+00004c d07f                      		RCALL		CLEARKEY
+00004d d1d9                      		RCALL		retardo1s
                                  getk2a:		
-000028 d180                      		RCALL		Shift
-000029 d03f                      		RCALL		GETKEY
-00002a 3030                      		CPI			KEY,0x00
-00002b f3e1                      		BREQ		getk2a
-00002c 3034                      		CPI			KEY,0x04
-00002d f7d0                      		BRSH		getk2a
-00002e c02c                      		RJMP		END
+00004e d18e                      		RCALL		Shift
+00004f d04d                      		RCALL		GETKEY
+000050 3030                      		CPI			KEY,0x00
+000051 f3e1                      		BREQ		getk2a
+000052 3034                      		CPI			KEY,0x04
+000053 f7d0                      		BRSH		getk2a
+000054 c02c                      		RJMP		END
                                  KeyMenu1b:
-00002f d153                      		RCALL		DisplayClear
-000030 d1d4                      		RCALL		DisplayMenu1b
-000031 d066                      		RCALL		CLEARKEY
-000032 d1b9                      		RCALL		retardo1s
+000055 d161                      		RCALL		DisplayClear
+000056 d1e9                      		RCALL		DisplayMenu1b
+000057 d074                      		RCALL		CLEARKEY
+000058 d1ce                      		RCALL		retardo1s
                                  getk1b:		
-000033 d175                      		RCALL		Shift
-000034 d034                      		RCALL		GETKEY
-000035 3030                      		CPI			KEY,0x00
-000036 f3e1                      		BREQ		getk1b
-000037 3033                      		CPI			KEY,0x03
-000038 f7d0                      		BRSH		getk1b
+000059 d183                      		RCALL		Shift
+00005a d042                      		RCALL		GETKEY
+00005b 3030                      		CPI			KEY,0x00
+00005c f3e1                      		BREQ		getk1b
+00005d 3033                      		CPI			KEY,0x03
+00005e f7d0                      		BRSH		getk1b
                                  KeyMenu2b:
-000039 d149                      		RCALL		DisplayClear
-00003a d1ce                      		RCALL		DisplayMenu2b
-00003b d05c                      		RCALL		CLEARKEY
-00003c d1af                      		RCALL		retardo1s
+00005f d157                      		RCALL		DisplayClear
+000060 d1e3                      		RCALL		DisplayMenu2b
+000061 d06a                      		RCALL		CLEARKEY
+000062 d1c4                      		RCALL		retardo1s
                                  getk2b:	
-00003d d05a                      		RCALL		CLEARKEY	
-00003e d02a                      		RCALL		GETKEY
-00003f 3030                      		CPI			KEY,0x00
-000040 f3e1                      		BREQ		getk2b
-000041 e300                      		LDI			TEMP,48
-000042 303b                      		CPI			KEY,11
-000043 f409                      		BRNE		KeyNotZero
-000044 e030                      		LDI			KEY,0x00
+000063 d068                      		RCALL		CLEARKEY	
+000064 d038                      		RCALL		GETKEY
+000065 3030                      		CPI			KEY,0x00
+000066 f3e1                      		BREQ		getk2b
+000067 e300                      		LDI			TEMP,48
+000068 303b                      		CPI			KEY,11
+000069 f409                      		BRNE		KeyNotZero
+00006a e030                      		LDI			KEY,0x00
                                  KeyNotZero:
-000045 0f30                      		ADD			KEY,TEMP
-000046 2f83                      		MOV			DISPVAR,KEY
-000047 d0f4                      		RCALL		DisplayChar
-000048 d1a3                      		RCALL		retardo1s
-000049 933f                      		PUSH		KEY
-00004a fd50                      		SBRC		PRGFLAGS,PERC
-00004b c002                      		RJMP		getPercentage
-00004c 6051                      		ORI			PRGFLAGS,(1<<PERC)
-00004d cfef                      		RJMP		getk2b
+00006b 0f30                      		ADD			KEY,TEMP
+00006c 2f83                      		MOV			DISPVAR,KEY
+00006d d102                      		RCALL		DisplayChar
+00006e d1b8                      		RCALL		retardo1s
+00006f 933f                      		PUSH		KEY
+000070 fd50                      		SBRC		PRGFLAGS,PERC
+000071 c002                      		RJMP		getPercentage
+000072 6051                      		ORI			PRGFLAGS,(1<<PERC)
+000073 cfef                      		RJMP		getk2b
                                  
                                  getPercentage:
-00004e 7f5e                      		ANDI		PRGFLAGS,(0xFE<<PERC)
-00004f d287                      		RCALL		keyb_to_bcd
-000050 906f                      		POP			PERCENTREG
+000074 7f5e                      		ANDI		PRGFLAGS,(0xFE<<PERC)
+000075 d29c                      		RCALL		keyb_to_bcd
+000076 906f                      		POP			PERCENTREG
                                  
                                  KeyMenu3b:
-000051 d131                      		RCALL		DisplayClear
-000052 d1ba                      		RCALL		DisplayMenu3b
-000053 d044                      		RCALL		CLEARKEY
-000054 d197                      		RCALL		retardo1s
+000077 d13f                      		RCALL		DisplayClear
+000078 d1cf                      		RCALL		DisplayMenu3b
+000079 d052                      		RCALL		CLEARKEY
+00007a d1ac                      		RCALL		retardo1s
                                  getk3b:
-000055 d153                      		RCALL		Shift
-000056 d012                      		RCALL		GETKEY
-000057 3030                      		CPI			KEY,0x00
-000058 f3e1                      		BREQ		getk3b
-000059 3034                      		CPI			KEY,0x04
-00005a f7d0                      		BRSH		getk3b
+00007b d161                      		RCALL		Shift
+00007c d020                      		RCALL		GETKEY
+00007d 3030                      		CPI			KEY,0x00
+00007e f3e1                      		BREQ		getk3b
+00007f 3034                      		CPI			KEY,0x04
+000080 f7d0                      		BRSH		getk3b
                                  
                                  END:	
-00005b d127                      		RCALL		DisplayClear
-00005c d1b4                      		RCALL		DisplayWait
-00005d d189                      		RCALL		retardo3s
-00005e d124                      		RCALL		DisplayClear
-00005f d1b5                      		RCALL		DisplayDone
-000060 d186                      		RCALL		retardo3s
-000061 cfae                      		RJMP		KeyMenu0
+000081 d135                      		RCALL		DisplayClear
+000082 d1c9                      		RCALL		DisplayWait
+000083 d1a3                      		RCALL		retardo1s
+000084 d132                      		RCALL		DisplayClear
+000085 d1ca                      		RCALL		DisplayDone
+000086 d1a0                      		RCALL		retardo1s
+000087 d12f                      		RCALL		DisplayClear
+000088 df85                      		RCALL measurement
+                                 
+000089 d2a5                      		RCALL bin_to_ascii
+00008a 910f                      		pop r16
+00008b 2f80                      		mov DISPVAR,r16
+00008c d0e3                      		RCALL DisplayChar
+00008d 910f                      		pop r16
+00008e 2f80                      		mov DISPVAR,r16
+00008f d0e0                      		RCALL DisplayChar
+000090 910f                      		pop r16
+000091 2f80                      		mov DISPVAR,r16
+000092 d0dd                      		RCALL DisplayChar
+000093 d18e                      		RCALL retardo3s
+000094 910f                      		pop r16
+000095 cfa0                      		RJMP		KeyMenu0
                                  
                                   .include "kb_driver.asm"
                                  
@@ -1191,86 +1315,86 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  .CSEG
                                  
                                  KBINIT:
-000062 931f                      		PUSH		KBTEMP
-000063 ef18                       		LDI			KBTEMP,KBCONF		;cols como input, filas como output
-000064 b914                      		OUT			DDRB,KBTEMP	
-000065 e017                      		LDI			KBTEMP,KBPULLUPS		;habilitar pullups en el input
-000066 b915                      		OUT			KBPORT,KBTEMP
-000067 911f                      		POP			KBTEMP	
-000068 9508                      		RET
+000096 931f                      		PUSH		KBTEMP
+000097 ef18                       		LDI			KBTEMP,KBCONF		;cols como input, filas como output
+000098 b914                      		OUT			DDRB,KBTEMP	
+000099 e017                      		LDI			KBTEMP,KBPULLUPS		;habilitar pullups en el input
+00009a b915                      		OUT			KBPORT,KBTEMP
+00009b 911f                      		POP			KBTEMP	
+00009c 9508                      		RET
                                  
                                   GETKEY:
                                  												;Esta sección lee la fila 1
-000069 e031                      		LDI			KEY,ROW1VAL					;carga el valor de la primera tecla de la fila 1 en "key"
-00006a ef17                      		LDI			KBTEMP,~(1<<ROW1)			;"apaga" fila 1 (carga un byte de unos con un único cero en la posición "ROW1")
-00006b b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
-00006c d013                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
+00009d e031                      		LDI			KEY,ROW1VAL					;carga el valor de la primera tecla de la fila 1 en "key"
+00009e ef17                      		LDI			KBTEMP,~(1<<ROW1)			;"apaga" fila 1 (carga un byte de unos con un único cero en la posición "ROW1")
+00009f b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
+0000a0 d013                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
                                   
-00006d fd20                      		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
-00006e c010                      		RJMP		DONE						;salir de la subrutina
+0000a1 fd20                      		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
+0000a2 c010                      		RJMP		DONE						;salir de la subrutina
                                   
                                  												;Esta sección lee la fila 2
-00006f e034                      		LDI			KEY,ROW2VAL					;carga el valor de la primera tecla de la fila 2 en "key"
-000070 e71f                      		LDI			KBTEMP,~(1<<ROW2)			;"apaga" fila 2 (carga un byte de unos con un único cero en la posición "ROW2")
-000071 b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
-000072 d00d                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
+0000a3 e034                      		LDI			KEY,ROW2VAL					;carga el valor de la primera tecla de la fila 2 en "key"
+0000a4 e71f                      		LDI			KBTEMP,~(1<<ROW2)			;"apaga" fila 2 (carga un byte de unos con un único cero en la posición "ROW2")
+0000a5 b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
+0000a6 d00d                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
                                   
-000073 fd20                      		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
-000074 c00a                      		RJMP		DONE						;salir de la subrutina
+0000a7 fd20                      		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
+0000a8 c00a                      		RJMP		DONE						;salir de la subrutina
                                  												
                                  												;Esta sección lee la fila 3
-000075 e037                      		LDI			KEY,ROW3VAL					;carga el valor de la primera tecla de la fila 3 en "key"
-000076 ed1f                      		LDI			KBTEMP,~(1<<ROW3)			;"apaga" fila 3 (carga un byte de unos con un único cero en la posición "ROW3")
-000077 b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
-000078 d007                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
+0000a9 e037                      		LDI			KEY,ROW3VAL					;carga el valor de la primera tecla de la fila 3 en "key"
+0000aa ed1f                      		LDI			KBTEMP,~(1<<ROW3)			;"apaga" fila 3 (carga un byte de unos con un único cero en la posición "ROW3")
+0000ab b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
+0000ac d007                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
                                  
-000079 fd20                      		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
-00007a c004                      		RJMP		DONE						;salir de la subrutina
+0000ad fd20                      		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
+0000ae c004                      		RJMP		DONE						;salir de la subrutina
                                   
                                  												;Esta sección lee la fila 4
-00007b e03a                      		LDI			KEY,ROW4VAL					;carga el valor de la primera tecla de la fila 4 en "key"
-00007c ee1f                      		LDI			KBTEMP,~(1<<ROW4)			;"apaga" fila 4 (carga un byte de unos con un único cero en la posición "ROW4")
-00007d b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
-00007e d001                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
+0000af e03a                      		LDI			KEY,ROW4VAL					;carga el valor de la primera tecla de la fila 4 en "key"
+0000b0 ee1f                      		LDI			KBTEMP,~(1<<ROW4)			;"apaga" fila 4 (carga un byte de unos con un único cero en la posición "ROW4")
+0000b1 b915                      		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
+0000b2 d001                      		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
                                   
                                  DONE:					
-00007f 9508                      		RET
+0000b3 9508                      		RET
                                   
                                  READ_COL:
-000080 d013                      		RCALL		SETTLE
-000081 7f2e                      		CBR			KBFLAGS, (1<<PRESSED)		;estado = no presionado
+0000b4 d013                      		RCALL		SETTLE
+0000b5 7f2e                      		CBR			KBFLAGS, (1<<PRESSED)		;estado = no presionado
                                   
-000082 9918                      		SBIC		PINB, COL1					;lee columna 1
-000083 c002                      		RJMP		NEXTCOL						;si no, pasar a columna 2
-000084 6021                      		SBR			KBFLAGS, (1<<PRESSED)		;estado = presionado
-000085 9508                      		RET										;devolver el valor de la primer columna de la fila
+0000b6 9918                      		SBIC		PINB, COL1					;lee columna 1
+0000b7 c002                      		RJMP		NEXTCOL						;si no, pasar a columna 2
+0000b8 6021                      		SBR			KBFLAGS, (1<<PRESSED)		;estado = presionado
+0000b9 9508                      		RET										;devolver el valor de la primer columna de la fila
                                  NEXTCOL:
-000086 9919                      		SBIC		PINB,COL2					;lee columna 2
-000087 c003                      		RJMP		NEXTCOL1					;si no, pasar a columna 3
-000088 9533                      		INC			KEY							
-000089 6021                      		SBR			KBFLAGS,(1<<PRESSED)		;estado = presionado
-00008a 9508                      		RET										;devolver el valor de la segunda columna de la fila
+0000ba 9919                      		SBIC		PINB,COL2					;lee columna 2
+0000bb c003                      		RJMP		NEXTCOL1					;si no, pasar a columna 3
+0000bc 9533                      		INC			KEY							
+0000bd 6021                      		SBR			KBFLAGS,(1<<PRESSED)		;estado = presionado
+0000be 9508                      		RET										;devolver el valor de la segunda columna de la fila
                                  NEXTCOL1:
-00008b 991a                      		SBIC		PINB,COL3					;lee columna 3
-00008c c004                      		RJMP		EXIT						;si no, termina
-00008d 9533                      		INC			KEY							;estado = presionado
-00008e 9533                      		INC			KEY
-00008f 6021                      		SBR			KBFLAGS, (1<<PRESSED)		;estado=presionado
-000090 9508                      		RET										;devolver el valor de la tercer columna de la fila
+0000bf 991a                      		SBIC		PINB,COL3					;lee columna 3
+0000c0 c004                      		RJMP		EXIT						;si no, termina
+0000c1 9533                      		INC			KEY							;estado = presionado
+0000c2 9533                      		INC			KEY
+0000c3 6021                      		SBR			KBFLAGS, (1<<PRESSED)		;estado=presionado
+0000c4 9508                      		RET										;devolver el valor de la tercer columna de la fila
                                  EXIT:
-000091 2733                      		CLR			KEY							;vacía el valor de la tecla
-000092 7f2e                      		CBR			KBFLAGS, (1<<PRESSED)		;no se presionó ninguna tecla
-000093 9508                      		RET										
+0000c5 2733                      		CLR			KEY							;vacía el valor de la tecla
+0000c6 7f2e                      		CBR			KBFLAGS, (1<<PRESSED)		;no se presionó ninguna tecla
+0000c7 9508                      		RET										
                                  SETTLE:
-000094 ef1f                      		LDI			KBTEMP,255
-000095 951a                      TAGAIN: DEC			KBTEMP
-000096 f7f1                      		BRNE		TAGAIN
-000097 9508                      		RET 
+0000c8 ef1f                      		LDI			KBTEMP,255
+0000c9 951a                      TAGAIN: DEC			KBTEMP
+0000ca f7f1                      		BRNE		TAGAIN
+0000cb 9508                      		RET 
                                  
                                  CLEARKEY:
-000098 e030                      		LDI			KEY,0X00
+0000cc e030                      		LDI			KEY,0X00
                                   .include "disp_driver.asm"
-000099 9508                      
+0000cd 9508                      
                                   * disp_driver.asm
                                   *
                                   *  Created: 01-Nov-16 5:01:30 PM
@@ -1338,179 +1462,179 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  ;------- inicializacion i2c-------
                                  InicI2C:	
                                  	
-00009a ef08                      	ldi TEMP, TWI_RATE
-00009b 9300 00b8                 	sts TWBR,TEMP
+0000ce ef08                      	ldi TEMP, TWI_RATE
+0000cf 9300 00b8                 	sts TWBR,TEMP
                                  
-00009d ea04                      	ldi TEMP, (1<<TWINT)|(1<<TWSTA)|(1<<TWEN)   
-00009e 9300 00bc                 	sts TWCR, TEMP								;envia condicion de start
+0000d1 ea04                      	ldi TEMP, (1<<TWINT)|(1<<TWSTA)|(1<<TWEN)   
+0000d2 9300 00bc                 	sts TWCR, TEMP								;envia condicion de start
                                  
                                  wait1:
-0000a0 9100 00bc                 	lds TEMP,TWCR
-0000a2 ff07                      	sbrs TEMP,TWINT								;espera flag de start ok
-0000a3 cffc                      	rjmp wait1
+0000d4 9100 00bc                 	lds TEMP,TWCR
+0000d6 ff07                      	sbrs TEMP,TWINT								;espera flag de start ok
+0000d7 cffc                      	rjmp wait1
                                  
-0000a4 9100 00b9                 	lds TEMP,TWSR
-0000a6 7f08                      	andi TEMP, 0xF8								;si el estado en el registro TWI es distinto de START se va a error
-0000a7 3008                      	cpi TEMP, STARTi
-0000a8 f409                      	brne error_A
-0000a9 c001                      	rjmp continuo
+0000d8 9100 00b9                 	lds TEMP,TWSR
+0000da 7f08                      	andi TEMP, 0xF8								;si el estado en el registro TWI es distinto de START se va a error
+0000db 3008                      	cpi TEMP, STARTi
+0000dc f409                      	brne error_A
+0000dd c001                      	rjmp continuo
                                  error_A:
-0000aa d0d4                      	RCALL ERROR1
+0000de d0d4                      	RCALL ERROR1
                                  	
                                  continuo:
-0000ab e40e                      	ldi TEMP, SL_ADD								
-0000ac 9300 00bb                 	sts TWDR, TEMP								;Carga direccion del esclavo en el registro TWDR, limpia bit TWINT para empezar la transmision de la direccion
-0000ae e804                      	ldi TEMP, (1<<TWINT) | (1<<TWEN)
-0000af 9300 00bc                 	sts TWCR, TEMP								;envio direccion del esclavo
+0000df e40e                      	ldi TEMP, SL_ADD								
+0000e0 9300 00bb                 	sts TWDR, TEMP								;Carga direccion del esclavo en el registro TWDR, limpia bit TWINT para empezar la transmision de la direccion
+0000e2 e804                      	ldi TEMP, (1<<TWINT) | (1<<TWEN)
+0000e3 9300 00bc                 	sts TWCR, TEMP								;envio direccion del esclavo
                                  
                                  wait2:
-0000b1 9100 00bc                 	lds TEMP,TWCR
-0000b3 ff07                      	sbrs TEMP,TWINT								;espera seteo de TWINT para confirmar transmision ok
-0000b4 cffc                      	rjmp wait2
+0000e5 9100 00bc                 	lds TEMP,TWCR
+0000e7 ff07                      	sbrs TEMP,TWINT								;espera seteo de TWINT para confirmar transmision ok
+0000e8 cffc                      	rjmp wait2
                                  
-0000b5 9100 00b9                 	lds TEMP,TWSR
-0000b7 7f08                      	andi TEMP, 0xF8								;chequea el registro TWI, salta a error si no se transmitio bien
-0000b8 3200                      	cpi TEMP, MT_SLA_ACK
-0000b9 f009                      	breq error_B
-0000ba c001                      	rjmp continuo2
+0000e9 9100 00b9                 	lds TEMP,TWSR
+0000eb 7f08                      	andi TEMP, 0xF8								;chequea el registro TWI, salta a error si no se transmitio bien
+0000ec 3200                      	cpi TEMP, MT_SLA_ACK
+0000ed f009                      	breq error_B
+0000ee c001                      	rjmp continuo2
                                  error_B:
-0000bb d0c3                      	RCALL ERROR1
+0000ef d0c3                      	RCALL ERROR1
                                  continuo2:
-0000bc 9508                      	ret
+0000f0 9508                      	ret
                                  	
                                  ;----------------------------------Fin inicializacion i2c----------------------------------------;
                                  
                                  ;.................................incialización display, envio de a 4bits........................;
                                  InicDisplay:	
                                  	
-0000bd d11d                      	RCALL retardo50ms
+0000f1 d11d                      	RCALL retardo50ms
                                  	
-0000be e300                      	ldi TEMP, 0x30
-0000bf e310                      	ldi r17,0x30
-0000c0 9300 00bb                 	sts TWDR, TEMP								; Carga DATA en twdr, limpia twint para empezar la transmision
-0000c2 e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
-0000c3 9300 00bc                 	sts TWCR, TEMP								
-0000c5 d06c                      	RCALL WaitDataI2c
+0000f2 e300                      	ldi TEMP, 0x30
+0000f3 e310                      	ldi r17,0x30
+0000f4 9300 00bb                 	sts TWDR, TEMP								; Carga DATA en twdr, limpia twint para empezar la transmision
+0000f6 e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
+0000f7 9300 00bc                 	sts TWCR, TEMP								
+0000f9 d06c                      	RCALL WaitDataI2c
                                  
-0000c6 d0a7                      	RCALL DisplayEnable
+0000fa d0a7                      	RCALL DisplayEnable
                                  
-0000c7 d11a                      	RCALL retardo5ms
+0000fb d121                      	RCALL retardo5ms
                                  
-0000c8 d0a5                      	RCALL DisplayEnable
+0000fc d0a5                      	RCALL DisplayEnable
                                  
-0000c9 d10a                      	RCALL retardo1ms
+0000fd d10a                      	RCALL retardo1ms
                                  												; todo esto te lo pide que hagas la hoja de datos del display
-0000ca d0a3                      	RCALL DisplayEnable
+0000fe d0a3                      	RCALL DisplayEnable
                                  
-0000cb d116                      	RCALL retardo5ms
+0000ff d11d                      	RCALL retardo5ms
                                  
-0000cc e208                      	ldi r16, 0x28								;set 4bit mode
-0000cd e218                      	ldi r17,0x28
-0000ce 9300 00bb                 	sts TWDR, r16								
-0000d0 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-0000d1 9300 00bc                 	sts TWCR, r16								
-0000d3 d05e                      	RCALL WaitDataI2c
+000100 e208                      	ldi r16, 0x28								;set 4bit mode
+000101 e218                      	ldi r17,0x28
+000102 9300 00bb                 	sts TWDR, r16								
+000104 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+000105 9300 00bc                 	sts TWCR, r16								
+000107 d05e                      	RCALL WaitDataI2c
                                  	
-0000d4 d099                      	RCALL DisplayEnable
+000108 d099                      	RCALL DisplayEnable
                                  
-0000d5 d0fe                      	RCALL retardo1ms
+000109 d0fe                      	RCALL retardo1ms
                                  
-0000d6 e208                      	ldi TEMP,0x28								;0x28_H
-0000d7 e218                      	ldi r17,0x28
-0000d8 9300 00bb                 	sts TWDR, TEMP								
-0000da e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-0000db 9300 00bc                 	sts TWCR, TEMP								
-0000dd d054                      	RCALL WaitDataI2c
+00010a e208                      	ldi TEMP,0x28								;0x28_H
+00010b e218                      	ldi r17,0x28
+00010c 9300 00bb                 	sts TWDR, TEMP								
+00010e e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+00010f 9300 00bc                 	sts TWCR, TEMP								
+000111 d054                      	RCALL WaitDataI2c
                                  
-0000de d08f                      	RCALL DisplayEnable
+000112 d08f                      	RCALL DisplayEnable
                                  
-0000df e808                      	ldi TEMP,0x88								;0x28_L
-0000e0 e818                      	ldi r17,0x88
-0000e1 9300 00bb                 	sts TWDR, r16								
-0000e3 e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
-0000e4 9300 00bc                 	sts TWCR, TEMP								
-0000e6 d04b                      	RCALL WaitDataI2c
+000113 e808                      	ldi TEMP,0x88								;0x28_L
+000114 e818                      	ldi r17,0x88
+000115 9300 00bb                 	sts TWDR, r16								
+000117 e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
+000118 9300 00bc                 	sts TWCR, TEMP								
+00011a d04b                      	RCALL WaitDataI2c
                                  
-0000e7 d086                      	RCALL DisplayEnable
+00011b d086                      	RCALL DisplayEnable
                                  
-0000e8 e008                      	ldi TEMP, 0x08								;0x08_H
-0000e9 e018                      	ldi r17,0x08
-0000ea 9300 00bb                 	sts TWDR, TEMP								
-0000ec e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
-0000ed 9300 00bc                 	sts TWCR, TEMP								
-0000ef d042                      	RCALL WaitDataI2c
+00011c e008                      	ldi TEMP, 0x08								;0x08_H
+00011d e018                      	ldi r17,0x08
+00011e 9300 00bb                 	sts TWDR, TEMP								
+000120 e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
+000121 9300 00bc                 	sts TWCR, TEMP								
+000123 d042                      	RCALL WaitDataI2c
                                  
-0000f0 d07d                      	RCALL DisplayEnable							
+000124 d07d                      	RCALL DisplayEnable							
                                  
-0000f1 e808                      	ldi TEMP,0x88								;0x08_L				
-0000f2 e818                      	ldi r17,0x88
+000125 e808                      	ldi TEMP,0x88								;0x08_L				
+000126 e818                      	ldi r17,0x88
                                  	
-0000f3 9300 00bb                 	sts TWDR, TEMP								
-0000f5 e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
-0000f6 9300 00bc                 	sts TWCR, TEMP								
-0000f8 d039                      	RCALL WaitDataI2c
+000127 9300 00bb                 	sts TWDR, TEMP								
+000129 e804                      	ldi TEMP, (1<<TWINT) |(1<<TWEN)
+00012a 9300 00bc                 	sts TWCR, TEMP								
+00012c d039                      	RCALL WaitDataI2c
                                  
-0000f9 d074                      	RCALL DisplayEnable
+00012d d074                      	RCALL DisplayEnable
                                  
-0000fa e008                      	ldi r16,0x08								;0x01_H	
-0000fb e018                      	ldi r17,0x08
-0000fc 9300 00bb                 	sts TWDR, r16								
-0000fe e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-0000ff 9300 00bc                 	sts TWCR, r16								
-000101 d030                      	RCALL WaitDataI2c
+00012e e008                      	ldi r16,0x08								;0x01_H	
+00012f e018                      	ldi r17,0x08
+000130 9300 00bb                 	sts TWDR, r16								
+000132 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+000133 9300 00bc                 	sts TWCR, r16								
+000135 d030                      	RCALL WaitDataI2c
                                  
-000102 d06b                      	RCALL DisplayEnable
+000136 d06b                      	RCALL DisplayEnable
                                  
-000103 e108                      	ldi r16,0x18								;0x01_L	
-000104 e118                      	ldi r17,0x18
+000137 e108                      	ldi r16,0x18								;0x01_L	
+000138 e118                      	ldi r17,0x18
                                  		
-000105 9300 00bb                 	sts TWDR, r16								
-000107 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-000108 9300 00bc                 	sts TWCR, r16								
-00010a d027                      	RCALL WaitDataI2c
+000139 9300 00bb                 	sts TWDR, r16								
+00013b e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+00013c 9300 00bc                 	sts TWCR, r16								
+00013e d027                      	RCALL WaitDataI2c
                                  
-00010b d062                      	RCALL DisplayEnable
+00013f d062                      	RCALL DisplayEnable
                                  
-00010c e008                      	ldi r16,0x08								;0x0F_H		
-00010d e018                      	ldi r17,0x08
+000140 e008                      	ldi r16,0x08								;0x0F_H		
+000141 e018                      	ldi r17,0x08
                                  
-00010e 9300 00bb                 	sts TWDR, r16								
-000110 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-000111 9300 00bc                 	sts TWCR, r16								
-000113 d01e                      	RCALL WaitDataI2c
+000142 9300 00bb                 	sts TWDR, r16								
+000144 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+000145 9300 00bc                 	sts TWCR, r16								
+000147 d01e                      	RCALL WaitDataI2c
                                  
-000114 d059                      	RCALL DisplayEnable
+000148 d059                      	RCALL DisplayEnable
                                  	
-000115 ef08                      	ldi r16,0xF8								;0x0F_L	
-000116 ef18                      	ldi r17,0xF8
-000117 9300 00bb                 	sts TWDR, r16								
-000119 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-00011a 9300 00bc                 	sts TWCR, r16								
-00011c d015                      	RCALL WaitDataI2c
+000149 ef08                      	ldi r16,0xF8								;0x0F_L	
+00014a ef18                      	ldi r17,0xF8
+00014b 9300 00bb                 	sts TWDR, r16								
+00014d e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+00014e 9300 00bc                 	sts TWCR, r16								
+000150 d015                      	RCALL WaitDataI2c
                                  
-00011d d050                      	RCALL DisplayEnable
+000151 d050                      	RCALL DisplayEnable
                                  
-00011e e008                      	ldi r16,0x08							;0x06_H
-00011f e018                      	ldi r17,0x08
-000120 9300 00bb                 	sts TWDR, r16								
-000122 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-000123 9300 00bc                 	sts TWCR, r16
-000125 d00c                      	RCALL WaitDataI2c
+000152 e008                      	ldi r16,0x08							;0x06_H
+000153 e018                      	ldi r17,0x08
+000154 9300 00bb                 	sts TWDR, r16								
+000156 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+000157 9300 00bc                 	sts TWCR, r16
+000159 d00c                      	RCALL WaitDataI2c
                                  
-000126 d047                      	RCALL DisplayEnable
+00015a d047                      	RCALL DisplayEnable
                                  
-000127 d0ba                      	RCALL retardo5ms
+00015b d0c1                      	RCALL retardo5ms
                                  	
-000128 e608                      	ldi r16, 0x68							;0x06_L
-000129 e618                      	ldi r17, 0x68
-00012a 9300 00bb                 	sts TWDR, r16								
-00012c e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-00012d 9300 00bc                 	sts TWCR, r16
-00012f d002                      	RCALL WaitDataI2c
+00015c e608                      	ldi r16, 0x68							;0x06_L
+00015d e618                      	ldi r17, 0x68
+00015e 9300 00bb                 	sts TWDR, r16								
+000160 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+000161 9300 00bc                 	sts TWCR, r16
+000163 d002                      	RCALL WaitDataI2c
                                  
-000130 d03d                      	RCALL DisplayEnable
+000164 d03d                      	RCALL DisplayEnable
                                  
-000131 9508                      	ret
+000165 9508                      	ret
                                  
                                  ;-----------Fin Inicialización display--------------
                                  
@@ -1519,101 +1643,101 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  WaitDataI2c:
                                  
                                  wait_twint:
-000132 9100 00bc                 	lds r16,TWCR
-000134 ff07                      	sbrs r16,TWINT								; Espera TWINT para confirmar que se envió ok
-000135 cffc                      	rjmp wait_twint
+000166 9100 00bc                 	lds r16,TWCR
+000168 ff07                      	sbrs r16,TWINT								; Espera TWINT para confirmar que se envió ok
+000169 cffc                      	rjmp wait_twint
                                  
-000136 9100 00b9                 	lds r16,TWSR
-000138 7f08                      	andi r16, 0xF8
-000139 3208                      	cpi r16, MT_DATA_ACK
-00013a f591                      	brne error_data
-00013b 9508                      	ret
+00016a 9100 00b9                 	lds r16,TWSR
+00016c 7f08                      	andi r16, 0xF8
+00016d 3208                      	cpi r16, MT_DATA_ACK
+00016e f591                      	brne error_data
+00016f 9508                      	ret
                                  
                                  ;------DISPLAY : CHAR------;                  Con esta Funcion le enviamos un CHAR al display
                                  DisplayChar:
                                  
-00013c 2f08                      	mov r16,DISPVAR							  ;En DISPVAR tiene que estar el CHAR
-00013d 7f00                      	andi r16,0xF0							  ;Envio DISPVAR_H
-00013e 6009                      	ori r16,0x09
-00013f 2f10                      	mov r17,r16
-000140 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
-000142 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-000143 9300 00bc                 	sts TWCR, r16
+000170 2f08                      	mov r16,DISPVAR							  ;En DISPVAR tiene que estar el CHAR
+000171 7f00                      	andi r16,0xF0							  ;Envio DISPVAR_H
+000172 6009                      	ori r16,0x09
+000173 2f10                      	mov r17,r16
+000174 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+000176 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+000177 9300 00bc                 	sts TWCR, r16
                                  
-000145 dfec                      	RCALL WaitDataI2c
-000146 d027                      	RCALL DisplayEnable
+000179 dfec                      	RCALL WaitDataI2c
+00017a d027                      	RCALL DisplayEnable
                                  
-000147 2f08                      	mov r16,DISPVAR							  ;Envio DISPVAR_L
-000148 0f00                      	lsl r16
-000149 0f00                      	lsl r16
-00014a 0f00                      	lsl r16
-00014b 0f00                      	lsl r16
-00014c 6009                      	ori r16,0x09
-00014d 2f10                      	mov r17,r16
-00014e 9300 00bb                 	sts TWDR, r16								
-000150 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-000151 9300 00bc                 	sts TWCR, r16
-000153 dfde                      	RCALL WaitDataI2c
+00017b 2f08                      	mov r16,DISPVAR							  ;Envio DISPVAR_L
+00017c 0f00                      	lsl r16
+00017d 0f00                      	lsl r16
+00017e 0f00                      	lsl r16
+00017f 0f00                      	lsl r16
+000180 6009                      	ori r16,0x09
+000181 2f10                      	mov r17,r16
+000182 9300 00bb                 	sts TWDR, r16								
+000184 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+000185 9300 00bc                 	sts TWCR, r16
+000187 dfde                      	RCALL WaitDataI2c
                                  
-000154 d019                      	RCALL DisplayEnable
+000188 d019                      	RCALL DisplayEnable
                                  
-000155 9508                      	ret
+000189 9508                      	ret
                                  
                                  ;------Display :ENTER----------
                                  
                                  DisplayEnter:
                                  
-000156 ec08                      	ldi r16,0xC8								;0x08_H
-000157 ec18                      	ldi r17,0xC8
-000158 9300 00bb                 	sts TWDR, r16								
-00015a e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-00015b 9300 00bc                 	sts TWCR, r16								
-00015d dfd4                      	RCALL WaitDataI2c
+00018a ec08                      	ldi r16,0xC8								;0x08_H
+00018b ec18                      	ldi r17,0xC8
+00018c 9300 00bb                 	sts TWDR, r16								
+00018e e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+00018f 9300 00bc                 	sts TWCR, r16								
+000191 dfd4                      	RCALL WaitDataI2c
                                  
-00015e d00f                      	RCALL DisplayEnable							
+000192 d00f                      	RCALL DisplayEnable							
                                  
-00015f e008                      	ldi r16,0x08								;0x08_L				
-000160 e018                      	ldi r17,0x08
+000193 e008                      	ldi r16,0x08								;0x08_L				
+000194 e018                      	ldi r17,0x08
                                  	
-000161 9300 00bb                 	sts TWDR, r16								
-000163 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-000164 9300 00bc                 	sts TWCR, r16								
-000166 dfcb                      	RCALL WaitDataI2c
+000195 9300 00bb                 	sts TWDR, r16								
+000197 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+000198 9300 00bc                 	sts TWCR, r16								
+00019a dfcb                      	RCALL WaitDataI2c
                                  
-000167 d006                      	RCALL DisplayEnable
-000168 9508                      ret
+00019b d006                      	RCALL DisplayEnable
+00019c 9508                      ret
                                  
                                  
                                  
                                  ;----DISPLAY : STOP------
                                  
                                  I2CStop:
-000169 e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
-00016a 9300 00bc                 	sts TWCR, r16
-00016c 9508                      			ret
+00019d e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
+00019e 9300 00bc                 	sts TWCR, r16
+0001a0 9508                      			ret
                                  
                                  error_data:
-00016d d011                      	RCALL ERROR1
+0001a1 d011                      	RCALL ERROR1
                                  
                                  
                                  DisplayEnable:
-00016e d065                      	RCALL retardo1ms
+0001a2 d065                      	RCALL retardo1ms
                                  	
-00016f 6014                      	ori r17, 0x04
-000170 9310 00bb                 	sts TWDR, r17								
-000172 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-000173 9300 00bc                 	sts TWCR, r16
-000175 dfbc                      	RCALL WaitDataI2c
+0001a3 6014                      	ori r17, 0x04
+0001a4 9310 00bb                 	sts TWDR, r17								
+0001a6 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+0001a7 9300 00bc                 	sts TWCR, r16
+0001a9 dfbc                      	RCALL WaitDataI2c
                                  ;	RCALL retardo1ms
                                  
-000176 7f1b                      	andi r17, 0b11111011
-000177 9310 00bb                 	sts TWDR, r17								
-000179 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-00017a 9300 00bc                 	sts TWCR, r16
-00017c dfb5                      	RCALL WaitDataI2c
+0001aa 7f1b                      	andi r17, 0b11111011
+0001ab 9310 00bb                 	sts TWDR, r17								
+0001ad e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+0001ae 9300 00bc                 	sts TWCR, r16
+0001b0 dfb5                      	RCALL WaitDataI2c
                                  
                                  	;RCALL retardo1ms
-00017d 9508                      	ret
+0001b1 9508                      	ret
                                  
                                  
                                  ;-----------Error----------------------------------
@@ -1622,179 +1746,189 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                  	
                                  	;ldi R16,0x02
                                  	;out PORTB,R16
-00017e cfff                      	rjmp error
+0001b2 cfff                      	rjmp error
                                  
                                  ERROR1:
                                  	
                                  	;ldi R16,0x02
                                  	;out PORTB,R16
-00017f e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
-000180 9300 00bc                 	sts TWCR, r16
-000182 cffb                      	rjmp error
+0001b3 e904                      	ldi r16, (1<<TWINT)|(1<<TWEN)| (1<<TWSTO)	;Transmite bit de STOP
+0001b4 9300 00bc                 	sts TWCR, r16
+0001b6 cffb                      	rjmp error
                                  
                                  ;------Display :CLEAR----------
                                  DisplayClear:
-000183 e018                      	ldi r17, 0x08
-000184 e008                      	ldi	r16, 0x08
-000185 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
-000187 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-000188 9300 00bc                 	sts TWCR, r16
+0001b7 e018                      	ldi r17, 0x08
+0001b8 e008                      	ldi	r16, 0x08
+0001b9 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+0001bb e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+0001bc 9300 00bc                 	sts TWCR, r16
                                  
-00018a dfa7                      	RCALL WaitDataI2c
-00018b dfe2                      	RCALL DisplayEnable
+0001be dfa7                      	RCALL WaitDataI2c
+0001bf dfe2                      	RCALL DisplayEnable
                                  
-00018c e118                      	ldi r17, 0x18
-00018d e108                      	ldi r16, 0x18
-00018e 9300 00bb                 	sts TWDR, r16								
-000190 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-000191 9300 00bc                 	sts TWCR, r16
-000193 df9e                      	RCALL WaitDataI2c
+0001c0 e118                      	ldi r17, 0x18
+0001c1 e108                      	ldi r16, 0x18
+0001c2 9300 00bb                 	sts TWDR, r16								
+0001c4 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+0001c5 9300 00bc                 	sts TWCR, r16
+0001c7 df9e                      	RCALL WaitDataI2c
                                  
-000194 dfd9                      	RCALL DisplayEnable
+0001c8 dfd9                      	RCALL DisplayEnable
                                  
-000195 9508                      	ret
+0001c9 9508                      	ret
                                  
                                  DisplayToggleShift:
-000196 e118                      	ldi r17, 0x18
-000197 e108                      	ldi	r16, 0x18
-000198 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
-00019a e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
-00019b 9300 00bc                 	sts TWCR, r16
+0001ca e118                      	ldi r17, 0x18
+0001cb e108                      	ldi	r16, 0x18
+0001cc 9300 00bb                 	sts TWDR, r16								; Carga DATA en twdr, limpia twint para empezar la transmision
+0001ce e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)
+0001cf 9300 00bc                 	sts TWCR, r16
                                  
-00019d df94                      	RCALL WaitDataI2c
-00019e dfcf                      	RCALL DisplayEnable
+0001d1 df94                      	RCALL WaitDataI2c
+0001d2 dfcf                      	RCALL DisplayEnable
                                  
-00019f e818                      	ldi r17, 0x88
-0001a0 e808                      	ldi r16, 0x88
-0001a1 9300 00bb                 	sts TWDR, r16								
-0001a3 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
-0001a4 9300 00bc                 	sts TWCR, r16
-0001a6 df8b                      	RCALL WaitDataI2c
+0001d3 e818                      	ldi r17, 0x88
+0001d4 e808                      	ldi r16, 0x88
+0001d5 9300 00bb                 	sts TWDR, r16								
+0001d7 e804                      	ldi r16, (1<<TWINT) |(1<<TWEN)				
+0001d8 9300 00bc                 	sts TWCR, r16
+0001da df8b                      	RCALL WaitDataI2c
                                  
-0001a7 dfc6                      	RCALL DisplayEnable
+0001db dfc6                      	RCALL DisplayEnable
                                  
-0001a8 9508                      	ret
+0001dc 9508                      	ret
                                  
                                  Shift:
-0001a9 959a                      		DEC			SHIFTREGISTER
-0001aa f411                      		BRNE		SkipShift0
-0001ab dfea                      		RCALL		DisplayToggleShift
-0001ac ea90                      		LDI			SHIFTREGISTER,SHIFTDELAY		
+0001dd 959a                      		DEC			SHIFTREGISTER
+0001de f411                      		BRNE		SkipShift0
+0001df dfea                      		RCALL		DisplayToggleShift
+0001e0 ea90                      		LDI			SHIFTREGISTER,SHIFTDELAY		
                                  SkipShift0:
-0001ad d026                      		RCALL		retardo1ms
+0001e1 d026                      		RCALL		retardo1ms
                                  
-0001ae 9508                      		ret
+0001e2 9508                      		ret
                                  
                                  DisplayString:
-0001af 93ff                      	PUSH ZH
-0001b0 93ef                      	PUSH ZL
-0001b1 e040                      	LDI CONTADOR,0x00
+0001e3 93ff                      	PUSH ZH
+0001e4 93ef                      	PUSH ZL
+0001e5 e040                      	LDI CONTADOR,0x00
                                  
                                  DisplayString_cont:
-0001b2 9543                      	INC CONTADOR	
-0001b3 9185                      	LPM DISPVAR, Z+
-0001b4 3080                      	CPI DISPVAR,0x00
-0001b5 f7e1                      	BRNE DisplayString_cont
-0001b6 9543                      	INC CONTADOR
-0001b7 9185                      	LPM DISPVAR, Z+
-0001b8 3080                      	CPI DISPVAR,0x00
-0001b9 f7c1                      	BRNE DisplayString_cont
-0001ba 954a                      	DEC CONTADOR
-0001bb 954a                      	DEC CONTADOR
-0001bc 91ef                      	POP ZL
-0001bd 91ff                      	POP ZH
+0001e6 9543                      	INC CONTADOR	
+0001e7 9185                      	LPM DISPVAR, Z+
+0001e8 3080                      	CPI DISPVAR,0x00
+0001e9 f7e1                      	BRNE DisplayString_cont
+0001ea 9543                      	INC CONTADOR
+0001eb 9185                      	LPM DISPVAR, Z+
+0001ec 3080                      	CPI DISPVAR,0x00
+0001ed f7c1                      	BRNE DisplayString_cont
+0001ee 954a                      	DEC CONTADOR
+0001ef 954a                      	DEC CONTADOR
+0001f0 91ef                      	POP ZL
+0001f1 91ff                      	POP ZH
                                  
                                  DisplayString_next:
-0001be 9185                      	lpm DISPVAR, Z+
-0001bf 3080                      	CPI DISPVAR,0x00
-0001c0 f419                      	BRNE DisplayString_nextChar
-0001c1 df94                      	RCALL DisplayEnter
-0001c2 954a                      	DEC CONTADOR
-0001c3 cffa                      	RJMP DisplayString_next
+0001f2 9185                      	lpm DISPVAR, Z+
+0001f3 3080                      	CPI DISPVAR,0x00
+0001f4 f419                      	BRNE DisplayString_nextChar
+0001f5 df94                      	RCALL DisplayEnter
+0001f6 954a                      	DEC CONTADOR
+0001f7 cffa                      	RJMP DisplayString_next
                                  DisplayString_nextChar:
-0001c4 df77                      	RCALL DisplayChar
+0001f8 df77                      	RCALL DisplayChar
                                  
-0001c5 954a                      	dec  CONTADOR
-0001c6 f7b9                      	brne DisplayString_next
+0001f9 954a                      	dec  CONTADOR
+0001fa f7b9                      	brne DisplayString_next
                                  	
-0001c7 9508                      	ret
+0001fb 9508                      	ret
                                  
                                  
                                  
                                  DispNum:
                                  	
                                  
-0001c8 e300                      	ldi TEMP, 48
-0001c9 0f30                      	add KEY,TEMP
+0001fc e300                      	ldi TEMP, 48
+0001fd 0f30                      	add KEY,TEMP
                                  	
                                  	
                                  DispNum_cont:
-0001ca 2f80                      	mov DISPVAR,TEMP
-0001cb df70                      	RCALL DisplayChar
+0001fe 2f80                      	mov DISPVAR,TEMP
+0001ff df70                      	RCALL DisplayChar
                                  	
                                   .include "delay.asm"
-0001cc 9508                      
+000200 9508                      
                                   * delay.asm
                                   *
                                   *  Created: 05-Nov-16 5:35:06 PM
                                   *   Author: galca
                                   */ 
                                   retardo10us:
-0001cd 930f                      	push TEMP
-0001ce e30a                      	ldi TEMP,58
+000201 930f                      	push TEMP
+000202 e30a                      	ldi TEMP,58
                                  loop_ret_10:
-0001cf 950a                      	dec TEMP
-0001d0 0000                      	NOP
-0001d1 f7e9                      	brne loop_ret_10
-0001d2 910f                      	pop TEMP
-0001d3 9508                      	ret
+000203 950a                      	dec TEMP
+000204 0000                      	NOP
+000205 f7e9                      	brne loop_ret_10
+000206 910f                      	pop TEMP
+000207 9508                      	ret
                                  
                                  retardo1ms:
-0001d4 930f                      	push TEMP
-0001d5 e604                      	ldi TEMP,100
+000208 930f                      	push TEMP
+000209 e604                      	ldi TEMP,100
                                  loop_ret_1m:
-0001d6 dff6                      	RCALL retardo10us
-0001d7 950a                      	dec TEMP	
-0001d8 f7e9                      	brne loop_ret_1m
-0001d9 910f                      	pop TEMP
-0001da 9508                      	ret
+00020a dff6                      	RCALL retardo10us
+00020b 950a                      	dec TEMP	
+00020c f7e9                      	brne loop_ret_1m
+00020d 910f                      	pop TEMP
+00020e 9508                      	ret
                                  
                                  retardo50ms:
-0001db 930f                      	push TEMP
-0001dc e302                      	ldi TEMP,50
+00020f 930f                      	push TEMP
+000210 e302                      	ldi TEMP,50
                                  loop_ret_50m:
-0001dd dff6                      	RCALL retardo1ms
-0001de 950a                      	dec TEMP
-0001df f7e9                      	brne loop_ret_50m
-0001e0 910f                      	pop TEMP
-0001e1 9508                      	ret
+000211 dff6                      	RCALL retardo1ms
+000212 950a                      	dec TEMP
+000213 f7e9                      	brne loop_ret_50m
+000214 910f                      	pop TEMP
+000215 9508                      	ret
+                                 
+                                 retardo500ms:
+000216 930f                      	push TEMP
+000217 e00a                      	ldi TEMP,10
+                                 loop_ret_500m:
+000218 dff6                      	RCALL retardo50ms
+000219 950a                      	dec TEMP
+00021a f7e9                      	brne loop_ret_500m
+00021b 910f                      	pop TEMP
+00021c 9508                      	ret
                                  
                                  retardo5ms:
-0001e2 e005                      	ldi TEMP,5
+00021d e005                      	ldi TEMP,5
                                  loop_ret_5m:
-0001e3 dff0                      	RCALL retardo1ms
-0001e4 950a                      	dec TEMP
-0001e5 f7e9                      	brne loop_ret_5m
-0001e6 9508                      	ret
+00021e dfe9                      	RCALL retardo1ms
+00021f 950a                      	dec TEMP
+000220 f7e9                      	brne loop_ret_5m
+000221 9508                      	ret
                                  
                                  retardo3s:
                                  
-0001e7 e30c                      	ldi TEMP, 60
+000222 e30c                      	ldi TEMP, 60
                                  loop_ret_3s:
-0001e8 dff2                      	RCALL retardo50ms
-0001e9 950a                      	dec TEMP
-0001ea f7e9                      	brne loop_ret_3s
-0001eb 9508                      	ret
+000223 dfeb                      	RCALL retardo50ms
+000224 950a                      	dec TEMP
+000225 f7e9                      	brne loop_ret_3s
+000226 9508                      	ret
                                  
                                  retardo1s:
                                  
-0001ec e104                      	ldi TEMP, 20
+000227 e104                      	ldi TEMP, 20
                                  loop_ret_1s:
-0001ed dfed                      	RCALL retardo50ms
-0001ee 950a                      	dec TEMP
-0001ef f7e9                      	brne loop_ret_1s
+000228 dfe6                      	RCALL retardo50ms
+000229 950a                      	dec TEMP
+00022a f7e9                      	brne loop_ret_1s
                                   .include "interface.asm"
-0001f0 9508                      
+00022b 9508                      
                                   * interface.asm
                                   *
                                   *  Created: 05-Nov-16 7:59:54 PM
@@ -1810,336 +1944,396 @@ D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas
                                   ;....................Display welcome............................
                                  DisplayWelcome:
                                  	
-0001f1 e0f4                      	LDi ZH, High(2*T_Welcome)
-0001f2 e3e2                      	LDI ZL, LOW(2*T_Welcome)
+00022c e0f4                      	LDi ZH, High(2*T_Welcome)
+00022d eae8                      	LDI ZL, LOW(2*T_Welcome)
                                  	
-0001f3 dfbb                      	RCALL DisplayString
-0001f4 df61                      	RCALL DisplayEnter
+00022e dfb4                      	RCALL DisplayString
+00022f df5a                      	RCALL DisplayEnter
                                  	
-0001f5 e0f4                      	LDI ZH, High(2*T_Cocktail)
-0001f6 e4e0                      	LDI ZL, LOW(2*T_Cocktail)
+000230 e0f4                      	LDI ZH, High(2*T_Cocktail)
+000231 ebe6                      	LDI ZL, LOW(2*T_Cocktail)
                                  	
-0001f7 dfb7                      	RCALL DisplayString
+000232 dfb0                      	RCALL DisplayString
                                  		
-0001f8 9508                      	ret
+000233 9508                      	ret
                                  
                                  DisplayMenu0:
                                  	
-0001f9 e0f4                      	LDi ZH, High(2*T_Mode_Select)
-0001fa e5e0                      	LDI ZL, LOW(2*T_Mode_Select)
+000234 e0f4                      	LDi ZH, High(2*T_Mode_Select)
+000235 ece6                      	LDI ZL, LOW(2*T_Mode_Select)
                                  	
-0001fb dfb3                      	RCALL DisplayString
+000236 dfac                      	RCALL DisplayString
                                  	
                                  		
-0001fc 9508                      	ret
+000237 9508                      	ret
                                  
                                  DisplayMenu1a:
                                  	
-0001fd e0f4                      	LDi ZH, High(2*T_Pred_Select)
-0001fe e8e4                      	LDI ZL, LOW(2*T_Pred_Select)
+000238 e0f4                      	LDi ZH, High(2*T_Pred_Select)
+000239 efea                      	LDI ZL, LOW(2*T_Pred_Select)
                                  	
-0001ff dfaf                      	RCALL DisplayString
+00023a dfa8                      	RCALL DisplayString
                                  	
                                  		
-000200 9508                      	ret
+00023b 9508                      	ret
                                  
                                  DisplayMenu2a:
                                  	
-000201 e0f4                      	LDi ZH, High(2*T_Pot_Select)
-000202 ebe8                      	LDI ZL, LOW(2*T_Pot_Select)
+00023c e0f5                      	LDi ZH, High(2*T_Pot_Select)
+00023d e2ee                      	LDI ZL, LOW(2*T_Pot_Select)
                                  	
-000203 dfab                      	RCALL DisplayString
+00023e dfa4                      	RCALL DisplayString
                                  	
                                  		
-000204 9508                      	ret
+00023f 9508                      	ret
                                  
                                  DisplayMenu1b:
                                  	
-000205 e0f4                      	LDi ZH, High(2*T_Bebida1_Select)
-000206 eeec                      	LDI ZL, LOW(2*T_Bebida1_Select)
+000240 e0f5                      	LDi ZH, High(2*T_Bebida1_Select)
+000241 e6e2                      	LDI ZL, LOW(2*T_Bebida1_Select)
                                  	
-000207 dfa7                      	RCALL DisplayString
+000242 dfa0                      	RCALL DisplayString
                                  	
                                  		
-000208 9508                      	ret
+000243 9508                      	ret
                                  
                                  DisplayMenu2b:
                                  	
-000209 e0f5                      	LDi ZH, High(2*T_Porc_Select)
-00020a e5ea                      	LDI ZL, LOW(2*T_Porc_Select)
+000244 e0f5                      	LDi ZH, High(2*T_Porc_Select)
+000245 ede0                      	LDI ZL, LOW(2*T_Porc_Select)
                                  	
-00020b dfa3                      	RCALL DisplayString
+000246 df9c                      	RCALL DisplayString
                                  	
                                  		
-00020c 9508                      	ret
+000247 9508                      	ret
                                  
                                  DisplayMenu3b:
                                  	
-00020d e0f5                      	LDi ZH, High(2*T_Bebida2_Select)
-00020e e2e2                      	LDI ZL, LOW(2*T_Bebida2_Select)
+000248 e0f5                      	LDi ZH, High(2*T_Bebida2_Select)
+000249 e9e8                      	LDI ZL, LOW(2*T_Bebida2_Select)
                                  	
-00020f df9f                      	RCALL DisplayString
-000210 9508                      	ret
+00024a df98                      	RCALL DisplayString
+00024b 9508                      	ret
                                  
                                  DisplayWait:
                                  	
-000211 e0f5                      	LDi ZH, High(2*T_Espere)
-000212 e7e4                      	LDI ZL, LOW(2*T_Espere)
+00024c e0f5                      	LDi ZH, High(2*T_Espere)
+00024d eeea                      	LDI ZL, LOW(2*T_Espere)
                                  
-000213 df9b                      	RCALL DisplayString
-000214 9508                      	ret
+00024e df94                      	RCALL DisplayString
+00024f 9508                      	ret
                                  
                                  DisplayDone:
                                  	
-000215 e0f5                      	LDi ZH, High(2*T_Listo)
-000216 e8ea                      	LDI ZL, LOW(2*T_Listo)
+000250 e0f6                      	LDi ZH, High(2*T_Listo)
+000251 e0e0                      	LDI ZL, LOW(2*T_Listo)
                                  
-000217 df97                      	RCALL DisplayString
-000218 9508                      	ret
+000252 df90                      	RCALL DisplayString
+000253 9508                      	ret
                                  
                                   ;....................TABLAS (display)...........................
                                  
                                  T_Welcome:
-000219 4942
-00021a 4e45
-00021b 4556
-00021c 494e
-00021d 4f44
-00021e 2153
-00021f 0000                      	.Db 'B','I','E','N','V','E','N','I','D','O','S','!',0,0
+000254 4942
+000255 4e45
+000256 4556
+000257 494e
+000258 4f44
+000259 2153
+00025a 0000                      	.Db 'B','I','E','N','V','E','N','I','D','O','S','!',0,0
                                  
                                  T_COCKTail:
-000220 2a2a
-000221 432a
-000222 434f
-000223 2d4b
-000224 4154
-000225 4c49
-000226 2a2a
-000227 0000                      	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*',0,0
+00025b 2a2a
+00025c 432a
+00025d 434f
+00025e 2d4b
+00025f 4154
+000260 4c49
+000261 2a2a
+000262 0000                      	.DB '*','*','*','C','O','C','K','-','T','A','I','L','*','*',0,0
                                  	
                                  T_Mode_Select:
-000228 6553
-000229 656c
-00022a 6363
-00022b 6f69
-00022c 656e
-00022d 6d20
-00022e 646f
-00022f 206f
-000230 6564
-000231 6f20
-000232 6570
-000233 6172
-000234 6963
-000235 6e6f
-000236 003a
-000237 2d31
-000238 6142
-000239 6973
-00023a 6f63
-00023b 3220
-00023c 412d
-00023d 6176
-00023e 7a6e
-00023f 6461
-000240 006f
+000263 6553
+000264 656c
+000265 6363
+000266 6f69
+000267 656e
+000268 6d20
+000269 646f
+00026a 206f
+00026b 6564
+00026c 6f20
+00026d 6570
+00026e 6172
+00026f 6963
+000270 6e6f
+000271 003a
+000272 2d31
+000273 6142
+000274 6973
+000275 6f63
+000276 3220
+000277 412d
+000278 6176
+000279 7a6e
+00027a 6461
+00027b 006f
 D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm(113): warning: .cseg .db misalignment - padding zero byte
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(166): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
-000241 0000                      	.DB		"Seleccione modo de operacion:",0,"1-Basico 2-Avanzado",0,0 
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(239): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
+00027c 0000                      	.DB		"Seleccione modo de operacion:",0,"1-Basico 2-Avanzado",0,0 
                                  
                                  T_Pred_Select:
-000242 6553
-000243 656c
-000244 6363
-000245 6f69
-000246 656e
-000247 6220
-000248 6265
-000249 6469
-00024a 3a61
-00024b 3100
-00024c 462d
-00024d 7265
-00024e 656e
-00024f 2074
-000250 2d32
-000251 6857
-000252 7369
-000253 6f63
-000254 616c
-000255 3320
-000256 432d
-000257 636f
-000258 2d61
-000259 6f43
-00025a 616c
-00025b 0000                      	.DB		"Seleccione bebida:",0,"1-Fernet 2-Whiscola 3-Coca-Cola",0,0
+00027d 6553
+00027e 656c
+00027f 6363
+000280 6f69
+000281 656e
+000282 6220
+000283 6265
+000284 6469
+000285 3a61
+000286 3100
+000287 462d
+000288 7265
+000289 656e
+00028a 2074
+00028b 2d32
+00028c 6857
+00028d 7369
+00028e 6f63
+00028f 616c
+000290 3320
+000291 432d
+000292 636f
+000293 2d61
+000294 6f43
+000295 616c
+000296 0000                      	.DB		"Seleccione bebida:",0,"1-Fernet 2-Whiscola 3-Coca-Cola",0,0
                                  
                                  T_Pot_Select:
-00025c 6553
-00025d 656c
-00025e 6363
-00025f 6f69
-000260 656e
-000261 7020
-000262 746f
-000263 6e65
-000264 6963
-000265 3a61
-000266 3100
-000267 432d
-000268 726f
-000269 6f64
-00026a 6562
-00026b 2073
-00026c 2d32
-00026d 654d
-00026e 6964
-00026f 2061
-000270 2d33
-000271 6e49
-000272 6166
-000273 746e
-000274 6c69
-000275 0000                      	.DB		"Seleccione potencia:",0,"1-Cordobes 2-Media 3-Infantil",0,0
+000297 6553
+000298 656c
+000299 6363
+00029a 6f69
+00029b 656e
+00029c 7020
+00029d 746f
+00029e 6e65
+00029f 6963
+0002a0 3a61
+0002a1 3100
+0002a2 432d
+0002a3 726f
+0002a4 6f64
+0002a5 6562
+0002a6 2073
+0002a7 2d32
+0002a8 654d
+0002a9 6964
+0002aa 2061
+0002ab 2d33
+0002ac 6e49
+0002ad 6166
+0002ae 746e
+0002af 6c69
+0002b0 0000                      	.DB		"Seleccione potencia:",0,"1-Cordobes 2-Media 3-Infantil",0,0
                                  
                                  T_Bebida1_Select:
-000276 6553
-000277 656c
-000278 6363
-000279 6f69
-00027a 656e
-00027b 7020
-00027c 6972
-00027d 656d
-00027e 6172
-00027f 6220
-000280 6265
-000281 6469
-000282 3a61
-000283 3100
-000284 462d
-000285 7265
-000286 656e
-000287 2074
-000288 2d32
-000289 6857
-00028a 7369
-00028b 796b
-00028c 3320
-00028d 432d
-00028e 636f
-00028f 0061
+0002b1 6553
+0002b2 656c
+0002b3 6363
+0002b4 6f69
+0002b5 656e
+0002b6 7020
+0002b7 6972
+0002b8 656d
+0002b9 6172
+0002ba 6220
+0002bb 6265
+0002bc 6469
+0002bd 3a61
+0002be 3100
+0002bf 462d
+0002c0 7265
+0002c1 656e
+0002c2 2074
+0002c3 2d32
+0002c4 6857
+0002c5 7369
+0002c6 796b
+0002c7 3320
+0002c8 432d
+0002c9 636f
+0002ca 0061
 D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm(122): warning: .cseg .db misalignment - padding zero byte
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(166): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
-000290 0000                      	.DB		"Seleccione primera bebida:",0,"1-Fernet 2-Whisky 3-Coca",0,0
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(239): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
+0002cb 0000                      	.DB		"Seleccione primera bebida:",0,"1-Fernet 2-Whisky 3-Coca",0,0
                                  
                                  T_Bebida2_Select:
-000291 6553
-000292 656c
-000293 6363
-000294 6f69
-000295 656e
-000296 7320
-000297 6765
-000298 6e75
-000299 6164
-00029a 6220
-00029b 6265
-00029c 6469
-00029d 3a61
-00029e 2000
-00029f 2d31
-0002a0 6546
-0002a1 6e72
-0002a2 7465
-0002a3 3220
-0002a4 572d
-0002a5 6968
-0002a6 6b73
-0002a7 2079
-0002a8 2d33
-0002a9 6f43
-0002aa 6163
-0002ab 0020
+0002cc 6553
+0002cd 656c
+0002ce 6363
+0002cf 6f69
+0002d0 656e
+0002d1 7320
+0002d2 6765
+0002d3 6e75
+0002d4 6164
+0002d5 6220
+0002d6 6265
+0002d7 6469
+0002d8 3a61
+0002d9 2000
+0002da 2d31
+0002db 6546
+0002dc 6e72
+0002dd 7465
+0002de 3220
+0002df 572d
+0002e0 6968
+0002e1 6b73
+0002e2 2079
+0002e3 2d33
+0002e4 6f43
+0002e5 6163
+0002e6 0020
 D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm(125): warning: .cseg .db misalignment - padding zero byte
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(166): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
-0002ac 0000                      	.DB		"Seleccione segunda bebida:",0," 1-Fernet 2-Whisky 3-Coca ",0,0
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(239): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
+0002e7 0000                      	.DB		"Seleccione segunda bebida:",0," 1-Fernet 2-Whisky 3-Coca ",0,0
                                  
                                  T_Porc_Select:
-0002ad 6e49
-0002ae 7274
-0002af 646f
-0002b0 7a75
-0002b1 6163
-0002b2 7000
-0002b3 726f
-0002b4 6563
-0002b5 746e
-0002b6 6a61
-0002b7 3a65
-0002b8 0020
+0002e8 6e49
+0002e9 7274
+0002ea 646f
+0002eb 7a75
+0002ec 6163
+0002ed 7000
+0002ee 726f
+0002ef 6563
+0002f0 746e
+0002f1 6a61
+0002f2 3a65
+0002f3 0020
 D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm(128): warning: .cseg .db misalignment - padding zero byte
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(166): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
-0002b9 0000                      	.DB		"Introduzca",0,"porcentaje: ",0,0
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(239): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm' included form here
+0002f4 0000                      	.DB		"Introduzca",0,"porcentaje: ",0,0
                                  
                                  T_Espere:
-0002ba 7345
-0002bb 6570
-0002bc 6572
-0002bd 0020
-0002be 6f70
-0002bf 2072
-0002c0 6166
-0002c1 6f76
-0002c2 2e72
-0002c3 2e2e
-0002c4 0000                      	.DB		"Espere ",0,"por favor...",0,0
+0002f5 7345
+0002f6 6570
+0002f7 6572
+0002f8 0020
+0002f9 6f70
+0002fa 2072
+0002fb 6166
+0002fc 6f76
+0002fd 2e72
+0002fe 2e2e
+0002ff 0000                      	.DB		"Espere ",0,"por favor...",0,0
                                  
                                  T_Listo:
-0002c5 694c
-0002c6 7473
-0002c7 216f
-0002c8 5220
-0002c9 7465
-0002ca 7269
-0002cb 2065
-0002cc 7573
-0002cd 6200
-0002ce 6265
-0002cf 6469
-0002d0 2061
-0002d1 6f70
-0002d2 2072
-0002d3 6166
-0002d4 6f76                       .include "math.asm"
-0002d5 0072
+000300 694c
+000301 7473
+000302 216f
+000303 5220
+000304 7465
+000305 7269
+000306 2065
+000307 7573
+000308 6200
+000309 6265
+00030a 6469
+00030b 2061
+00030c 6f70
+00030d 2072
+00030e 6166
+00030f 6f76                       .include "math.asm"
+000310 0072
 D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm(1): warning: .cseg .db misalignment - padding zero byte
-D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(167): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm' included form here
-0002d6 0000                      
+D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm(240): 'D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm' included form here
+000311 0000                      
                                   * math.asm
                                   *
                                   *  Created: 18-Nov-16 11:18:15 AM
                                   *   Author: galca
                                   */ 
                                  
+                                  .DEF	DENOMINATOR = R2
+                                  .DEF	QUOTIENT = R3
+                                  .DEF	NUM = R5
+                                 
                                  keyb_to_bcd:
-0002d7 91ff                      		POP			ZH
-0002d8 91ef                      		POP			ZL
-0002d9 910f                      		POP			TEMP
-0002da 700f                      		ANDI		TEMP,0x0F
-0002db 9502                      		SWAP		TEMP
+000312 91ff                      		POP			ZH
+000313 91ef                      		POP			ZL
+000314 910f                      		POP			TEMP
+000315 700f                      		ANDI		TEMP,0x0F
+000316 9502                      		SWAP		TEMP
                                  
-0002dc 2e40                      		MOV			TEMP2,TEMP
-0002dd 910f                      		POP			TEMP
-0002de 700f                      		ANDI		TEMP,0x0F
-0002df 2904                      		OR			TEMP,TEMP2
-0002e0 930f                      		PUSH		TEMP
-0002e1 93ef                      		PUSH		ZL
-0002e2 93ff                      		PUSH		ZH
+000317 2e40                      		MOV			TEMP2,TEMP
+000318 910f                      		POP			TEMP
+000319 700f                      		ANDI		TEMP,0x0F
+00031a 2904                      		OR			TEMP,TEMP2
+00031b 930f                      		PUSH		TEMP
+00031c 93ef                      		PUSH		ZL
+00031d 93ff                      		PUSH		ZH
                                  
-0002e3 9508                      		RET
+00031e 9508                      		RET
+                                 
+                                 bcd_to_ascii:
+00031f 91ff                      		POP			ZH
+000320 91ef                      		POP			ZL
+000321 910f                      		POP			TEMP
+000322 930f                      		PUSH		TEMP
+000323 700f                      		ANDI		TEMP,0x0F
+000324 6300                      		ORI			TEMP,0x30
+                                 
+000325 2e40                      		MOV			TEMP2,TEMP
+000326 910f                      		POP			TEMP
+000327 924f                      		PUSH		TEMP2
+000328 9502                      		SWAP		TEMP
+000329 700f                      		ANDI		TEMP,0x0F
+00032a 6300                      		ORI			TEMP,0x30
+00032b 930f                      		PUSH		TEMP
+                                 
+00032c 93ef                      		PUSH		ZL
+00032d 93ff                      		PUSH		ZH
+00032e 9508                      		RET
+                                 
+                                 bin_to_ascii:
+00032f 91ff                      		POP			ZH
+000330 91ef                      		POP			ZL
+000331 905f                      		POP			NUM
+000332 e00a                      		LDI			TEMP,10
+000333 2e20                      		MOV			DENOMINATOR,TEMP
+000334 d011                      		RCALL		DIVIDE
+000335 2d05                      		MOV			TEMP,NUM
+000336 6300                      		ORI			TEMP,0x30
+000337 2e50                      		MOV			NUM,TEMP
+000338 925f                      		PUSH		NUM
+000339 2c53                      		MOV			NUM,QUOTIENT
+00033a d00b                      		RCALL		DIVIDE
+00033b 2d05                      		MOV			TEMP,NUM
+00033c 6300                      		ORI			TEMP,0x30
+00033d 2e50                      		MOV			NUM,TEMP
+00033e 925f                      		PUSH		NUM
+00033f 2d03                      		MOV			TEMP,QUOTIENT
+000340 6300                      		ORI			TEMP,0x30
+000341 2e30                      		MOV			QUOTIENT,TEMP
+000342 923f                      		PUSH		QUOTIENT
+000343 93ef                      		PUSH		ZL
+000344 93ff                      		PUSH		ZH
+000345 9508                      		RET
+                                 
+                                 DIVIDE:
+000346 e000                      		LDI			TEMP,0
+000347 2e30                      		MOV			QUOTIENT,TEMP
+                                 DIVLOOP:
+000348 9433                      		INC			QUOTIENT
+000349 1852                      		SUB			NUM,DENOMINATOR
+00034a f7e8                      		BRCC		DIVLOOP
+00034b 943a                      		DEC			QUOTIENT
+00034c 0c52                      		ADD			NUM,DENOMINATOR
+00034d 9508                      
 
 
 RESOURCE USE INFORMATION
@@ -2157,39 +2351,39 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega328P" register use summary:
-x  :   0 y  :   0 z  :   3 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   2 
-r5 :   0 r6 :   1 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 155 r17:  40 r18:   8 r19:  26 r20:  10 
-r21:   3 r22:   0 r23:   0 r24:  10 r25:   3 r26:   0 r27:   0 r28:   0 
-r29:   0 r30:  14 r31:  14 
-Registers used: 13 out of 35 (37.1%)
+x  :   0 y  :   0 z  :   3 r0 :   0 r1 :   0 r2 :   3 r3 :   7 r4 :   8 
+r5 :  10 r6 :   1 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
+r13:   0 r14:   0 r15:   0 r16: 202 r17:  40 r18:   8 r19:  26 r20:   7 
+r21:   3 r22:   0 r23:   0 r24:  13 r25:   3 r26:   0 r27:   0 r28:   0 
+r29:   0 r30:  20 r31:  20 
+Registers used: 16 out of 35 (45.7%)
 
 "ATmega328P" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   0 add   :   2 adiw  :   0 and   :   0 
-andi  :   8 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   0 brcs  :   0 break :   0 breq  :   8 brge  :   0 brhc  :   0 
+.lds  :   0 .sts  :   0 adc   :   0 add   :   3 adiw  :   0 and   :   0 
+andi  :  10 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+brcc  :   1 brcs  :   0 break :   0 breq  :   8 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
-brne  :  15 brpl  :   0 brsh  :   4 brtc  :   0 brts  :   0 brvc  :   0 
+brne  :  16 brpl  :   0 brsh  :   4 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   0 cbr   :   2 
 clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   1 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
-cpi   :  18 cpse  :   0 dec   :  12 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   5 jmp   :   0 
-ld    :   0 ldd   :   0 ldi   : 111 lds   :   6 lpm   :   3 lsl   :   4 
-lsr   :   0 mov   :   7 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   1 or    :   1 ori   :   4 out   :  10 pop   :  11 
-push  :  10 rcall : 131 ret   :  36 reti  :   0 rjmp  :  20 rol   :   0 
+cpi   :  18 cpse  :   0 dec   :  14 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   6 jmp   :   0 
+ld    :   0 ldd   :   0 ldi   : 118 lds   :   9 lpm   :   3 lsl   :   4 
+lsr   :   0 mov   :  20 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   1 or    :   1 ori   :   9 out   :   8 pop   :  25 
+push  :  25 rcall : 147 ret   :  44 reti  :   0 rjmp  :  22 rol   :   0 
 ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   3 sbis  :   0 
-sbiw  :   0 sbr   :   3 sbrc  :   4 sbrs  :   3 sec   :   0 seh   :   0 
+sbiw  :   0 sbr   :   3 sbrc  :   4 sbrs  :   5 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
-sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  50 
-sub   :   0 subi  :   0 swap  :   1 tst   :   0 wdr   :   0 
-Instructions used: 30 out of 113 (26.5%)
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  55 
+sub   :   1 subi  :   0 swap  :   2 tst   :   0 wdr   :   0 
+Instructions used: 32 out of 113 (28.3%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x0005c8   1100    380   1480   32768   4.5%
+[.cseg] 0x000000 0x00069c   1312    380   1692   32768   5.2%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
