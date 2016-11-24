@@ -4,8 +4,8 @@
 ; Created: 01-Oct-16 1:40:18 PM
 ; Author : galca
 ;
-; LEDs verdes: PORTD 4 y 7
-; LEDs rojos: PORTC 2 y 3
+; 
+
  .equ F_CPU = 18432000
  .equ SHIFTDELAY = 160
 
@@ -46,79 +46,6 @@ BEGIN:
 
 
 
-
-
-
-
-
-		RCALL		KBINIT			; inicialización del teclado
-		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
-		RCALL		InicDisplay		; lo mismo que la anterior
-		RCALL		InitUsart		; inicialización del protocolo USART para el sensor de distancia
-
-
-getk2b:	
-		RCALL		CLEARKEY	
-		RCALL		GETKEY
-		CPI			KEY,0x00
-		BREQ		getk2b
-		CPI			KEY,11
-		BRNE		KeyNotZero
-		LDI			KEY,0x00
-KeyNotZero:
-		RCALL		retardo1s
-		MOV			TEMP2,KEY
-		SBRC		PRGFLAGS,PERC
-		RJMP		getPercentage
-		ORI			PRGFLAGS,(1<<PERC)
-		MOV			TEMP3,TEMP2
-		RJMP		getk2b
-
-getPercentage:
-		ANDI		PRGFLAGS,(0xFE<<PERC)
-
-		PUSH		TEMP2
-		PUSH		TEMP3
-
-		RCALL		keyb_to_bcd
-		POP			TEMP2
-		STS			PERC1,TEMP2
-		PUSH		TEMP2
-		RCALL		bcd_to_bin
-		POP			TEMP2
-		LDI			TEMP,100
-		SUB			TEMP,TEMP2
-		PUSH		TEMP
-		RCALL		bin_to_bcd
-		POP			TEMP
-		RCALL		pack_bcd
-		POP			TEMP
-		STS			PERC2,TEMP
-
-
-		lds TEMP,PERC1
-		PUSH TEMP
-		rcall bcd_to_ascii
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-
-		lds TEMP,PERC2
-		PUSH TEMP
-		rcall bcd_to_ascii
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-
-		here:
-		rjmp here
-/*
 
 
 
@@ -191,13 +118,15 @@ getk2b:
 		RCALL		GETKEY
 		CPI			KEY,0x00
 		BREQ		getk2b
-		LDI			TEMP,48
 		CPI			KEY,11
 		BRNE		KeyNotZero
 		LDI			KEY,0x00
 KeyNotZero:
+		LDI			TEMP,48
 		ADD			KEY,TEMP
 		MOV			DISPVAR,KEY
+		LDI			TEMP,48
+		SUB			KEY,TEMP
 		RCALL		DisplayChar
 		RCALL		retardo1s
 		PUSH		KEY
@@ -211,9 +140,43 @@ getPercentage:
 		RCALL		keyb_to_bcd
 		POP			TEMP2
 		STS			PERC1,TEMP2
+		PUSH		TEMP2
+		RCALL		bcd_to_bin
+		POP			TEMP2
 		LDI			TEMP,100
 		SUB			TEMP,TEMP2
-		STS			PERC2,TEMP*/
+		PUSH		TEMP
+		RCALL		bin_to_bcd
+		POP			TEMP
+		RCALL		pack_bcd
+		POP			TEMP
+		STS			PERC2,TEMP
+
+		RCALL DisplayClear
+
+		lds TEMP,PERC1
+		PUSH TEMP
+		rcall bcd_to_ascii
+		pop temp
+		mov dispvar,temp
+		rcall DisplayChar
+		pop temp
+		mov dispvar,temp
+		rcall DisplayChar
+
+		lds TEMP,PERC2
+		PUSH TEMP
+		rcall bcd_to_ascii
+		pop temp
+		mov dispvar,temp
+		rcall DisplayChar
+		pop temp
+		mov dispvar,temp
+		rcall DisplayChar
+
+		here:
+		rjmp here
+
 
 
 END:	
