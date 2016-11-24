@@ -20,13 +20,12 @@
 .EQU ROW4VAL = 10
 
 .EQU KBPORT = PORTB
-.EQU PRESSED = 0
+.EQU PRESSED = 7
 .EQU KBCONF = 0xF8
 .EQU KBPULLUPS = 0x07
  
 
 .DEF KBTEMP = R17
-.DEF KBFLAGS = R18
 .DEF KEY = R19
  
 .CSEG
@@ -47,7 +46,7 @@ KBINIT:
 		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
 		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
  
-		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
+		SBRC		PRGFLAGS,PRESSED				;si se registró una tecla presionada
 		RJMP		DONE						;salir de la subrutina
  
 												;Esta sección lee la fila 2
@@ -56,7 +55,7 @@ KBINIT:
 		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
 		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
  
-		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
+		SBRC		PRGFLAGS,PRESSED				;si se registró una tecla presionada
 		RJMP		DONE						;salir de la subrutina
 												
 												;Esta sección lee la fila 3
@@ -65,7 +64,7 @@ KBINIT:
 		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
 		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
 
-		SBRC		KBFLAGS,PRESSED				;si se registró una tecla presionada
+		SBRC		PRGFLAGS,PRESSED				;si se registró una tecla presionada
 		RJMP		DONE						;salir de la subrutina
  
 												;Esta sección lee la fila 4
@@ -79,28 +78,28 @@ DONE:
  
 READ_COL:
 		RCALL		SETTLE
-		CBR			KBFLAGS, (1<<PRESSED)		;estado = no presionado
+		CBR			PRGFLAGS, (1<<PRESSED)		;estado = no presionado
  
 		SBIC		PINB, COL1					;lee columna 1
 		RJMP		NEXTCOL						;si no, pasar a columna 2
-		SBR			KBFLAGS, (1<<PRESSED)		;estado = presionado
+		SBR			PRGFLAGS, (1<<PRESSED)		;estado = presionado
 		RET										;devolver el valor de la primer columna de la fila
 NEXTCOL:
 		SBIC		PINB,COL2					;lee columna 2
 		RJMP		NEXTCOL1					;si no, pasar a columna 3
 		INC			KEY							
-		SBR			KBFLAGS,(1<<PRESSED)		;estado = presionado
+		SBR			PRGFLAGS,(1<<PRESSED)		;estado = presionado
 		RET										;devolver el valor de la segunda columna de la fila
 NEXTCOL1:
 		SBIC		PINB,COL3					;lee columna 3
 		RJMP		EXIT						;si no, termina
 		INC			KEY							;estado = presionado
 		INC			KEY
-		SBR			KBFLAGS, (1<<PRESSED)		;estado=presionado
+		SBR			PRGFLAGS, (1<<PRESSED)		;estado=presionado
 		RET										;devolver el valor de la tercer columna de la fila
 EXIT:
 		CLR			KEY							;vacía el valor de la tecla
-		CBR			KBFLAGS, (1<<PRESSED)		;no se presionó ninguna tecla
+		CBR			PRGFLAGS, (1<<PRESSED)		;no se presionó ninguna tecla
 		RET										
 SETTLE:
 		LDI			KBTEMP,255

@@ -5,12 +5,6 @@
  *   Author: galca
  */ 
 
-
-
-
-
-
-
  ;....................Display welcome............................
 DisplayWelcome:
 	
@@ -77,14 +71,6 @@ DisplayMenu2b:
 		
 	ret
 
-DisplayMenu3b:
-	
-	LDi ZH, High(2*T_Bebida2_Select)
-	LDI ZL, LOW(2*T_Bebida2_Select)
-	
-	RCALL DisplayString
-	ret
-
 DisplayWait:
 	
 	LDi ZH, High(2*T_Espere)
@@ -120,9 +106,6 @@ T_Pot_Select:
 
 T_Bebida1_Select:
 	.DB		"Seleccione primera bebida:",0,"1-Fernet 2-Whisky 3-Coca",0,0
-
-T_Bebida2_Select:
-	.DB		"Seleccione segunda bebida:",0," 1-Fernet 2-Whisky 3-Coca ",0,0
 
 T_Porc_Select:
 	.DB		"Introduzca",0,"porcentaje: ",0,0
