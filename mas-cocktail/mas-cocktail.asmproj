@@ -81,6 +81,9 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="caudal_driver.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="delay.asm">
       <SubType>Code</SubType>
     </Compile>

@@ -105,7 +105,7 @@ T_Pot_Select:
 	.DB		"Seleccione potencia:",0,"1-Cordobes 2-Media 3-Infantil",0,0
 
 T_Bebida1_Select:
-	.DB		"Seleccione primera bebida:",0,"1-Fernet 2-Whisky 3-Coca",0,0
+	.DB		"Seleccione bebida:",0,"1-Fernet 2-Whisky",0,0
 
 T_Porc_Select:
 	.DB		"Introduzca",0,"porcentaje: ",0,0

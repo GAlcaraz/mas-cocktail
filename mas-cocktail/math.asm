@@ -8,6 +8,11 @@
  .DEF	DENOMINATOR = R2
  .DEF	QUOTIENT = R3
  .DEF	NUM = R4
+ .def	numeradorL = R8
+ .def	numeradorH = R9
+ .def	denominadorL = R10
+ .def	denominadorH = R11
+
 
 keyb_to_bcd:
 		POP			ZH
@@ -112,3 +117,19 @@ DIVLOOP:
 		DEC			QUOTIENT
 		ADD			NUM,DENOMINATOR
 		RET
+
+
+;----------------Operaciones matemáticas---------------
+
+;---Division--
+division:
+	clr QUOTIENT
+
+div1:
+	inc QUOTIENT
+	sub numeradorL, denominadorL
+	sbc numeradorH, denominadorH
+	brcc div1
+	dec QUOTIENT
+	
+	ret

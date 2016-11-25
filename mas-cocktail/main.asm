@@ -12,9 +12,7 @@
  .def TEMP = R16
  .DEF TEMP2 = R5
  .DEF TEMP3 = R6
- .DEF PERCENTREG = R6
-/* .DEF DRINK1 = R22
- .DEF DRINK2 = R23*/
+ 
  .def PRGFLAGS = R21
 
  ;----------------------------------------------------------
@@ -31,10 +29,16 @@
  .EQU PERC2 = $1401
  .EQU DRINK1 = $1402
  .EQU DRINK2 = $1403
+ .EQU CORDO = 1
+ .EQU MEDIUM = 2
+ .EQU INFANT = 3
+
 
 .CSEG
 		RJMP		BEGIN
 
+.org 0x0016
+		jmp			T1_B_ISR
 
 
 .ORG	$500
@@ -45,17 +49,13 @@ BEGIN:
 		OUT	SPH, R16
 
 
-
-
-
-
 		RCALL		KBINIT			; inicialización del teclado
 		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
 		RCALL		InicDisplay		; lo mismo que la anterior
 		RCALL		InitUsart		; inicialización del protocolo USART para el sensor de distancia
  MAIN:	
 		RCALL		DisplayWelcome					; muestra mensaje de bienvendia
-		RCALL		retardo3s						; durante 3 segundos
+		/*RCALL		retardo3s						; durante 3 segundos*/
 		RCALL		DisplayClear					; borra el display
 		RCALL		DisplayMenu0					; empieza el programa en si
 		LDI			TEMP,SHIFTDELAY					; settea el contador de velocidad de shifteo del display
@@ -83,6 +83,16 @@ getk1a:
 		BREQ		getk1a
 		CPI			KEY,0x03
 		BRSH		getk1a
+		BREQ		PureCoke
+		STS			DRINK1,KEY
+		LDI			TEMP,COCA
+		STS			DRINK2,TEMP
+PureCoke:
+		LDI			TEMP,COCA
+		STS			DRINK1,TEMP
+		LDI			TEMP,0x00
+		STS			DRINK2,TEMP
+
 MenuPotencia:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2a
@@ -95,6 +105,25 @@ getk2a:
 		BREQ		getk2a
 		CPI			KEY,0x04
 		BRSH		getk2a
+		CPI			KEY,0x01
+		BREQ		PotCordobes
+		CPI			KEY,0x02
+		BREQ		PotMediA
+		LDI			TEMP,10
+		STS			PERC1,TEMP
+		LDI			TEMP,90
+		STS			PERC2,TEMP
+		RJMP		END
+PotCordobes:
+		LDI			TEMP,50
+		STS			PERC1,TEMP
+		STS			PERC2,TEMP
+		RJMP		END
+PotMedia:
+		LDI			TEMP,30
+		STS			PERC1,TEMP
+		LDI			TEMP,70
+		STS			PERC2,TEMP
 		RJMP		END
 MenuBebida:
 		RCALL		DisplayClear
@@ -108,6 +137,9 @@ getk1b:
 		BREQ		getk1b
 		CPI			KEY,0x03
 		BRSH		getk1b
+		STS			DRINK1,KEY
+		LDI			TEMP,COCA
+		STS			DRINK2,TEMP
 MenuPorc:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2b
@@ -137,25 +169,25 @@ KeyNotZero:
 
 getPercentage:
 		ANDI		PRGFLAGS,(0xFE<<PERC)
-		RCALL		keyb_to_bcd
 		POP			TEMP2
-		STS			PERC1,TEMP2
+		POP			TEMP3
 		PUSH		TEMP2
+		PUSH		TEMP3
+		RCALL		keyb_to_bcd
 		RCALL		bcd_to_bin
 		POP			TEMP2
+		STS			PERC1,TEMP2
 		LDI			TEMP,100
 		SUB			TEMP,TEMP2
-		PUSH		TEMP
-		RCALL		bin_to_bcd
-		POP			TEMP
-		RCALL		pack_bcd
-		POP			TEMP
 		STS			PERC2,TEMP
 
 		RCALL DisplayClear
 
 		lds TEMP,PERC1
 		PUSH TEMP
+		RCALL bin_to_bcd
+		pop temp
+		rcall pack_bcd
 		rcall bcd_to_ascii
 		pop temp
 		mov dispvar,temp
@@ -166,6 +198,9 @@ getPercentage:
 
 		lds TEMP,PERC2
 		PUSH TEMP
+		RCALL bin_to_bcd
+		pop temp
+		rcall pack_bcd
 		rcall bcd_to_ascii
 		pop temp
 		mov dispvar,temp
@@ -173,7 +208,6 @@ getPercentage:
 		pop temp
 		mov dispvar,temp
 		rcall DisplayChar
-
 		here:
 		rjmp here
 
@@ -190,14 +224,16 @@ END:
 		RCALL measurement
 
 		RCALL bin_to_bcd
-		RCALL bcd_to_ascii
 		pop r16
+		ori	r16,0x30
 		mov DISPVAR,r16
 		RCALL DisplayChar
 		pop r16
+		ori	r16,0x30
 		mov DISPVAR,r16
 		RCALL DisplayChar
 		pop r16
+		ori	r16,0x30
 		mov DISPVAR,r16
 		RCALL DisplayChar
 		RCALL retardo3s
@@ -210,7 +246,7 @@ END:
  .include "interface.asm"
  .include "math.asm"
  .include "ultrasound_driver.asm"
-
+ .include "caudal_driver.asm"
 
 
  

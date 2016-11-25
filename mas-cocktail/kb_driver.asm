@@ -10,7 +10,7 @@
 .EQU COL3 = PINB2
 
 .EQU ROW1 = PINB3
-.EQU ROW2 = PINB7
+.EQU ROW2 = PINC3
 .EQU ROW3 = PINB5
 .EQU ROW4 = PINB4
 
@@ -33,7 +33,10 @@
 KBINIT:
 		PUSH		KBTEMP
  		LDI			KBTEMP,KBCONF		;cols como input, filas como output
-		OUT			DDRB,KBTEMP	
+		OUT			DDRB,KBTEMP
+		IN			KBTEMP,DDRC
+		ORI			KBTEMP,(0<<PINC3)
+		OUT			DDRC,TEMP
 		LDI			KBTEMP,KBPULLUPS		;habilitar pullups en el input
 		OUT			KBPORT,KBTEMP
 		POP			KBTEMP	
@@ -45,18 +48,20 @@ KBINIT:
 		LDI			KBTEMP,~(1<<ROW1)			;"apaga" fila 1 (carga un byte de unos con un único cero en la posición "ROW1")
 		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
 		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
+		
  
 		SBRC		PRGFLAGS,PRESSED				;si se registró una tecla presionada
 		RJMP		DONE						;salir de la subrutina
  
 												;Esta sección lee la fila 2
-		LDI			KEY,ROW2VAL					;carga el valor de la primera tecla de la fila 2 en "key"
-		LDI			KBTEMP,~(1<<ROW2)			;"apaga" fila 2 (carga un byte de unos con un único cero en la posición "ROW2")
-		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
+/*		LDI			KEY,ROW2VAL					;carga el valor de la primera tecla de la fila 2 en "key"
+		IN			KBTEMP,PORTC
+		ANDI		KBTEMP,(1<<PINC3)			;"apaga" fila 2 (carga un byte de unos con un único cero en la posición "ROW2")
+		OUT			PORTC,KBTEMP				;y cargando el valor al puerto usado por el teclado
 		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
  
 		SBRC		PRGFLAGS,PRESSED				;si se registró una tecla presionada
-		RJMP		DONE						;salir de la subrutina
+		RJMP		DONE						;salir de la subrutina*/
 												
 												;Esta sección lee la fila 3
 		LDI			KEY,ROW3VAL					;carga el valor de la primera tecla de la fila 3 en "key"
@@ -71,7 +76,7 @@ KBINIT:
 		LDI			KEY,ROW4VAL					;carga el valor de la primera tecla de la fila 4 en "key"
 		LDI			KBTEMP,~(1<<ROW4)			;"apaga" fila 4 (carga un byte de unos con un único cero en la posición "ROW4")
 		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
-		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
+		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias*/
  
 DONE:					
 		RET
@@ -85,12 +90,14 @@ READ_COL:
 		SBR			PRGFLAGS, (1<<PRESSED)		;estado = presionado
 		RET										;devolver el valor de la primer columna de la fila
 NEXTCOL:
+		RCALL		SETTLE
 		SBIC		PINB,COL2					;lee columna 2
 		RJMP		NEXTCOL1					;si no, pasar a columna 3
 		INC			KEY							
 		SBR			PRGFLAGS,(1<<PRESSED)		;estado = presionado
 		RET										;devolver el valor de la segunda columna de la fila
 NEXTCOL1:
+		RCALL		SETTLE
 		SBIC		PINB,COL3					;lee columna 3
 		RJMP		EXIT						;si no, termina
 		INC			KEY							;estado = presionado
