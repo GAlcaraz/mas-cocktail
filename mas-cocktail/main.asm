@@ -10,7 +10,7 @@
  .equ SHIFTDELAY = 160
 
  .def TEMP = R16
- .DEF TEMP2 = R5
+ .DEF TEMP2 = R18
  .DEF TEMP3 = R6
  
  .def PRGFLAGS = R21
@@ -47,15 +47,20 @@ BEGIN:
 		OUT	SPL, R16
 		LDI	R16, high(RAMEND)
 		OUT	SPH, R16
-
-
+		ldi temp, 0x00
+		out ddrb,temp
+		out ddrd,temp
+		sbi ddrc,0
+		sbi ddrc,1
+		sbi ddrc,2
+		cli
 		RCALL		KBINIT			; inicialización del teclado
 		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
 		RCALL		InicDisplay		; lo mismo que la anterior
 		RCALL		InitUsart		; inicialización del protocolo USART para el sensor de distancia
- MAIN:	
+ /*MAIN:	
 		RCALL		DisplayWelcome					; muestra mensaje de bienvendia
-		/*RCALL		retardo3s						; durante 3 segundos*/
+		;RCALL		retardo3s						; durante 3 segundos
 		RCALL		DisplayClear					; borra el display
 		RCALL		DisplayMenu0					; empieza el programa en si
 		LDI			TEMP,SHIFTDELAY					; settea el contador de velocidad de shifteo del display
@@ -181,64 +186,46 @@ getPercentage:
 		SUB			TEMP,TEMP2
 		STS			PERC2,TEMP
 
-		RCALL DisplayClear
+		
 
-		lds TEMP,PERC1
-		PUSH TEMP
-		RCALL bin_to_bcd
-		pop temp
-		rcall pack_bcd
-		rcall bcd_to_ascii
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-
-		lds TEMP,PERC2
-		PUSH TEMP
-		RCALL bin_to_bcd
-		pop temp
-		rcall pack_bcd
-		rcall bcd_to_ascii
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		here:
-		rjmp here
+		
 
 
 
 END:	
 		RCALL		DisplayClear
 		RCALL		DisplayWait
-		RCALL		retardo1s
+		RCALL		CreoTrago
 		RCALL		DisplayClear
 		RCALL		DisplayDone
-		RCALL		retardo1s
-		RCALL		DisplayClear
-		RCALL measurement
+		rcall		retardo1s
+		
+		rjmp		MAIN*/
+;---------------------------PRueba----
+		ldi temp, 80
+		sts perc1,temp
+		ldi temp,2
+		sts drink1,temp
+		ldi temp, 20
+		sts perc2,temp
+		ldi temp,1
+		sts drink2,temp
 
-		RCALL bin_to_bcd
-		pop r16
-		ori	r16,0x30
-		mov DISPVAR,r16
-		RCALL DisplayChar
-		pop r16
-		ori	r16,0x30
-		mov DISPVAR,r16
-		RCALL DisplayChar
-		pop r16
-		ori	r16,0x30
-		mov DISPVAR,r16
-		RCALL DisplayChar
-		RCALL retardo3s
-		pop r16
-		RJMP		here
+beh:
+		SBI	PORTC,0
+		rcall	retardo1s
+		cbi portc,0
+		rcall	retardo1s
+		SBI	PORTC,1
+		rcall	retardo1s
+		cbi portc,1
+		rcall	retardo1s
+		SBI	PORTC,2
+		rcall	retardo1s
+		cbi portc,2
+		call CreoTrago
+	loopfinal:
+		rjmp loopfinal
 
  .include "kb_driver.asm"
  .include "disp_driver.asm"
@@ -249,4 +236,13 @@ END:
  .include "caudal_driver.asm"
 
 
+	.org 0x200
  
+T1_B_ISR:
+	ldi CONTROL, 0x01
+	cbi portc,0
+	cbi portc,1
+	cbi portc,2
+	ldi TEMP,0b00000000	; STOP TIMER         0b00001001  ; CTC INTERNAL clock
+	sts TCCR1B,TEMP
+	reti

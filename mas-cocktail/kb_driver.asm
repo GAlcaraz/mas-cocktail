@@ -34,9 +34,7 @@ KBINIT:
 		PUSH		KBTEMP
  		LDI			KBTEMP,KBCONF		;cols como input, filas como output
 		OUT			DDRB,KBTEMP
-		IN			KBTEMP,DDRC
-		ORI			KBTEMP,(0<<PINC3)
-		OUT			DDRC,TEMP
+
 		LDI			KBTEMP,KBPULLUPS		;habilitar pullups en el input
 		OUT			KBPORT,KBTEMP
 		POP			KBTEMP	
