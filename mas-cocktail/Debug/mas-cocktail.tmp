@@ -30,57 +30,53 @@
  </OUTPUT_FILES>
  <LABELS>
   <BEGIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>45</LINE></BEGIN>
-  <T1_B_ISR><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>94</LINE></T1_B_ISR>
+  <T1_B_ISR><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>236</LINE></T1_B_ISR>
   <KBINIT><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>33</LINE></KBINIT>
   <InicI2C><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>43</LINE></InicI2C>
   <InicDisplay><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>88</LINE></InicDisplay>
   <InitUsart><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\ultrasound_driver.asm</FILE><LINE>11</LINE></InitUsart>
-  <MAIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>56</LINE></MAIN>
+  <MAIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>61</LINE></MAIN>
   <DisplayWelcome><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>9</LINE></DisplayWelcome>
   <DisplayClear><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>340</LINE></DisplayClear>
   <DisplayMenu0><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>24</LINE></DisplayMenu0>
-  <MenuModo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>62</LINE></MenuModo>
-  <CLEARKEY><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>117</LINE></CLEARKEY>
-  <getk0><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>66</LINE></getk0>
+  <MenuModo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>67</LINE></MenuModo>
+  <CLEARKEY><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>115</LINE></CLEARKEY>
+  <getk0><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>71</LINE></getk0>
   <Shift><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>382</LINE></Shift>
-  <GETKEY><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>45</LINE></GETKEY>
-  <MenuTrago><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>74</LINE></MenuTrago>
-  <MenuBebida><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>128</LINE></MenuBebida>
+  <GETKEY><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>43</LINE></GETKEY>
+  <MenuTrago><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>79</LINE></MenuTrago>
+  <MenuBebida><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>140</LINE></MenuBebida>
   <DisplayMenu1a><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>34</LINE></DisplayMenu1a>
   <retardo1s><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>64</LINE></retardo1s>
-  <getk1a><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>79</LINE></getk1a>
-  <PureCoke><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>90</LINE></PureCoke>
-  <MenuPotencia><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>96</LINE></MenuPotencia>
+  <getk1a><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>84</LINE></getk1a>
+  <PureCoke><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>97</LINE></PureCoke>
+  <MenuPotencia><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>107</LINE></MenuPotencia>
+  <END><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>203</LINE></END>
   <DisplayMenu2a><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>44</LINE></DisplayMenu2a>
-  <getk2a><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>101</LINE></getk2a>
-  <PotCordobes><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>117</LINE></PotCordobes>
-  <PotMediA><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>122</LINE></PotMediA>
-  <END><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>216</LINE></END>
+  <getk2a><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>112</LINE></getk2a>
+  <PotCordobes><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>128</LINE></PotCordobes>
+  <PotMediA><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>134</LINE></PotMediA>
   <DisplayMenu1b><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>54</LINE></DisplayMenu1b>
-  <getk1b><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>133</LINE></getk1b>
-  <MenuPorc><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>143</LINE></MenuPorc>
+  <getk1b><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>145</LINE></getk1b>
+  <MenuPorc><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>156</LINE></MenuPorc>
   <DisplayMenu2b><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>64</LINE></DisplayMenu2b>
-  <getk2b><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>148</LINE></getk2b>
-  <KeyNotZero><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>156</LINE></KeyNotZero>
+  <getk2b><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>161</LINE></getk2b>
+  <KeyNotZero><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>169</LINE></KeyNotZero>
   <DisplayChar><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>237</LINE></DisplayChar>
-  <getPercentage><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>170</LINE></getPercentage>
+  <getPercentage><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>183</LINE></getPercentage>
   <keyb_to_bcd><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>17</LINE></keyb_to_bcd>
   <bcd_to_bin><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>34</LINE></bcd_to_bin>
-  <bin_to_bcd><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>88</LINE></bin_to_bcd>
-  <pack_bcd><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>76</LINE></pack_bcd>
-  <bcd_to_ascii><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>56</LINE></bcd_to_ascii>
-  <here><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\main.asm</FILE><LINE>211</LINE></here>
   <DisplayWait><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>74</LINE></DisplayWait>
+  <CreoTrago><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>19</LINE></CreoTrago>
   <DisplayDone><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>82</LINE></DisplayDone>
-  <measurement><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\ultrasound_driver.asm</FILE><LINE>23</LINE></measurement>
   <retardo3s><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\delay.asm</FILE><LINE>55</LINE></retardo3s>
-  <READ_COL><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>84</LINE></READ_COL>
-  <DONE><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>81</LINE></DONE>
-  <SETTLE><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>111</LINE></SETTLE>
-  <NEXTCOL><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>92</LINE></NEXTCOL>
-  <NEXTCOL1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>99</LINE></NEXTCOL1>
-  <EXIT><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>107</LINE></EXIT>
-  <TAGAIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>113</LINE></TAGAIN>
+  <READ_COL><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>82</LINE></READ_COL>
+  <DONE><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>79</LINE></DONE>
+  <SETTLE><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>109</LINE></SETTLE>
+  <NEXTCOL><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>90</LINE></NEXTCOL>
+  <NEXTCOL1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>97</LINE></NEXTCOL1>
+  <EXIT><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>105</LINE></EXIT>
+  <TAGAIN><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\kb_driver.asm</FILE><LINE>111</LINE></TAGAIN>
   <wait1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>51</LINE></wait1>
   <error_A><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>61</LINE></error_A>
   <continuo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\disp_driver.asm</FILE><LINE>64</LINE></continuo>
@@ -124,20 +120,29 @@
   <T_Porc_Select><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>110</LINE></T_Porc_Select>
   <T_Espere><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>113</LINE></T_Espere>
   <T_Listo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\interface.asm</FILE><LINE>116</LINE></T_Listo>
+  <bcd_to_ascii><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>56</LINE></bcd_to_ascii>
+  <pack_bcd><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>76</LINE></pack_bcd>
+  <bin_to_bcd><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>88</LINE></bin_to_bcd>
   <DIVIDE><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>110</LINE></DIVIDE>
   <DIVLOOP><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>113</LINE></DIVLOOP>
   <division><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>125</LINE></division>
   <div1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\math.asm</FILE><LINE>128</LINE></div1>
+  <measurement><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\ultrasound_driver.asm</FILE><LINE>23</LINE></measurement>
   <transmit><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\ultrasound_driver.asm</FILE><LINE>41</LINE></transmit>
   <receive><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\ultrasound_driver.asm</FILE><LINE>48</LINE></receive>
-  <CreoTrago><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>19</LINE></CreoTrago>
-  <CargoTrago1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>33</LINE></CargoTrago1>
-  <loop4><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>22</LINE></loop4>
-  <ahora><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>30</LINE></ahora>
-  <imprimototal><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>66</LINE></imprimototal>
-  <contimprtot><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>70</LINE></contimprtot>
-  <CeroTotal><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>75</LINE></CeroTotal>
-  <UnoTotal><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>82</LINE></UnoTotal>
-  <finImprimo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>89</LINE></finImprimo>
+  <CargoTrago1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>69</LINE></CargoTrago1>
+  <loop4><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>25</LINE></loop4>
+  <ahora><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>48</LINE></ahora>
+  <imprimototal><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>147</LINE></imprimototal>
+  <loop5><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>58</LINE></loop5>
+  <ahora2><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>66</LINE></ahora2>
+  <StartEV1><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>106</LINE></StartEV1>
+  <StartEV2><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>109</LINE></StartEV2>
+  <StartEV3><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>112</LINE></StartEV3>
+  <EndCreoTrago><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>102</LINE></EndCreoTrago>
+  <contimprtot><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>151</LINE></contimprtot>
+  <CeroTotal><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>156</LINE></CeroTotal>
+  <UnoTotal><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>163</LINE></UnoTotal>
+  <finImprimo><FILE>D:\Documents\FIUBA\Electrónica\Laboratorio de Microprocesadores\mas-cocktail\mas-cocktail\caudal_driver.asm</FILE><LINE>170</LINE></finImprimo>
  </LABELS>
 </ASSEMBLER_INFO>
