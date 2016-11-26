@@ -5,7 +5,11 @@
  *   Author: galca
  */ 
 
+<<<<<<< HEAD
  .equ MaxPulsos = 150
+=======
+ .equ MaxPulsos = 120
+>>>>>>> Pruebas-finales
  .def CONTROL = R22
  .def TOTAL = R23
  .def IMPRIMO = R25
@@ -17,6 +21,9 @@
 
 ;---Inicio Creacion de Trago------
 CreoTrago:
+
+
+
 	call CargoTrago1
 	ldi CONTROL,0x00
 loop4:
@@ -24,12 +31,37 @@ loop4:
 	sbrc CONTROL, 0
 	jmp ahora
 	lds TOTAL,TCNT1L
+	LDS TEMP, 100
+	MUL TEMP,TOTAL
+	LDI TEMP, MaxPulsos
+	call division
+/*	PUSH cociente
+	RCALL bin_to_bcd
+	POP TEMP
+	RCALL pack_bcd
+	rcall bcd_to_ascii
+	pop temp
+	pop temp2
+	mov dispvar,temp2
+	rcall DisplayChar
+	mov dispvar,temp
+	rcall DisplayChar*/
 	call imprimototal
 	call retardo50ms
 	rjmp loop4
 ahora:	
 	call retardo3s
+<<<<<<< HEAD
 	call CargoTrago2
+=======
+	lds temp, drink2
+	sts drink1,temp
+	lds temp, perc2
+	sts perc1, temp
+	rcall retardo3s
+	rcall retardo3s
+	call CargoTrago1
+>>>>>>> Pruebas-finales
 	ldi CONTROL,0x00
 loop5:
 	
@@ -67,10 +99,58 @@ CargoTrago1:
 	ldi TEMP,(1<<1)			 ; Interrupts enabled, compare match b
 	sts TIMSK1, TEMP
 	lds temp, Drink1
+	cpi temp, 0x01
+	breq StartEV1
+	cpi temp, 0x02
+	breq StartEV2
+	cpi temp, 0x03
+	breq StartEV3
+	
+
+EndCreoTrago:
+	sei
+	ret
+
+StartEV1:
+	sbi portc,0
+	rjmp EndCreoTrago
+StartEV2:
+	sbi portc,1
+	rjmp EndCreoTrago
+StartEV3:
+	sbi portc,2
+	rjmp EndCreoTrago
+/*;------Cargo TRago 2----
+CargoTrago2:
+	cli
+	
+	lds TEMP,perc2
+	ldi TEMP2,MAxPulsos
+	
+	mul temp,temp2
+	ldi temp,0
+	mov denominadorh,temp
+	ldi temp,100
+	mov denominadorL,temp
+	call division ;En cociente tenemos la cantidad de pulsos 
+
+	ldi TEMP,0     
+	sts OCR1AH,TEMP
+	mov TEMP,cociente			;Cantidad de pulsos hasta cortar electrovalvula
+	sts OCR1AL,TEMP
+
+	ldi TEMP,0x00			;Configuro timer para external clock, pt11
+	sts TCCR1A,TEMP
+	ldi TEMP,0b00001110		; CTC External clock  SART         0b00001001  ; CTC INTERNAL clock
+	sts TCCR1B,TEMP
+	ldi TEMP,(1<<1)			 ; Interrupts enabled, compare match b
+	sts TIMSK1, TEMP
+	SBI PORTC,2
 	in temp2,portc
 	or temp,temp2
 	out portc,temp
 	sei
+<<<<<<< HEAD
 	ret
 
 ;------Cargo TRago 2----
@@ -104,6 +184,9 @@ CargoTrago2:
 	out portc,temp
 	sei
 	ret
+=======
+	ret*/
+>>>>>>> Pruebas-finales
 ;-----numero a string-----
 ImprimoTotal:
 		call DisplayClear

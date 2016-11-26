@@ -74,8 +74,8 @@ getk0:
 		CPI			KEY,0x01
 		BREQ		MenuTrago
 		CPI			KEY,0x02
-		BREQ		MenuBebida
-		RJMP		getk0
+		BRNE		getk0
+		RJMP		MenuBebida
 MenuTrago:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu1a
@@ -86,18 +86,24 @@ getk1a:
 		RCALL		GETKEY
 		CPI			KEY,0x00
 		BREQ		getk1a
-		CPI			KEY,0x03
+		CPI			KEY,0x04
 		BRSH		getk1a
+		CPI			KEY,0x03
 		BREQ		PureCoke
 		STS			DRINK1,KEY
 		LDI			TEMP,COCA
 		STS			DRINK2,TEMP
+		RJMP		MenuPotencia
 PureCoke:
 		LDI			TEMP,COCA
 		STS			DRINK1,TEMP
-		LDI			TEMP,0x00
 		STS			DRINK2,TEMP
-
+		LDI			TEMP,99
+		STS			PERC1,TEMP
+		LDI			TEMP,01
+		STS			PERC2,TEMP
+		RJMP		END
+			
 MenuPotencia:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2a
@@ -114,20 +120,21 @@ getk2a:
 		BREQ		PotCordobes
 		CPI			KEY,0x02
 		BREQ		PotMediA
-		LDI			TEMP,10
+		LDI			TEMP,25
 		STS			PERC1,TEMP
-		LDI			TEMP,90
+		LDI			TEMP,75
 		STS			PERC2,TEMP
 		RJMP		END
 PotCordobes:
-		LDI			TEMP,50
+		LDI			TEMP,75
 		STS			PERC1,TEMP
+		LDI			TEMP,25
 		STS			PERC2,TEMP
 		RJMP		END
 PotMedia:
-		LDI			TEMP,30
+		LDI			TEMP,50
 		STS			PERC1,TEMP
-		LDI			TEMP,70
+		LDI			TEMP,50
 		STS			PERC2,TEMP
 		RJMP		END
 MenuBebida:
@@ -145,6 +152,7 @@ getk1b:
 		STS			DRINK1,KEY
 		LDI			TEMP,COCA
 		STS			DRINK2,TEMP
+
 MenuPorc:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2b
@@ -193,14 +201,25 @@ getPercentage:
 
 
 END:	
+		
+		
 		RCALL		DisplayClear
 		RCALL		DisplayWait
 		RCALL		CreoTrago
+<<<<<<< HEAD
 		RCALL		DisplayClear
 		RCALL		DisplayDone
 		rcall		retardo1s
 		
 		rjmp		MAIN*/
+=======
+		rcall		retardo1s
+		RCALL		DisplayClear
+		RCALL		DisplayDone
+		rcall		retardo3s
+		
+		rjmp		MAIN
+>>>>>>> Pruebas-finales
 ;---------------------------PRueba----
 		ldi temp, 80
 		sts perc1,temp
@@ -210,6 +229,7 @@ END:
 		sts perc2,temp
 		ldi temp,1
 		sts drink2,temp
+<<<<<<< HEAD
 
 beh:
 		SBI	PORTC,0
@@ -226,6 +246,8 @@ beh:
 		call CreoTrago
 	loopfinal:
 		rjmp loopfinal
+=======
+>>>>>>> Pruebas-finales
 
  .include "kb_driver.asm"
  .include "disp_driver.asm"
