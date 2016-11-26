@@ -5,11 +5,7 @@
  *   Author: galca
  */ 
 
-<<<<<<< HEAD
- .equ MaxPulsos = 150
-=======
  .equ MaxPulsos = 120
->>>>>>> Pruebas-finales
  .def CONTROL = R22
  .def TOTAL = R23
  .def IMPRIMO = R25
@@ -51,9 +47,6 @@ loop4:
 	rjmp loop4
 ahora:	
 	call retardo3s
-<<<<<<< HEAD
-	call CargoTrago2
-=======
 	lds temp, drink2
 	sts drink1,temp
 	lds temp, perc2
@@ -61,7 +54,6 @@ ahora:
 	rcall retardo3s
 	rcall retardo3s
 	call CargoTrago1
->>>>>>> Pruebas-finales
 	ldi CONTROL,0x00
 loop5:
 	
@@ -150,43 +142,7 @@ CargoTrago2:
 	or temp,temp2
 	out portc,temp
 	sei
-<<<<<<< HEAD
-	ret
-
-;------Cargo TRago 2----
-CargoTrago2:
-	cli
-	
-	lds TEMP,perc2
-	ldi TEMP2,MAxPulsos
-	
-	mul temp,temp2
-	ldi temp,0
-	mov denominadorh,temp
-	ldi temp,100
-	mov denominadorL,temp
-	call division ;En cociente tenemos la cantidad de pulsos 
-
-	ldi TEMP,0     
-	sts OCR1AH,TEMP
-	mov TEMP,cociente			;Cantidad de pulsos hasta cortar electrovalvula
-	sts OCR1AL,TEMP
-
-	ldi TEMP,0x00			;Configuro timer para external clock, pt11
-	sts TCCR1A,TEMP
-	ldi TEMP,0b00001110		; CTC External clock  SART         0b00001001  ; CTC INTERNAL clock
-	sts TCCR1B,TEMP
-	ldi TEMP,(1<<1)			 ; Interrupts enabled, compare match b
-	sts TIMSK1, TEMP
-	lds temp, Drink2
-	in temp2,portc
-	or temp,temp2
-	out portc,temp
-	sei
-	ret
-=======
 	ret*/
->>>>>>> Pruebas-finales
 ;-----numero a string-----
 ImprimoTotal:
 		call DisplayClear

@@ -58,7 +58,7 @@ BEGIN:
 		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
 		RCALL		InicDisplay		; lo mismo que la anterior
 		RCALL		InitUsart		; inicialización del protocolo USART para el sensor de distancia
- /*MAIN:	
+ MAIN:	
 		RCALL		DisplayWelcome					; muestra mensaje de bienvendia
 		;RCALL		retardo3s						; durante 3 segundos
 		RCALL		DisplayClear					; borra el display
@@ -206,20 +206,12 @@ END:
 		RCALL		DisplayClear
 		RCALL		DisplayWait
 		RCALL		CreoTrago
-<<<<<<< HEAD
-		RCALL		DisplayClear
-		RCALL		DisplayDone
-		rcall		retardo1s
-		
-		rjmp		MAIN*/
-=======
 		rcall		retardo1s
 		RCALL		DisplayClear
 		RCALL		DisplayDone
 		rcall		retardo3s
 		
 		rjmp		MAIN
->>>>>>> Pruebas-finales
 ;---------------------------PRueba----
 		ldi temp, 80
 		sts perc1,temp
@@ -229,25 +221,6 @@ END:
 		sts perc2,temp
 		ldi temp,1
 		sts drink2,temp
-<<<<<<< HEAD
-
-beh:
-		SBI	PORTC,0
-		rcall	retardo1s
-		cbi portc,0
-		rcall	retardo1s
-		SBI	PORTC,1
-		rcall	retardo1s
-		cbi portc,1
-		rcall	retardo1s
-		SBI	PORTC,2
-		rcall	retardo1s
-		cbi portc,2
-		call CreoTrago
-	loopfinal:
-		rjmp loopfinal
-=======
->>>>>>> Pruebas-finales
 
  .include "kb_driver.asm"
  .include "disp_driver.asm"
