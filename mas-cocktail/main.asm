@@ -10,7 +10,7 @@
  .equ SHIFTDELAY = 160
 
  .def TEMP = R16
- .DEF TEMP2 = R5
+ .DEF TEMP2 = R18
  .DEF TEMP3 = R6
  
  .def PRGFLAGS = R21
@@ -47,15 +47,20 @@ BEGIN:
 		OUT	SPL, R16
 		LDI	R16, high(RAMEND)
 		OUT	SPH, R16
-
-
+		ldi temp, 0x00
+		out ddrb,temp
+		out ddrd,temp
+		sbi ddrc,0
+		sbi ddrc,1
+		sbi ddrc,2
+		cli
 		RCALL		KBINIT			; inicialización del teclado
 		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
 		RCALL		InicDisplay		; lo mismo que la anterior
 		RCALL		InitUsart		; inicialización del protocolo USART para el sensor de distancia
  MAIN:	
 		RCALL		DisplayWelcome					; muestra mensaje de bienvendia
-		/*RCALL		retardo3s						; durante 3 segundos*/
+		;RCALL		retardo3s						; durante 3 segundos
 		RCALL		DisplayClear					; borra el display
 		RCALL		DisplayMenu0					; empieza el programa en si
 		LDI			TEMP,SHIFTDELAY					; settea el contador de velocidad de shifteo del display
@@ -69,8 +74,8 @@ getk0:
 		CPI			KEY,0x01
 		BREQ		MenuTrago
 		CPI			KEY,0x02
-		BREQ		MenuBebida
-		RJMP		getk0
+		BRNE		getk0
+		RJMP		MenuBebida
 MenuTrago:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu1a
@@ -81,18 +86,24 @@ getk1a:
 		RCALL		GETKEY
 		CPI			KEY,0x00
 		BREQ		getk1a
-		CPI			KEY,0x03
+		CPI			KEY,0x04
 		BRSH		getk1a
+		CPI			KEY,0x03
 		BREQ		PureCoke
 		STS			DRINK1,KEY
 		LDI			TEMP,COCA
 		STS			DRINK2,TEMP
+		RJMP		MenuPotencia
 PureCoke:
 		LDI			TEMP,COCA
 		STS			DRINK1,TEMP
-		LDI			TEMP,0x00
 		STS			DRINK2,TEMP
-
+		LDI			TEMP,99
+		STS			PERC1,TEMP
+		LDI			TEMP,01
+		STS			PERC2,TEMP
+		RJMP		END
+			
 MenuPotencia:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2a
@@ -109,20 +120,21 @@ getk2a:
 		BREQ		PotCordobes
 		CPI			KEY,0x02
 		BREQ		PotMediA
-		LDI			TEMP,10
+		LDI			TEMP,25
 		STS			PERC1,TEMP
-		LDI			TEMP,90
+		LDI			TEMP,75
 		STS			PERC2,TEMP
 		RJMP		END
 PotCordobes:
-		LDI			TEMP,50
+		LDI			TEMP,75
 		STS			PERC1,TEMP
+		LDI			TEMP,25
 		STS			PERC2,TEMP
 		RJMP		END
 PotMedia:
-		LDI			TEMP,30
+		LDI			TEMP,50
 		STS			PERC1,TEMP
-		LDI			TEMP,70
+		LDI			TEMP,50
 		STS			PERC2,TEMP
 		RJMP		END
 MenuBebida:
@@ -140,6 +152,7 @@ getk1b:
 		STS			DRINK1,KEY
 		LDI			TEMP,COCA
 		STS			DRINK2,TEMP
+
 MenuPorc:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu2b
@@ -181,64 +194,33 @@ getPercentage:
 		SUB			TEMP,TEMP2
 		STS			PERC2,TEMP
 
-		RCALL DisplayClear
+		
 
-		lds TEMP,PERC1
-		PUSH TEMP
-		RCALL bin_to_bcd
-		pop temp
-		rcall pack_bcd
-		rcall bcd_to_ascii
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-
-		lds TEMP,PERC2
-		PUSH TEMP
-		RCALL bin_to_bcd
-		pop temp
-		rcall pack_bcd
-		rcall bcd_to_ascii
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		pop temp
-		mov dispvar,temp
-		rcall DisplayChar
-		here:
-		rjmp here
+		
 
 
 
 END:	
+		
+		
 		RCALL		DisplayClear
 		RCALL		DisplayWait
-		RCALL		retardo1s
+		RCALL		CreoTrago
+		rcall		retardo1s
 		RCALL		DisplayClear
 		RCALL		DisplayDone
-		RCALL		retardo1s
-		RCALL		DisplayClear
-		RCALL measurement
-
-		RCALL bin_to_bcd
-		pop r16
-		ori	r16,0x30
-		mov DISPVAR,r16
-		RCALL DisplayChar
-		pop r16
-		ori	r16,0x30
-		mov DISPVAR,r16
-		RCALL DisplayChar
-		pop r16
-		ori	r16,0x30
-		mov DISPVAR,r16
-		RCALL DisplayChar
-		RCALL retardo3s
-		pop r16
-		RJMP		here
+		rcall		retardo3s
+		
+		rjmp		MAIN
+;---------------------------PRueba----
+		ldi temp, 80
+		sts perc1,temp
+		ldi temp,2
+		sts drink1,temp
+		ldi temp, 20
+		sts perc2,temp
+		ldi temp,1
+		sts drink2,temp
 
  .include "kb_driver.asm"
  .include "disp_driver.asm"
@@ -249,4 +231,13 @@ END:
  .include "caudal_driver.asm"
 
 
+	.org 0x200
  
+T1_B_ISR:
+	ldi CONTROL, 0x01
+	cbi portc,0
+	cbi portc,1
+	cbi portc,2
+	ldi TEMP,0b00000000	; STOP TIMER         0b00001001  ; CTC INTERNAL clock
+	sts TCCR1B,TEMP
+	reti
