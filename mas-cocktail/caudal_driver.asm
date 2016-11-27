@@ -27,11 +27,16 @@ loop4:
 	sbrc CONTROL, 0
 	jmp ahora
 	lds TOTAL,TCNT1L
-	LDS TEMP, 100
-	MUL TEMP,TOTAL
-	LDI TEMP, MaxPulsos
-	call division
-/*	PUSH cociente
+	LDi TEMP, 100
+	MUL TEMP,TOTAL	
+
+	ldi temp,0
+	mov denominadorh,temp
+	ldi temp,MaxPulsos
+	mov denominadorL,temp
+	call division ;En cociente tenemos la cantidad de pulsos 
+
+	PUSH cociente
 	RCALL bin_to_bcd
 	POP TEMP
 	RCALL pack_bcd
@@ -41,8 +46,8 @@ loop4:
 	mov dispvar,temp2
 	rcall DisplayChar
 	mov dispvar,temp
-	rcall DisplayChar*/
-	call imprimototal
+	rcall DisplayChar
+/*	call imprimototal*/
 	call retardo50ms
 	rjmp loop4
 ahora:	
@@ -50,6 +55,10 @@ ahora:
 	lds temp, drink2
 	sts drink1,temp
 	lds temp, perc2
+
+	cpi temp,0x00
+	breq ahora2
+
 	sts perc1, temp
 	rcall retardo3s
 	rcall retardo3s

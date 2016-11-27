@@ -43,6 +43,11 @@
 
 .ORG	$500
 BEGIN:
+
+	
+
+
+
 		LDI	R16, low(RAMEND)
 		OUT	SPL, R16
 		LDI	R16, high(RAMEND)
@@ -98,9 +103,9 @@ PureCoke:
 		LDI			TEMP,COCA
 		STS			DRINK1,TEMP
 		STS			DRINK2,TEMP
-		LDI			TEMP,99
+		LDI			TEMP,100
 		STS			PERC1,TEMP
-		LDI			TEMP,01
+		LDI			TEMP,00
 		STS			PERC2,TEMP
 		RJMP		END
 			
