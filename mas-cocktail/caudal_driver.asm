@@ -5,7 +5,7 @@
  *   Author: galca
  */ 
 
- .equ MaxPulsos = 120
+ .equ MaxPulsos = 240
  .def CONTROL = R22
  .def TOTAL = R23
  .def IMPRIMO = R25
@@ -19,7 +19,11 @@
 CreoTrago:
 
 
-
+	ldi temp,0
+	sts TCNT1L,TEMP
+	STS TCNT1H,TEMP
+	ldi dispvar,0x41
+	rcall DisplayChar
 	call CargoTrago1
 	ldi CONTROL,0x00
 loop4:
@@ -41,15 +45,31 @@ loop4:
 	POP TEMP
 	RCALL pack_bcd
 	rcall bcd_to_ascii
+	RCALL DisplayClear
 	pop temp
-	pop temp2
-	mov dispvar,temp2
-	rcall DisplayChar
 	mov dispvar,temp
 	rcall DisplayChar
-/*	call imprimototal*/
+	pop temp
+	mov dispvar,temp
+	rcall DisplayChar
+	
+	RCALL measurement
+	pop temp
+	pop temp2
+	cpi temp,MINDIST
+	brlo corte1
+	
 	call retardo50ms
 	rjmp loop4
+corte1:
+	ldi CONTROL, 0x01
+	cbi portc,0
+	cbi portc,1
+	cbi portc,2
+	ldi TEMP,0b00000000	; STOP TIMER         0b00001001  ; CTC INTERNAL clock
+	sts TCCR1B,TEMP
+	rjmp ahora2
+
 ahora:	
 	call retardo3s
 	lds temp, drink2
@@ -62,6 +82,10 @@ ahora:
 	sts perc1, temp
 	rcall retardo3s
 	rcall retardo3s
+
+	ldi temp,0
+	sts TCNT1L,TEMP
+	STS TCNT1H,TEMP
 	call CargoTrago1
 	ldi CONTROL,0x00
 loop5:
@@ -69,9 +93,45 @@ loop5:
 	sbrc CONTROL, 0
 	jmp ahora2
 	lds TOTAL,TCNT1L
-	call imprimototal
+	LDi TEMP, 100
+	MUL TEMP,TOTAL	
+
+	ldi temp,0
+	mov denominadorh,temp
+	ldi temp,MaxPulsos
+	mov denominadorL,temp
+	call division ;En cociente tenemos la cantidad de pulsos 
+
+	PUSH cociente
+	RCALL bin_to_bcd
+	POP TEMP
+	RCALL pack_bcd
+	rcall bcd_to_ascii
+	RCALL DisplayClear
+	pop temp
+	mov dispvar,temp
+	rcall DisplayChar
+	pop temp
+	mov dispvar,temp
+	rcall DisplayChar
+
+	RCALL measurement
+	pop temp
+	pop temp2
+	cpi temp,MINDIST
+	brlo corte2
+
 	call retardo50ms
 	rjmp loop5
+
+	corte2:
+	ldi CONTROL, 0x01
+	cbi portc,0
+	cbi portc,1
+	cbi portc,2
+	ldi TEMP,0b00000000	; STOP TIMER         0b00001001  ; CTC INTERNAL clock
+	sts TCCR1B,TEMP
+
 ahora2:	
 	ret
 
@@ -177,6 +237,6 @@ UnoTotal:
 		lsL TOTAL
 		rjmp contimprtot
 FinImprimo:
-ret
+		ret
 
 

@@ -21,6 +21,8 @@
  ;----------------------------------------------------------
  ;----------------------------------------------------------
 
+ .EQU MINDIST = 50
+
  .EQU FERNET = 1
  .EQU WHISKY = 2
  .EQU COCA = 3
@@ -58,17 +60,54 @@ BEGIN:
 		sbi ddrc,0
 		sbi ddrc,1
 		sbi ddrc,2
-		cli
 		RCALL		KBINIT			; inicialización del teclado
 		RCALL		InicI2C			; esta funcion inicializa el display, si o si tiene que ir. no hace falta modificarle nada
 		RCALL		InicDisplay		; lo mismo que la anterior
 		RCALL		InitUsart		; inicialización del protocolo USART para el sensor de distancia
+		
+		/*RCALL measurement
+		pop r16
+		pop r17
+		push r16
+		push r17
+		RCALL bin_to_bcd
+		pop r16
+		ori r16,0x30
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		ori r16,0x30
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		ori r16,0x30
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		RCALL bin_to_bcd
+		pop r16
+		ori r16,0x30
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		ori r16,0x30
+		mov DISPVAR,r16
+		RCALL DisplayChar
+		pop r16
+		ori r16,0x30
+		mov DISPVAR,r16
+		RCALL DisplayChar
+
+here2:		
+		RJMP here2*/
+
+
  MAIN:	
 		RCALL		DisplayWelcome					; muestra mensaje de bienvendia
 		;RCALL		retardo3s						; durante 3 segundos
 		RCALL		DisplayClear					; borra el display
 		RCALL		DisplayMenu0					; empieza el programa en si
 		LDI			TEMP,SHIFTDELAY					; settea el contador de velocidad de shifteo del display
+		
 MenuModo:
 		RCALL		DisplayClear
 		RCALL		DisplayMenu0
@@ -218,14 +257,14 @@ END:
 		
 		rjmp		MAIN
 ;---------------------------PRueba----
-		ldi temp, 80
+/*		ldi temp, 80
 		sts perc1,temp
 		ldi temp,2
 		sts drink1,temp
 		ldi temp, 20
 		sts perc2,temp
 		ldi temp,1
-		sts drink2,temp
+		sts drink2,temp*/
 
  .include "kb_driver.asm"
  .include "disp_driver.asm"
@@ -246,3 +285,6 @@ T1_B_ISR:
 	ldi TEMP,0b00000000	; STOP TIMER         0b00001001  ; CTC INTERNAL clock
 	sts TCCR1B,TEMP
 	reti
+
+
+	

@@ -31,7 +31,7 @@ measurement:
 		PUSH	TEMP
 		RCALL	receive
 		PUSH	TEMP
-		RCALL receive
+		/*RCALL receive*/
 
 		PUSH	ZL
 		PUSH	ZH

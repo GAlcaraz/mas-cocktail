@@ -34,6 +34,8 @@ KBINIT:
 		PUSH		KBTEMP
  		LDI			KBTEMP,KBCONF		;cols como input, filas como output
 		OUT			DDRB,KBTEMP
+		sbi			ddrc,3
+		sbi			portc,3
 
 		LDI			KBTEMP,KBPULLUPS		;habilitar pullups en el input
 		OUT			KBPORT,KBTEMP
@@ -52,14 +54,14 @@ KBINIT:
 		RJMP		DONE						;salir de la subrutina
  
 												;Esta sección lee la fila 2
-/*		LDI			KEY,ROW2VAL					;carga el valor de la primera tecla de la fila 2 en "key"
+		LDI			KEY,ROW2VAL					;carga el valor de la primera tecla de la fila 2 en "key"
 		IN			KBTEMP,PORTC
-		ANDI		KBTEMP,(1<<PINC3)			;"apaga" fila 2 (carga un byte de unos con un único cero en la posición "ROW2")
+		ANDI		KBTEMP,~(1<<PINC3)			;"apaga" fila 2 (carga un byte de unos con un único cero en la posición "ROW2")
 		OUT			PORTC,KBTEMP				;y cargando el valor al puerto usado por el teclado
 		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias
  
 		SBRC		PRGFLAGS,PRESSED				;si se registró una tecla presionada
-		RJMP		DONE						;salir de la subrutina*/
+		RJMP		DONE						;salir de la subrutina
 												
 												;Esta sección lee la fila 3
 		LDI			KEY,ROW3VAL					;carga el valor de la primera tecla de la fila 3 en "key"
@@ -76,7 +78,12 @@ KBINIT:
 		OUT			KBPORT,KBTEMP				;y cargando el valor al puerto usado por el teclado
 		RCALL		READ_COL					;se pasa a leer las columnas, esperando encontrar coincidencias*/
  
-DONE:					
+DONE:		
+		sbi			portb, row1
+		sbi			portc, row2
+		sbi			portb, row3
+		sbi			portb, row4
+					
 		RET
  
 READ_COL:
